@@ -10,4 +10,4 @@
 
 # OOPs FAQs
 
-* [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/FAQs/Static%20Library%20VS%20Frameworks.md)
+* [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs%20FAQs/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
