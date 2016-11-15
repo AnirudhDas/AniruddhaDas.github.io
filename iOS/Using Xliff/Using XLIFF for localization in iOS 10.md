@@ -26,13 +26,13 @@ class LoginViewController: UIViewController {
 
 When you run the app, you see:
 
-![](3.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/3.png)
 
 And you have already generated ```Main.strings (Dutch)``` file.
 
-![](2.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/2.png)
 
-![](4.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/4.png)
 
 The contents of ```Main.strings (Dutch)``` looks like the following:
 
@@ -59,7 +59,7 @@ Now, when I’ll add a new "forgot-password" button and I want to translate the 
 
 To get around this problem, we can export an ".xliff" file and translate all the corresponding values into multiple languages all at once, using some third party tool. We can then import all those ".xliff" files for multiple languages into our project.
 
-![](1.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/1.png)
 
 XLIFF is an XML-based format created to standardize the way localizable data are passed between tools during a localization process (source wikipedia). Since Xcode 6 it is possible to use XLIFF-format for localization.
 
@@ -69,7 +69,7 @@ Let’s go back a couple of steps, to the point where we initially selected our 
 
 Go to ``` Project Navigator -> Editor -> Export For Localization ```
 
-![](5.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/5.png)
 
 ### Step 2
 
@@ -111,7 +111,7 @@ Instead of adding translations manually, we can also automaatically generate the
 
 After the translations are done, you are ready to import your translations into your Xcode-project. But before I add the translations I’ll add the ‘forgot-password’-button again, because it could very well happen that you will continue on your project and make some changes when the translator is busy translating. I add the translations by again selecting your project in the Project Navigator and in the taskbar go to ``` Editor -> Import Localizations```. When I do this I receive a couple of warnings. This is because the XLIFF-file I am importing does not contain a translation for every string in my project, one of which is the ‘forgot-password’-button I added after I exported the strings for translation.
 
-![](6.png)
+![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/6.png)
 
 Don’t worry! This is not a problem! For now we’ll just accept the missing translations and import what we have received from the translator. If we now browse the Project Navigator and look up ```Main.strings (Dutch)```. We’ll see all the translated strings, but not the strings that do not have translation, so we can not add those missing translations in Xcode. Luckily we do not want that anyway, we want to export strings and send them to the translator.
 
