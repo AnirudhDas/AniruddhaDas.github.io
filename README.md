@@ -7,3 +7,7 @@
 # iOS FAQs
 
 * [Static Library VS Framework](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/FAQs/Static%20Library%20VS%20Frameworks.md)
+
+# OOPs FAQs
+
+* [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/FAQs/Static%20Library%20VS%20Frameworks.md)
