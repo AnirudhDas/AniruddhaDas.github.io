@@ -36,10 +36,10 @@ It simply means that there is some relationship between two different classes.
 
 Two flavours of Association are:
 
-1. Compostion
+1. Composition
 2. Aggregation
 
-### Compostion
+### Composition
 
 It means two classes are tightly coupled. Say, ```class A``` is tightly coupled to ```class B```, i.e. ```class A``` can't exist independently without ```class B```.
 
