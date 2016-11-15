@@ -19,37 +19,40 @@
 # Algorithms
 
 1. Sorting
-	* [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
+	* [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
 
-	* [Count Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Counting%20Sort/CountingSort.md)
+	* [Counting Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Counting%20Sort/CountingSort.md)
 
 2. Searching
 	* [Linear Search, Binary Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Searching/Search.md)
 
 3. Recursion
-	* [Tower of Hanoi]()
+	* [Tower of Hanoi](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/TowerOfHanoi/Tower%20of%20Hanoi.md)
 
-	* [N'th fibonacci number]()
+	* [N'th fibonacci number](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/Fibonacci/Fibonacci.md)
 
 4. Divide and Conquer
-	* [Power of a number (x^y)]()
+	* [Power of a number (x^y)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/Power/Power.md)
 
-	* [Maximum and Minimum Element in an array]()
+	* [Maximum and Minimum Element in an array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/MaxMin/MaxMin.md)
 
 5. Greedy Algorithms
-	* [Knapsack Problem]()
-	* [Prim's Minimal Spanning Tree]()
-	* [Dijkstra's Single Source Shortest Path]()
+	* [Knapsack Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Knapsack/Knapsack.md)
+
+	* [Prim's Minimal Spanning Tree](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Prim/Prim.md)
+
+	* [Dijkstra's Single Source Shortest Path](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Dijkstra/Dijkstra.md)
 
 6. Backtracking Algorithms
-	* [N-Queen's Problem]()
-	* [Graph Coloring]()
+	* [N-Queen's Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/N%20-%20Queen/N-Queen's%20Problem.md)
+
+	* [Graph Coloring](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/Graph%20Colouring/Graph%20Coloring%20Algorithm.md)
 
 7. Dynamic Programming
-	* [Chain Matrix Multiplication]()
+	* [Chain Matrix Multiplication](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Chain/Chain%20Matrix%20Multiplication.md)
 
 8. Graph Traversal Algorithms
-	* [Breadth First Search, Depth First Search]()
+	* [Breadth First Search, Depth First Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Graph%20Traversal%20Algorithms/BFS-DFS/BFSDFS.md)
 
 # Data Structures
 
