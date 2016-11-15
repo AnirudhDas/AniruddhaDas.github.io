@@ -17,9 +17,44 @@
 1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
 
 # Algorithms
+
 1. Sorting
 	* [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
+
 	* [Count Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Counting%20Sort/CountingSort.md)
 
 2. Searching
 	* [Linear Search, Binary Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Searching/Search.md)
+
+3. Recursion
+	* [Tower of Hanoi]()
+
+	* [N'th fibonacci number]()
+
+4. Divide and Conquer
+	* [Power of a number (x^y)]()
+
+	* [Maximum and Minimum Element in an array]()
+
+5. Greedy Algorithms
+	* [Knapsack Problem]()
+	* [Prim's Minimal Spanning Tree]()
+	* [Dijkstra's Single Source Shortest Path]()
+
+6. Backtracking Algorithms
+	* [N-Queen's Problem]()
+	* [Graph Coloring]()
+
+7. Dynamic Programming
+	* [Chain Matrix Multiplication]()
+
+8. Graph Traversal Algorithms
+	* [Breadth First Search, Depth First Search]()
+
+# Data Structures
+
+1. Singly Linked List
+
+2. Doubly Linked List
+
+3. Stack
