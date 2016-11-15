@@ -26,13 +26,13 @@ class LoginViewController: UIViewController {
 
 When you run the app, you see:
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/3.png)
+![](3.png)
 
 And you have already generated ```Main.strings (Dutch)``` file.
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/2.png)
+![](2.png)
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/4.png)
+![](4.png)
 
 The contents of ```Main.strings (Dutch)``` looks like the following:
 
@@ -69,7 +69,7 @@ Let’s go back a couple of steps, to the point where we initially selected our 
 
 Go to ``` Project Navigator -> Editor -> Export For Localization ```
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/5.png)
+![](5.png)
 
 ### Step 2
 
@@ -111,7 +111,7 @@ Instead of adding translations manually, we can also automaatically generate the
 
 After the translations are done, you are ready to import your translations into your Xcode-project. But before I add the translations I’ll add the ‘forgot-password’-button again, because it could very well happen that you will continue on your project and make some changes when the translator is busy translating. I add the translations by again selecting your project in the Project Navigator and in the taskbar go to ``` Editor -> Import Localizations```. When I do this I receive a couple of warnings. This is because the XLIFF-file I am importing does not contain a translation for every string in my project, one of which is the ‘forgot-password’-button I added after I exported the strings for translation.
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/6.png)
+![](6.png)
 
 Don’t worry! This is not a problem! For now we’ll just accept the missing translations and import what we have received from the translator. If we now browse the Project Navigator and look up ```Main.strings (Dutch)```. We’ll see all the translated strings, but not the strings that do not have translation, so we can not add those missing translations in Xcode. Luckily we do not want that anyway, we want to export strings and send them to the translator.
 
