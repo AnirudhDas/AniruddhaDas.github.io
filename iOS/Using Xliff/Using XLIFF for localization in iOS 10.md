@@ -59,7 +59,7 @@ Now, when I’ll add a new "forgot-password" button and I want to translate the 
 
 To get around this problem, we can export an ".xliff" file and translate all the corresponding values into multiple languages all at once, using some third party tool. We can then import all those ".xliff" files for multiple languages into our project.
 
-![](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/1.png)
+![](1.png)
 
 XLIFF is an XML-based format created to standardize the way localizable data are passed between tools during a localization process (source wikipedia). Since Xcode 6 it is possible to use XLIFF-format for localization.
 
