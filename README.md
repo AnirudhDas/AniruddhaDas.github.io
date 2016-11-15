@@ -18,8 +18,8 @@
 
 # Algorithms
 1. Sorting
-	* [Quick Sort, Merge Sort, Heap Sort](Sorting.md)
-	* [Count Sort](CountingSort.md)
+	* [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
+	* [Count Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Counting%20Sort/CountingSort.md)
 
 2. Searching
-	* [Linear Search, Binary Search](Search.md)
+	* [Linear Search, Binary Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Searching/Search.md)

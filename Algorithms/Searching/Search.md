@@ -106,7 +106,7 @@ void binarysearch(double *A,int lb,int ub,double key)
 }
 ```
 
-### Data File [Download Here](Data.txt)
+### Data File [Here](Data.txt)
 
 ### Output
 
