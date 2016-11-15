@@ -1,3 +1,5 @@
+# Localization in iOS 10 and Xcode 8
+
 # Introduction
 
 Localization is the process of translating your app into multiple languages. But before you can localize your app, you internationalize it.
