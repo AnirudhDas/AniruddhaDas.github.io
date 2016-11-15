@@ -44,7 +44,13 @@ Go to the view controller, and change the text value as NSLocalizableString. Pro
 
 ### Step 5
 
-Add a new "strings" file. Name it as "Localizable" and save it in en.lproj folder.
+Now open terminal and get into the project directory. Type "genstrings *.swift"
+
+It generates "Localizable.strings" file. Add it into Xcode Project and copy it's reference.
+
+![](https://github.com/AnirudhDas/AnirudhDas.github.io/blob/master/iOS/Localization/2.png)
+
+Or alternatively, you can add a new "strings" file. Name it as "Localizable" and save it in en.lproj folder.
 
 ![](https://github.com/AnirudhDas/AnirudhDas.github.io/blob/master/iOS/Localization/10.png)
 
