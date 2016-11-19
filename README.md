@@ -12,6 +12,12 @@
 
 6. [Bundle ID VS Version ID in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Bundle%20Id%20VS%20Version%20Id/Bundle%20Id%20VS%20App%20Id%20in%20iOS.md)
 
+7. [Open VS Public in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OpenVsPublic/OpenVsPublic.md)
+
+8. [Difference between Dispatch Queue/GCD and NSOperationQueue](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GCDvsNSOperationQueue/GCDvsNSOperationQueue.md)
+
+9. [How to reset singleton instance once it's already created?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ResetSingleton/ResetSingleton.md)
+
 # OOPs Concepts
 
 1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
