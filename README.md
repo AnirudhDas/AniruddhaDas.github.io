@@ -18,6 +18,12 @@
 
 9. [How to reset singleton instance once it's already created?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ResetSingleton/ResetSingleton.md)
 
+10. [CocoaPods vs Carthage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsvsCarthage/CocoaPodsvsCarthage.md)
+
+11. [Class VS Static keyword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ClassVSStatic/ClassVSStatic.md)
+
+12. [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
+
 # OOPs Concepts
 
 1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
