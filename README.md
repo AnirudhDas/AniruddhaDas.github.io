@@ -30,6 +30,8 @@
 
 15. [Struct VS Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StructvsClasses/StructvsClasses.md)
 
+16. [Generating App Icons with one app icon file](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GeneratingAppIcons/GeneratingAppIcons.md)
+
 # OOPs Concepts
 
 1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
