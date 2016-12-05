@@ -34,6 +34,8 @@
 
 17. [iOS Using Cocoa Pods](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPods/CocoaPods.md)
 
+18. [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
+
 # OOPs Concepts
 
 1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
