@@ -8,6 +8,12 @@
 
 * Both provide us means to hide our source code from others. We only distribute precompiled classes for usablity.
 
+* There are two types of frameworks:
+
+	1) Embedded Framework
+	
+	2) Shared Framework
+
 ### How to create a static library?
 
 1. Start Xcode. And click on new Xcode project as indicated below.
