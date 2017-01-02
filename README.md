@@ -1,87 +1,189 @@
-# Learning iOS
+# **Learning iOS**
 
-1. [Localization in iOS 10 and Xcode 8](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Localization/Localization.md)
+### CoreLocation
 
-2. [Using XLIFF for localization in iOS 10](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/Using%20XLIFF%20for%20localization%20in%20iOS%2010.md)
+- [Geocoding](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
 
-3. [Static Library VS Framework](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Static%20Library%20VS%20Frameworks/Static%20Library%20VS%20Frameworks.md)
+- [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
 
-4. [What is dSYM file?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/dSYM%20file/What%20is%20dSYM%20file%3F.md)
+### CoreData
 
-5. [Version Number VS Build Number in XCode Projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Version%20Number%20VS%20Build%20Number%20in%20XCode%20Projects/Version%20Number%20VS%20Build%20Number%20in%20XCode%20Projects.md)
+- [CoreData in iOS 10 and Xcode 8 and Swift 3](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreData/CoreData.md)
 
-6. [Bundle ID VS Version ID in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Bundle%20Id%20VS%20Version%20Id/Bundle%20Id%20VS%20App%20Id%20in%20iOS.md)
+- [Multithreading In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MultithreadingInCoreData/MultithreadingInCoreData.md)
 
-7. [Open VS Public in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OpenVsPublic/OpenVsPublic.md)
+### UIKit
 
-8. [Difference between Dispatch Queue/GCD and NSOperationQueue](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GCDvsNSOperationQueue/GCDvsNSOperationQueue.md)
+### Localization
 
-9. [How to reset singleton instance once it's already created?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ResetSingleton/ResetSingleton.md)
+- [Localization in iOS 10 and Xcode 8](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Localization/Localization.md)
 
-10. [CocoaPods vs Carthage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsvsCarthage/CocoaPodsvsCarthage.md)
+- [Using XLIFF for localization in iOS 10](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/Using%20XLIFF%20for%20localization%20in%20iOS%2010.md)
 
-11. [Class VS Static keyword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ClassVSStatic/ClassVSStatic.md)
+### Web-Services and JSON Parsing
 
-12. [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
+- [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
 
-13. [API Automation and Rest Assured](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RestAssured/RestAssured.md)
+- [API Automation and Rest Assured](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RestAssured/RestAssured.md)
 
-14. [What is TDD?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TDD/TDD.md)
+### Automation
 
-15. [Struct VS Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StructvsClasses/StructvsClasses.md)
+- [Code Review using Tailor and Swiftlint](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CodeReview/CodeReview.md)
 
-16. [Generating App Icons with one app icon file](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GeneratingAppIcons/GeneratingAppIcons.md)
+- [Code Distribution using Fabric and Fastlane](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Fastlane/Fastlane.md)
 
-17. [iOS Using Cocoa Pods](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPods/CocoaPods.md)
+- [GitHooks](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitHooks/GitHooks.md)
 
-18. [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
+### Design Patterns
 
-# OOPs Concepts
+- [Design Patterns in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DesignPatterns/DesignPatterns.md)
 
-1. [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
+### Testing
 
-# Algorithms
+- [What is Test Driven Development (TDD)?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TDD/TDD.md)
 
-1. Sorting
-	* [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
+- [UI Testing](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UITesting/UITesting.md)
 
-	* [Counting Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Counting%20Sort/CountingSort.md)
+- [Unit Testing](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UnitTesting/UnitTesting.md)
 
-2. Searching
-	* [Linear Search, Binary Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Searching/Search.md)
+### Security
 
-3. Recursion
-	* [Tower of Hanoi](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/TowerOfHanoi/Tower%20of%20Hanoi.md)
+- [Encryption and Decryption in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/EncryptionAndDecryptionInIOS/EncryptionAndDecryptionInIOS.md)
 
-	* [N'th fibonacci number](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/Fibonacci/Fibonacci.md)
+- [NSCoder](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/NSCoder/NSCoder.md)
 
-4. Divide and Conquer
-	* [Power of a number (x^y)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/Power/Power.md)
+- [Security In iOS Apps using KeyChain and SSL Pinning](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SecurityIniOSApps/SecurityIniOSApps.md)
 
-	* [Maximum and Minimum Element in an array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/MaxMin/MaxMin.md)
+### Pods
 
-5. Greedy Algorithms
-	* [Knapsack Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Knapsack/Knapsack.md)
+- [ADEmailAndPassword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADEmailAndPassword.md)
 
-	* [Prim's Minimal Spanning Tree](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Prim/Prim.md)
+### Push Notifications
 
-	* [Dijkstra's Single Source Shortest Path](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Dijkstra/Dijkstra.md)
+- [Apple Push Notification Services and Google Cloud Messaging](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/APNS/APNS.md)
 
-6. Backtracking Algorithms
-	* [N-Queen's Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/N%20-%20Queen/N-Queen's%20Problem.md)
+### Multi-threading
 
-	* [Graph Coloring](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/Graph%20Colouring/Graph%20Coloring%20Algorithm.md)
+- [Difference between Dispatch Queue/GCD and NSOperationQueue](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GCDvsNSOperationQueue/GCDvsNSOperationQueue.md)
 
-7. Dynamic Programming
-	* [Chain Matrix Multiplication](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Chain/Chain%20Matrix%20Multiplication.md)
+### Swift
 
-8. Graph Traversal Algorithms
-	* [Breadth First Search, Depth First Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Graph%20Traversal%20Algorithms/BFS-DFS/BFSDFS.md)
+- [Struct VS Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StructvsClasses/StructvsClasses.md)
 
-# Data Structures
+- [Open VS Public in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OpenVsPublic/OpenVsPublic.md)
 
-1. Singly Linked List
+- [Class VS Static keyword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ClassVSStatic/ClassVSStatic.md)
 
-2. Doubly Linked List
+- [inout keyword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CallByReference(inoutKeyword)/CallByReference(inoutKeyword).md)
 
-3. Stack
+- [Generics and Mutating Functions](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GenericsAndMutatingFunctions/GenericsAndMutatingFunctions.md)
+
+- [Initializers In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/InitializersInSwift/InitializersInSwift.md)
+
+- [String Operations In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StringOperations/StringOperations.md)
+
+### Dependency Manager
+
+- [CocoaPods vs Carthage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsvsCarthage/CocoaPodsvsCarthage.md)
+
+- [iOS Using Cocoa Pods](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPods/CocoaPods.md)
+
+- [Swift Package Manager](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftPackageManager/SwiftPackageManager.md)
+
+### Shell scripts
+
+- [Generating App Icons with one app icon file](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GeneratingAppIcons/GeneratingAppIcons.md)
+
+### Other Code Snippets
+
+- [Convert HexString To UIColor](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ConvertHexStringToUIColor/ConvertHexStringToUIColor.md)
+
+- [Opposite Direction Navigation Controller](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OppositeDirectionNavigationController/OppositeDirectionNavigationController.md)
+
+### Xcode Settings
+
+- [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
+
+- [Adding Copyright Statements to your Source Code](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CopyrightStatement/CopyrightStatement.md)
+
+- [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
+
+### FAQs
+
+- [Static Library VS Framework](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Static%20Library%20VS%20Frameworks/Static%20Library%20VS%20Frameworks.md)
+
+- [What is dSYM file?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/dSYM%20file/What%20is%20dSYM%20file%3F.md)
+
+- [Version Number VS Build Number in XCode Projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Version%20Number%20VS%20Build%20Number%20in%20XCode%20Projects/Version%20Number%20VS%20Build%20Number%20in%20XCode%20Projects.md)
+
+- [Bundle ID VS Version ID in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Bundle%20Id%20VS%20Version%20Id/Bundle%20Id%20VS%20App%20Id%20in%20iOS.md)
+
+- [How to reset singleton instance once it's already created?](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ResetSingleton/ResetSingleton.md)
+
+- [NSURLConnection vs NSURLSession](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/NSURLConnectionVsNSURLSession/NSURLConnectionVsNSURLSession.md)
+
+- [Serialization vs Deserialization](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SerializationAndDeserialization/SerializationAndDeserialization.md)
+
+- [Sharing Data Between Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ShareDataBetweenApps/ShareDataBetweenApps.md)
+
+- [Slicing Of Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SlicingOfApps/SlicingOfApps.md)
+
+# **OOPs Concepts**
+
+- [OOPS Using Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/OOPSInSwift/OOPSInSwift.md)
+
+- [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
+
+# **Algorithms**
+
+### Sorting
+
+- [Quick Sort, Merge Sort, Heap Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Quick%20Sort%2C%20Merge%20Sort%2C%20Heap%20Sort/Sorting.md)
+
+- [Counting Sort](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Sorting/Counting%20Sort/CountingSort.md)
+
+### Searching
+
+- [Linear Search, Binary Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Searching/Search.md)
+
+### Recursion
+
+- [Tower of Hanoi](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/TowerOfHanoi/Tower%20of%20Hanoi.md)
+
+- [N'th fibonacci number](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Recursion/Fibonacci/Fibonacci.md)
+
+### Divide and Conquer
+
+-[Power of a number (x^y)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/Power/Power.md)
+
+- [Maximum and Minimum Element in an array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Divide%20and%20Conquer/MaxMin/MaxMin.md)
+
+### Greedy Algorithms
+
+- [Knapsack Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Knapsack/Knapsack.md)
+
+- [Prim's Minimal Spanning Tree](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Prim/Prim.md)
+
+- [Dijkstra's Single Source Shortest Path](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Greedy%20Algorithms/Dijkstra/Dijkstra.md)
+
+### Backtracking Algorithms
+
+- [N-Queen's Problem](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/N%20-%20Queen/N-Queen's%20Problem.md)
+
+- [Graph Coloring](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Backtracking%20Algorithms/Graph%20Colouring/Graph%20Coloring%20Algorithm.md)
+
+### Dynamic Programming
+
+- [Chain Matrix Multiplication](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Dynamic%20Programming/Matrix%20Chain/Chain%20Matrix%20Multiplication.md)
+
+### Graph Traversal Algorithms
+
+- [Breadth First Search, Depth First Search](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Algorithms/Graph%20Traversal%20Algorithms/BFS-DFS/BFSDFS.md)
+
+# **Data Structures**
+
+### Singly Linked List
+
+### Doubly Linked List
+
+### Stack
