@@ -107,3 +107,7 @@ App Target -> Edit Scheme -> Run -> Options -> Application Language -> Hindi
 Now run the app.
 
 ![](20.png)
+
+### Note:
+
+**A better approach for Localization in Swift is [Localize-Swift](https://github.com/marmelroy/Localize-Swift).**
