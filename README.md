@@ -66,6 +66,10 @@
 
 - [Difference between Dispatch Queue/GCD and NSOperationQueue](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GCDvsNSOperationQueue/GCDvsNSOperationQueue.md)
 
+### Objective-C
+
+- [Types Of Properties In Objective-C](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInObjectiveC/TypesOfPropertiesInObjectiveC.md)
+
 ### Swift
 
 - [Struct VS Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StructvsClasses/StructvsClasses.md)
@@ -127,6 +131,8 @@
 - [Sharing Data Between Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ShareDataBetweenApps/ShareDataBetweenApps.md)
 
 - [Slicing Of Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SlicingOfApps/SlicingOfApps.md)
+
+- [Tracing And Fixing Memory Leak](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TracingAndFixingMemoryLeak/TracingAndFixingMemoryLeak.md)
 
 # **OOPs Concepts**
 

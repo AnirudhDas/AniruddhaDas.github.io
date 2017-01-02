@@ -42,5 +42,5 @@ For the first time, the device needs internet connection to send request to APNS
 
 ### Note
 
-1. These steps have been made much easier using ```Firebase Push Notifications```.
+1. These steps have been made much easier using **[Firebase Push Notifications](https://firebase.google.com/)**.
 2. There is no guarantee that we will receive a message using APNS. It may have delay or may get discarded. So, it is uncertain.
