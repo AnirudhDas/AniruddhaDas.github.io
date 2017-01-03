@@ -2,7 +2,7 @@
 
 ### CoreLocation
 
-- [Geocoding](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
+- [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
 
 - [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
 
@@ -11,8 +11,6 @@
 - [CoreData in iOS 10 and Xcode 8 and Swift 3](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreData/CoreData.md)
 
 - [Multithreading In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MultithreadingInCoreData/MultithreadingInCoreData.md)
-
-### UIKit
 
 ### Localization
 
