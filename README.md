@@ -102,6 +102,8 @@
 
 - [Setting Up Workspace For Git](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SettingUpWorkspaceForGit/SettingUpWorkspaceForGit.md)
 
+- [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
+
 - [Git Commands](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitCommands/GitCommands.md)
 
 ### Shell scripts
@@ -124,9 +126,7 @@
 
 - [Check Session & SignOut for Facebook and Google using Firebase](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CheckSession&SignOutforFacebookandGoogle/CheckSession&SignOutforFacebookandGoogle.md)
 
-### Xcode Settings
-
-- [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
+### Xcode and MacOS Settings
 
 - [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
 
