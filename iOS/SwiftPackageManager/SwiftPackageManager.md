@@ -4,7 +4,7 @@
 
 The Swift Package Manager is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
 
-That’s right, Swift now has an **official package manager**! The Package Manager is included in Swift 3.0 and above.
+That’s right, Swift now has an **official package manager** from Apple! The Package Manager is included in Swift 3.0 and above.
 
 The Swift Package Manager is a tool for managing distribution of source code, aimed at making it easy to share your code and reuse others’ code. The tool directly addresses the challenges of compiling and linking Swift packages, managing dependencies, versioning, and supporting flexible distribution and collaboration models.
 

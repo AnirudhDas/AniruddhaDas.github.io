@@ -27,4 +27,12 @@ To view only the failed tests, click the Failed Test button at the bottom of the
 
 ![](UnitTest6.png)
 
+### Why is Unit Testing important?
+
+1. **Prevents runtime errors**
+2. **Prevents logical errors**
+3. **Makes your code maintainable**
+4. **Makes your code scalable**
+5. **During regression, it helps easy spotting of bugs**
+
 For more detail on writing, running, and viewing tests, see [Testing with Xcode](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/01-introduction.html#//apple_ref/doc/uid/TP40014132).

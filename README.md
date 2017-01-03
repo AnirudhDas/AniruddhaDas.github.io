@@ -22,6 +22,10 @@
 
 ### Web-Services and JSON Parsing
 
+- [JSON Parsing From Local JSON File](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/JSONParsingFromLocalJSONFile/JSONParsingFromLocalJSONFile.md)
+
+- [Invoke Request For JSON data or Plain data](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/InvokeRequestForJSONorPlainData/InvokeRequestForJSONorPlainData.md)
+
 - [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
 
 - [API Automation and Rest Assured](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RestAssured/RestAssured.md)
@@ -94,9 +98,21 @@
 
 - [Swift Package Manager](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftPackageManager/SwiftPackageManager.md)
 
+- [CocoaPods Commands](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsCommands/CocoaPodsCommands.md)
+
+### Git - Repository Management
+
+- [Setting Up Workspace For Git](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SettingUpWorkspaceForGit/SettingUpWorkspaceForGit.md)
+
+- [Git Commands](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitCommands/GitCommands.md)
+
 ### Shell scripts
 
 - [Generating App Icons with one app icon file](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GeneratingAppIcons/GeneratingAppIcons.md)
+
+- [Generating 1x,2x,3x for Assets](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Generating1x,2x,3xforAssets/Generating1x,2x,3xforAssets.md)
+
+- [Generating Simulator Shortcuts](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SimulatorsShortcuts/SimulatorsShortcuts.md)
 
 ### Other Code Snippets
 
@@ -104,13 +120,25 @@
 
 - [Opposite Direction Navigation Controller](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OppositeDirectionNavigationController/OppositeDirectionNavigationController.md)
 
+- [Draw Path Between Two Points On Google Maps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DrawPathBetweenTwoPointsOnGoogleMaps/DrawPathBetweenTwoPointsOnGoogleMaps.md)
+
+- [Integrating iRate in your Application](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/iRate/iRate.md)
+
+- [Check Session & SignOut for Facebook and Google using Firebase](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CheckSession&SignOutforFacebookandGoogle/CheckSession&SignOutforFacebookandGoogle.md)
+
 ### Xcode Settings
 
 - [Git Ignore file for Xcode projects](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GitIgnore/GitIgnore.md)
 
+- [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
+
+- [Display Hidden Files On MacOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DisplayHiddenFilesOnMacOS/DisplayHiddenFilesOnMacOS.md)
+
+### Documentation
+
 - [Adding Copyright Statements to your Source Code](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CopyrightStatement/CopyrightStatement.md)
 
-- [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
+- [Documenting your code](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DocumentingCode/DocumentingCode.md)
 
 ### FAQs
 
@@ -193,3 +221,7 @@
 ### Doubly Linked List
 
 ### Stack
+
+# **PHP**
+
+# **Java**

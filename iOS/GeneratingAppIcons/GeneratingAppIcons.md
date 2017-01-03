@@ -2,7 +2,7 @@
 
 ### Steps
 
-1. `copy` and `paste` following script as plain text document.
+- `copy` and `paste` following script as plain text document.
 
 ```	
 cp 1024x1024.png AppIcon-20.png
@@ -176,15 +176,15 @@ echo '{
 mv Contents.json AppIcon.appiconset/Contents.json
 ```
 
-2. Save as `GenerateAppIcons.sh`
+- Save as `GenerateAppIcons.sh`
 
-3. Move above script under `Assets.xcassets` folder.
+- Move above script under `Assets.xcassets` folder.
 
-4. Also place Appicon with highest size and name `1024x1024.png`.
+- Also place Appicon with highest size and name `1024x1024.png`.
 
-5. Launch `Terminal`.
+- Launch `Terminal`.
 
-6. Change your directory (in `terminal`) to `Assets.xcassets` folder.
+- Change your directory (in `terminal`) to `Assets.xcassets` folder.
 
 	Example:
 	
@@ -192,7 +192,7 @@ mv Contents.json AppIcon.appiconset/Contents.json
 	$ cd ~/Desktop/MyProject/MyProject/Assets.xcassets
 	```
 	
-7. Make sure you've added appropriate permission to execute script. Run script using following command.
+- Make sure you've added appropriate permission to execute script. Run script using following command.
 
 	```
 	$ sh GenerateAppIcons.sh
