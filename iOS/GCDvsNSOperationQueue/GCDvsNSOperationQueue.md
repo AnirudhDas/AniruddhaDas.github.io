@@ -20,6 +20,10 @@ With the introduction of Grand Central Dispatch, Apple refactored NSOperation to
 
 * NSOperationQueue can be more suitable for long-running/complex operations that may need to be cancelled or have complex dependencies.
 
+* NSOperationQueue supports two types of operations:
+	1. Block Operation - Executes a block/function and has a completion handler, i.e. it returns some value to it's caller.
+	2. Invocation Operation - Simply executes a block/function.
+
 ### Benefits of NSOperationQueue:
 
 Since NSOperation is built on top of Grand Central Dispatch, you may be wondering what NSOperation offers that Grand Central Dispatch doesn’t. There are several compelling benefits that make NSOperation an interesting choice for a number of use cases.

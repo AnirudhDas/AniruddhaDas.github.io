@@ -1,6 +1,6 @@
-# What is slicing and how we can achieve in app?
+# What is slicing/thinning and how we can achieve in app?
 
-### App slicing
+### App Slicing/App Thinning
 In application bundle, if we use the Asset.catalog with 1x, 2x, 3x images. App slicing is a technique which recognize the device which demands the binary, and it will provide the images which compatible to only that device instead of all (1x, 2x, 3x images). So, it reduces the actual size of the binary.
 
 ### BitCode

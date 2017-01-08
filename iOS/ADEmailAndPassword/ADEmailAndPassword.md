@@ -98,6 +98,8 @@ github "AnirudhDas/ADEmailAndPassword"
 	
 	Then run ```carthage update``` to build the framework and drag the built ```ADEmailAndPassword.framework``` into your Xcode project.
 	
+	**Note:** Do not check `"copy items if needed"` option, when asked. Always select `"use reference"` option.
+	
 	
 ### Usage Guide
 	

@@ -1,14 +1,30 @@
 # **Learning iOS**
 
+### AutoLayout
+
+- [Auto Layout and Size Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AutoLayoutAndSizeClasses/AutoLayoutAndSizeClasses.md)
+
 ### CoreLocation
 
 - [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
 
 - [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
 
-### CoreData
+### Persistence in iOS
+
+- [iOS File System](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/iOSFileSystem/iOSFileSystem.md)
+
+- [CoreData Architecture](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreDataArchitecture/CoreDataArchitecture.md)
+
+- [Working With CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/WorkingWithCoreData/WorkingWithCoreData.md)
 
 - [CoreData in iOS 10 and Xcode 8 and Swift 3](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreData/CoreData.md)
+
+- [Indexes In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/IndexesInCoreData/IndexesInCoreData.md)
+
+- [Deletion Rules In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DeletionRulesInCoreData/DeletionRulesInCoreData.md)
+
+- [CoreData Migration](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreDataMigration/CoreDataMigration.md)
 
 - [Multithreading In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MultithreadingInCoreData/MultithreadingInCoreData.md)
 
@@ -56,6 +72,10 @@
 
 - [Security In iOS Apps using KeyChain and SSL Pinning](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SecurityIniOSApps/SecurityIniOSApps.md)
 
+### Payment Gateways
+
+- [Stripe Payment Gateway](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StripePaymentGateway/StripePaymentGateway.md)
+
 ### Pods
 
 - [ADEmailAndPassword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADEmailAndPassword.md)
@@ -76,7 +96,7 @@
 
 - [Struct VS Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StructvsClasses/StructvsClasses.md)
 
-- [Open VS Public in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/OpenVsPublic/OpenVsPublic.md)
+- [Access Control in Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AccessControl/AccessControl.md)
 
 - [Class VS Static keyword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ClassVSStatic/ClassVSStatic.md)
 
@@ -160,11 +180,17 @@
 
 - [Tracing And Fixing Memory Leak](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TracingAndFixingMemoryLeak/TracingAndFixingMemoryLeak.md)
 
+- [Categories VS Extensions](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CategoriesVsExtensions/CategoriesVsExtensions.md)
+
+- [Swift VS ObjectiveC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
+
 # **OOPs Concepts**
 
 - [OOPS Using Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/OOPSInSwift/OOPSInSwift.md)
 
 - [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
+
+- [Overriding And Overloading In Same Class](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/OverridingAndOverloadingInSameClass/OverridingAndOverloadingInSameClass.md)
 
 # **Algorithms**
 
@@ -223,3 +249,47 @@
 # **PHP**
 
 # **Java**
+
+- [Convert ArrayList To Arrays](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/ConvertArrayListToArrays/ConvertArrayListToArrays.md)
+
+- [Convert Arrays To Set](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/ConvertArraysToSet/ConvertArraysToSet.md)
+
+- [Decompilers In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/DecompilersInJava/DecompilersInJava.md)
+
+- [Sort Arrays In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/SortArraysInJava/SortArraysInJava.md)
+
+# **Problem Solving**
+
+### Arrays
+
+- [Find a pair in an array of size 'n', whose sum is X](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array1.md)
+
+- [Find a majority element in an array of size 'n'](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array2.md)
+
+- [Find the number occuring odd number of times in a given array of size 'n'](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array3.md)
+
+- [Reverse an array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array4.md)
+
+- [Rotate an array of size 'n' by 'd' elements](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array5.md)
+
+- [Segregate all 0's and all 1's in an array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array6.md)
+
+- [Find the maximum difference between two elements such that larger element appears after the smaller number](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array7.md)
+
+- [Merge an array of size 'n' into another array of size 'm+n'](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array8.md)
+
+- [Find two repeating numbers in a given array](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array9.md)
+
+- [Find duplicate elements in O(n) time and O(1) extra space, for a given array of size 'n'](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array10.md)
+
+- [Find the index in an array such that the sum of elements at lower indices is equal to the sum of elements at higher indices (Equilibrium index of an array)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array11.md)
+
+- [Find the maximum difference of j - i such that a[j] > a[i], for a given an array of 'n' elements](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array12.md)
+
+- [Find the triplet whose sum is X](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array13.md)
+
+- [Find a continous sub-array whose sum is X (non-negative numbers)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/Array/Array14.md)
+
+### Linked List
+
+- [Find the middle of a linked list without traversing the entire list](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/LinkedList/FindMiddleOfLinkedListWithoutTraversingTillTheEnd.md)

@@ -33,3 +33,5 @@ Ultimately, we created Carthage because we wanted the simplest tool possible—a
 1. Carthage has to be a ```shared framework```.
 	
 2. Carthage also checkouts all the source code files into "Checkout" folder. So, it doesn't hide source code as any framework should ideally do.
+
+### Read More [Here](https://a-coding.com/a-review-of-ios-dependency-managers/).

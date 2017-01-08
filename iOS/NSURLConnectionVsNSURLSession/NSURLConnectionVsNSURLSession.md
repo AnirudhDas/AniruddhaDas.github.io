@@ -18,4 +18,14 @@
 
 3. NSURLSession preserves battery life and tasks can be resumed, suspended and cancelled at any point of time
 
-4. Supports 3 kinds of configarations: Default (In Disk), Emphimeral (In memory), Background (Download task)
+4. **NSURLSession supports 3 kinds of configarations:**
+
+	- **Default** (Can store HTTP cookies in Disk)
+	- **Emphimeral** (Can store HTTP cookies in memory)
+	- **Background** (Can upload or download in background, can suspend and resume on tasks)
+
+5. **NSURLSessionTask is of 3 types:**
+
+	- **DataTask**
+	- **DownloadTask**
+	- **UploadTask**
