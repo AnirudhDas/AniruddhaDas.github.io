@@ -88,7 +88,23 @@
 
 - [Difference between Dispatch Queue/GCD and NSOperationQueue](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GCDvsNSOperationQueue/GCDvsNSOperationQueue.md)
 
+### AppStore and Releases
+
+- [AppStore Submission Process](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AppStoreSubmissionProcess/AppStoreSubmissionProcess.md)
+
+- [Tools To Send Out Beta Releases](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ToolsToSendOutBetaReleases/ToolsToSendOutBetaReleases.md)
+
+- [Reasons for rejections in AppStore](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RejectionsInAppStore/RejectionsInAppStore.md)
+
+- [Provisioning Profile](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ProvisioningProfile/ProvisioningProfile.md)
+
+- [Development Vs Distribution Provisioning Profile](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DevelopmentVsDistributionProvisioningProfile/DevelopmentVsDistributionProvisioningProfile.md)
+
+- [Enterprise Vs Individual Account](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/EnterpriseVsIndividualAccount/EnterpriseVsIndividualAccount.md)
+
 ### Objective-C
+
+- [Swift VS ObjectiveC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
 
 - [Types Of Properties In Objective-C](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInObjectiveC/TypesOfPropertiesInObjectiveC.md)
 
@@ -107,6 +123,8 @@
 - [Initializers In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/InitializersInSwift/InitializersInSwift.md)
 
 - [String Operations In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StringOperations/StringOperations.md)
+
+- [Types Of Properties In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInSwift/TypesOfPropertiesInSwift.md)
 
 ### Dependency Manager
 
@@ -182,7 +200,9 @@
 
 - [Categories VS Extensions](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CategoriesVsExtensions/CategoriesVsExtensions.md)
 
-- [Swift VS ObjectiveC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
+- [NSURLSessionDataTask Vs NSURLSessionDownloadTask](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/NSURLSessionDataTaskVsNSURLSessionDownloadTask/NSURLSessionDataTaskVsNSURLSessionDownloadTask.md)
+
+- [Embedded Binaries Vs Linked Frameworks](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/EmbeddedBinariesVsLinkedFrameworks/EmbeddedBinariesVsLinkedFrameworks.md)
 
 # **OOPs Concepts**
 
