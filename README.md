@@ -80,9 +80,11 @@
 
 - [ADEmailAndPassword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADEmailAndPassword.md)
 
-### Push Notifications
+### Notifications in iOS
 
 - [Apple Push Notification Services and Google Cloud Messaging](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/APNS/APNS.md)
+
+- [Rich Notifications in iOS 10](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RichNotifications/RichNotifications.md)
 
 ### Multi-threading
 
@@ -101,6 +103,8 @@
 - [Development Vs Distribution Provisioning Profile](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DevelopmentVsDistributionProvisioningProfile/DevelopmentVsDistributionProvisioningProfile.md)
 
 - [Enterprise Vs Individual Account](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/EnterpriseVsIndividualAccount/EnterpriseVsIndividualAccount.md)
+
+- [Steps For Creating Certificates And Provisioning Profiles](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StepsForCreatingCertificatesAndProvisioningProfiles/StepsForCreatingCertificatesAndProvisioningProfiles.md)
 
 ### Objective-C
 
@@ -268,6 +272,20 @@
 
 # **PHP**
 
+- [Connecting To MySQL Database](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/ConnectingToMySQLDatabase.md)
+
+- [Executing Select Query](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/ExecutingSelectQuery.md)
+
+- [Executing Update, Insert, Delete Query](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ExecutingUpdateInsertDeleteQuery.md)
+
+- [Upload Image File To PHP Server using iOS app](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/UploadImageFileToPHPServer.md)
+
+- [Generate Random String](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/GenerateRandomString.md)
+
+- [Calculate Distance Between Two Geometrical Points](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/CalculateDistanceBetweenTwoGeometricalPoints.md)
+
+- [Other PHP Utilities](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OtherPHPUtilities.md)
+
 # **Java**
 
 - [Convert ArrayList To Arrays](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/ConvertArrayListToArrays/ConvertArrayListToArrays.md)
@@ -277,6 +295,8 @@
 - [Decompilers In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/DecompilersInJava/DecompilersInJava.md)
 
 - [Sort Arrays In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/SortArraysInJava/SortArraysInJava.md)
+
+- [Rest Web Services using JAX-RS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/JAX-RS/JAX-RS.md)
 
 # **Problem Solving**
 

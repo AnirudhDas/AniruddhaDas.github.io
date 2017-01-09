@@ -58,7 +58,7 @@ internal class D: B {} // error: B cannot be subclassed
 
 - **internal**
 
-Enables an entity to be used withing the defining module (target). You typically use internal access when defining an app’s or a framework’s internal structure.
+Enables an entity to be used withing the defining module (target). You typically use internal access when defining an app’s or a framework’s internal structure. **By default, all entities have internal access.**
 
 ```
 // First.framework – A.swift
