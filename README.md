@@ -276,15 +276,15 @@
 
 - [Executing Select Query](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/ExecutingSelectQuery.md)
 
-- [Executing Update, Insert, Delete Query](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ExecutingUpdateInsertDeleteQuery.md)
+- [Executing Update, Insert, Delete Query](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/ExecutingUpdateInsertDeleteQuery.md)
 
-- [Upload Image File To PHP Server using iOS app](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/UploadImageFileToPHPServer.md)
+- [Upload Image File To PHP Server using iOS app](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/UploadImageFileToPHPServer.md)
 
-- [Generate Random String](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/GenerateRandomString.md)
+- [Generate Random String](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/GenerateRandomString.md)
 
-- [Calculate Distance Between Two Geometrical Points](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/CalculateDistanceBetweenTwoGeometricalPoints.md)
+- [Calculate Distance Between Two Geometrical Points](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/CalculateDistanceBetweenTwoGeometricalPoints.md)
 
-- [Other PHP Utilities](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OtherPHPUtilities.md)
+- [Other PHP Utilities](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/OtherPHPUtilities.md)
 
 # **Java**
 
