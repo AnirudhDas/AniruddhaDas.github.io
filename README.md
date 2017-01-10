@@ -4,12 +4,6 @@
 
 - [Auto Layout and Size Classes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AutoLayoutAndSizeClasses/AutoLayoutAndSizeClasses.md)
 
-### CoreLocation
-
-- [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
-
-- [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
-
 ### Persistence in iOS
 
 - [iOS File System](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/iOSFileSystem/iOSFileSystem.md)
@@ -45,6 +39,12 @@
 - [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
 
 - [API Automation and Rest Assured](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RestAssured/RestAssured.md)
+
+### CoreLocation
+
+- [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
+
+- [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
 
 ### Automation
 
