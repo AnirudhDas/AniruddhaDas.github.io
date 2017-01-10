@@ -32,6 +32,8 @@
 
 - [Localization in iOS 10 and Xcode 8](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Localization/Localization.md)
 
+- [Localization using "Localize-Swift"](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/LocalizeSwiftDemo/LocalizeSwiftDemo.md)
+
 - [Using XLIFF for localization in iOS 10](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Using%20Xliff/Using%20XLIFF%20for%20localization%20in%20iOS%2010.md)
 
 ### Web-Services and JSON Parsing
