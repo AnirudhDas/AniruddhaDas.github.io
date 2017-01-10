@@ -3,5 +3,5 @@
 - Copyright issues
 - AutoLayout issues
 - Insufficient meta data
-- inappropiate content in kids apps
+- Inappropiate content in kids apps
 - Pornographic content
