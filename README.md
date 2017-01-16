@@ -140,7 +140,7 @@
 
 - [Completion Handlers](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CompletionHandlers/CompletionHandlers.md)
 
-- [ForLoops](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ForLoops/ForLoops.md)
+- [For Loops](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ForLoops/ForLoops.md)
 
 ### Dependency Manager
 

@@ -22,9 +22,13 @@ To make this possible, whenever you assign a class instance to a property, const
 
 Here, `ob3` has a weak reference to the object at memory address `1000`.
 
+----
+
 ![](ARC2.jpg)
 
 Here, `ob3` has a strong reference to the object at memory address `1000`.
+
+----
 
 ARC only maintains **reference counts** for `strong type references`, `not weak or unowned types`. It keeps a memory for an object only till there is atleast one strong reference to it, i.e. the reference count is atleast `1`.
 
