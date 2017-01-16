@@ -2,6 +2,8 @@
 
 ### Step 1
 
+Create a file **"DecodePolylineToArray.php"**.
+
 ```
 <?php
 
@@ -79,11 +81,11 @@ function decodePolylineToArray($encoded) {
 
 ### Step 2
 
-Use it like:
+Use it in some other file as:
 
 ```
 <?php
-include_once 'AKDecodePolylineToArray.php';
+include_once 'DecodePolylineToArray.php';
 
 
 class PolylineDemo extends DecodePolyline {
