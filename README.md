@@ -82,6 +82,10 @@
 
 - [ADEmailAndPassword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADEmailAndPassword.md)
 
+- [ADConnectionManager](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADConnectionManager.md)
+
+- [ADUtility](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADUtility.md)
+
 ### Notifications in iOS
 
 - [Apple Push Notification Services and Google Cloud Messaging](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/APNS/APNS.md)
@@ -110,7 +114,7 @@
 
 ### Objective-C
 
-- [Swift VS ObjectiveC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
+- [Swift VS ObjectiveC - **Modifications Needed**](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
 
 - [Types Of Properties In Objective-C](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInObjectiveC/TypesOfPropertiesInObjectiveC.md)
 
@@ -131,6 +135,12 @@
 - [String Operations In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StringOperations/StringOperations.md)
 
 - [Types Of Properties In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInSwift/TypesOfPropertiesInSwift.md)
+
+- [ARC - Memory Management](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ARC/ARC.md)
+
+- [Completion Handlers](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CompletionHandlers/CompletionHandlers.md)
+
+- [ForLoops](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ForLoops/ForLoops.md)
 
 ### Dependency Manager
 
@@ -170,9 +180,29 @@
 
 - [Check Session & SignOut for Facebook and Google using Firebase](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CheckSession&SignOutforFacebookandGoogle/CheckSession&SignOutforFacebookandGoogle.md)
 
+- [Showing a Popover](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Popover/Popover.md)
+
+- [UIColor With HexCode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UIColorWithHexCode/UIColorWithHexCode.md)
+
+- [Configure Navigation Bar](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ConfigureNavigationBar/ConfigureNavigationBar.md)
+
+- [Play a video within an UIView using AVPlayer](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AVPlayer/AVPlayer.md)
+
+- [Base64 Data To String Conversion](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Base64DataToStringConversion/Base64DataToStringConversion.md)
+
+- [Generate URL using scheme, host, path, parameters and path extension](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GenerateURL/GenerateURL.md)
+
+- [Rotate UIImage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RotateUIImage/RotateUIImage.md)
+
+- [Scale UIImage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ScaleUIImage/ScaleUIImage.md)
+
+- [Integrating Reachability in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/IntegratingReachability/IntegratingReachability.md)
+
 ### Xcode and MacOS Settings
 
 - [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
+
+- [Allow HTTP requests by disabling AppTransportSecurity](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AllowHTTPrequests/AllowHTTPrequests.md)
 
 - [Display Hidden Files On MacOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DisplayHiddenFilesOnMacOS/DisplayHiddenFilesOnMacOS.md)
 
@@ -285,6 +315,8 @@
 - [Generate Random String](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/GenerateRandomString.md)
 
 - [Calculate Distance Between Two Geometrical Points](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/CalculateDistanceBetweenTwoGeometricalPoints.md)
+
+- [Decode a Polyline String To an Array of latitude longitude points](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/DecodePolylineStringToArray.md)
 
 - [Other PHP Utilities](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/PHP/OtherPHPUtilities.md)
 
