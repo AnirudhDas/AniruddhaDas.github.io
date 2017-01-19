@@ -68,3 +68,7 @@ pod install
 	```
 	pod update
 	```
+	
+Alternatively, you can use `CocoaPods` Tool.
+
+![](UsingCocoaPodsTool.png)

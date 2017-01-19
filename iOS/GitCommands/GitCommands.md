@@ -71,3 +71,19 @@ git tag <Tag Number>
 ```
 git tag --delete 1.0.1 1.0.2 1.0.3
 ```
+
+### How to take checkout of the code before previous two commits?
+
+```
+git pull origin master
+```
+
+```
+git log -2
+```
+
+```
+git checkout 592985dca2f7f7bfa8d10795ac63c190700d61c4
+```
+
+Here, `592985dca2f7f7bfa8d10795ac63c190700d61c4` is the commit number before previous two commits, which appears after `git log -2`.

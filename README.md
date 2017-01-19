@@ -206,6 +206,8 @@
 
 - [Display Hidden Files On MacOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DisplayHiddenFilesOnMacOS/DisplayHiddenFilesOnMacOS.md)
 
+- [Difference between DWARF and DWARF With dSYM](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DWARF/DWARF.md)
+
 ### Documentation
 
 - [Adding Copyright Statements to your Source Code](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CopyrightStatement/CopyrightStatement.md)
@@ -240,6 +242,8 @@
 
 - [Embedded Binaries Vs Linked Frameworks](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/EmbeddedBinariesVsLinkedFrameworks/EmbeddedBinariesVsLinkedFrameworks.md)
 
+- [Screen Sizes And Resolutions for different devices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ScreenSizesAndResolutions/ScreenSizesAndResolutions.md)
+
 # **OOPs Concepts**
 
 - [OOPS Using Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/OOPSInSwift/OOPSInSwift.md)
@@ -247,6 +251,14 @@
 - [Inheritance VS Association (Aggregation and Composition)](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/Inheritance%20VS%20Association/Inheritance%20VS%20Association%20(Aggregation%20and%20Composition).md)
 
 - [Overriding And Overloading In Same Class](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/OOPs/OverridingAndOverloadingInSameClass/OverridingAndOverloadingInSameClass.md)
+
+# **Learning Android**
+
+- [Android Basics](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/AndroidBasics/AndroidBasics.md)
+
+- [Common Attributes For Layouts](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/CommonAttributesForLayouts/CommonAttributesForLayouts.md)
+
+- [Building my First Android App](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/FirstAndroidApp/FirstAndroidApp.md)
 
 # **Algorithms**
 

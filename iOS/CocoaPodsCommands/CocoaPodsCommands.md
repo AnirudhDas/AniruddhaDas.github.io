@@ -75,3 +75,7 @@ pod spec lint --verbose
 ```
 pod spec lint --verbose --allow-warnings
 ```
+
+### Refer
+
+To create your own cocoapods, refer this [article](https://www.raywenderlich.com/99386/create-cocoapod-swift).
