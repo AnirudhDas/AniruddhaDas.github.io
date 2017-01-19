@@ -6,7 +6,7 @@
 
 3. Create a **.CSR (Certificate Signing Request)** file from your KeyChain. The moment we create a CSR, the KeyChain creates a pair of keys; **one public key which is present in the .CSR file** and **one private key, which is stored inside the KeyChain itself**.
 
-4. Now we need to provide this .CSR file having the public key to Apple, and then Apple generates **two SSL Certificates (Development and Distribution)**.
+4. Now we need to provide this .CSR file having the public key to Apple, and then Apple generates **two SSL Certificates (Development and Distribution)**. You can revoke and recreate these SSL certificates any number of times.
 
 5. Download this certificates and install into your KeyChain. So, now the KeyChain has **a certificate and a private key**, which together is called an **identity**. This identity is required to compile the code. Without this identity, we can't compile any code.
 
