@@ -41,3 +41,5 @@
 - Relative Layout = The elements can be placed in any order, but it will appear on the screen only according to the relative position mentioned in the layout.
 
 - Intent = Segue. So, before intent is fired, we can pass some values to the next screen.
+
+- Fragments = ContainerView
