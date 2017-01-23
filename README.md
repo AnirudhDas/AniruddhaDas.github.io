@@ -90,12 +90,6 @@
 
 - [ADToast](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADToast/ADToast.md)
 
-- [ADMailComposer](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADMailComposer/ADMailComposer.md)
-
-- [ADMessageComposer](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADMessageComposer/ADMessageComposer.md)
-
-- [ADPhoneCallComposer](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADPhoneCallComposer/ADPhoneCallComposer.md)
-
 - [ADCameraVC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADCameraVC/ADCameraVC.md)
 
 - [ADControls](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADControls/ADControls.md)
@@ -107,10 +101,6 @@
 - [ADImageHelper](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADImageHelper/ADImageHelper.md)
 
 - [ADSocialShare](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADSocialShare/ADSocialShare.md)
-
-- [ADNumberPad](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADNumberPad/ADNumberPad.md)
-
-- [ADFloatText](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADFloatText/ADFloatText.md)
 
 ### Notifications in iOS
 
@@ -177,6 +167,8 @@
 - [Swift Package Manager](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftPackageManager/SwiftPackageManager.md)
 
 - [CocoaPods Commands](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsCommands/CocoaPodsCommands.md)
+
+- [Creating Your Own Cocoapods](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CreatingYourOwnCocoapods/CreatingYourOwnCocoapods.md)
 
 ### Git - Repository Management
 
@@ -289,6 +281,12 @@
 - [Localization In Android](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/LocalizationInAndroid/LocalizationInAndroid.md)
 
 - [Supporting Different Devices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/SupportingDifferentDevices/SupportingDifferentDevices.md)
+
+- [Interacting With Other Apps along with Toast Message](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/InteractingWithOtherApps/InteractingWithOtherApps.md)
+
+- [Shared Preferences](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/SharedPreferences/SharedPreferences.md)
+
+- [SnackBarControl](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/SnackBarControl/SnackBarControl.md)
 
 # **Algorithms**
 

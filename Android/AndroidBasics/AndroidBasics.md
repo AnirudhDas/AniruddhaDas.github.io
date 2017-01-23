@@ -43,3 +43,5 @@
 - Intent = Segue. So, before intent is fired, we can pass some values to the next screen.
 
 - Fragments = ContainerView
+
+- SharedPreferences = UserDefaults

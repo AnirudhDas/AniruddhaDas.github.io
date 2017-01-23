@@ -1,4 +1,7 @@
 # ADSlidePanels
+
+### Introduction
+
 It shows a sliding menu, which is customizable. You can also display the user pic at the top.
 
 ### Requirements Specifications
