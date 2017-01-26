@@ -415,3 +415,7 @@
 ### Linked List
 
 - [Find the middle of a linked list without traversing the entire list](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/ProblemSolving/LinkedList/FindMiddleOfLinkedListWithoutTraversingTillTheEnd.md)
+
+# **Learning Angular**
+
+- [Angular1](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular1/Angular1.md)
