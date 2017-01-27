@@ -298,7 +298,7 @@
 
 - [MEAN Stack With REST api](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/MEANStack/MEANStackWithRESTapi/MEANStackWithRESTapi.md)
 
-# **Learning Angular**
+# **Learning Angular JS**
 
 - [Angular1](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular1/Angular1.md)
 
