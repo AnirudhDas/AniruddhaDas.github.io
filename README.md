@@ -300,7 +300,9 @@
 
 # **Learning Angular JS**
 
-- [Angular1](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular1/Angular1.md)
+- [Angular 1](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular1/Angular1.md)
+
+- [Angular 2](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular2/Angular2.md)
 
 # **Algorithms**
 
@@ -385,6 +387,8 @@
 - [Sort Arrays In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/SortArraysInJava/SortArraysInJava.md)
 
 - [Rest Web Services using JAX-RS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/JAX-RS/JAX-RS.md)
+
+- [JSON Convertor Component - **Modifications Needed**](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/JSONConvertor/JSONConvertor.md)
 
 # **Problem Solving**
 

@@ -1245,3 +1245,706 @@ We see:
 
 ### The Calculator App
 
+Project Structure:
+
+![](calculator.png)
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="myCalculatorModule">
+<head>
+	<title>Calculator App</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<h1>Calculator App</h1>
+	<div ng-controller="myCalculatorController as cal">
+
+		<input type="text" ng-model="cal.input1"></input>
+		<span ng-bind="cal.selectedOperation"></span>
+		<input type="text" ng-model="cal.input2"></input>
+		<button ng-click="cal.computeResult()">=</button>
+		<span ng-bind="cal.resultValue"></span>
+		<p>
+			Choose Operation:
+			<button ng-click="cal.BtnClicked('+')">+</button>
+			<button ng-click="cal.BtnClicked('-')">-</button>
+			<button ng-click="cal.BtnClicked('*')">*</button>
+			<button ng-click="cal.BtnClicked('/')">/</button>
+		</p>
+		<p>
+		{{cal.input1}}
+		</p>
+		<p>
+		{{cal.input2}}
+		</p>
+	</div>
+
+
+
+</body>
+</html>
+```
+
+Inside `app.js`, write:
+
+```
+var module = angular.module("myCalculatorModule", []);
+module.controller("myCalculatorController", CalculatorController);
+
+function CalculatorController() {
+	this.resultValue = 0;
+
+	this.computeResult = function() {
+		var number1 = parseFloat(this.input1); //Convert String type input to float number
+		var number2 = parseFloat(this.input2); //Convert String type input to float number
+
+		if (this.selectedOperation === '+') {
+			this.resultValue = number1 + number2;
+		}
+
+		else if (this.selectedOperation === '-') {
+			this.resultValue = number1 - number2;
+		}
+
+		else if (this.selectedOperation === '*') {
+			this.resultValue = number1 * number2;
+		}
+
+		else if (this.selectedOperation === '/') {
+			this.resultValue = number1 / number2;
+		}
+	}
+
+	this.BtnClicked = function(button) {
+		this.selectedOperation = button;
+	}
+}
+```
+
+![](calculator1.png)
+
+Output:
+
+![](calculator2.png)
+
+If we enter a string, the output is `NaN`.
+
+![](calculator3.png)
+
+----
+
+### ng-show and ng-hide
+
+Create a project structure as:
+
+![](more-directives1.png)
+
+Imagine we have a checkbox, and depending on whether it's checked or not, we have to either show or hide some paragraph.
+
+We can do in the traditional way by using `ng-if`.
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		<input type="checkbox" ng-model="ctrl.checked"></input>
+
+		<p ng-if="ctrl.checked">Some Content</p>
+
+	</div>
+</body>
+</html>
+```
+
+Inside `app.js`, write:
+
+```
+angular.module("MoreDirectivesModule", []).controller("Controller", Controller);
+
+function Controller() {
+}
+```
+
+When not checked, we see:
+
+![](more-directives2.png)
+
+When checked, we see:
+
+![](more-directives3.png)
+
+**But we can achieve the same functionality using two other angular directives `ng-hide` and `ng-show`. Let's see that now.**
+
+`ng-hide` is just the opposite of `ng-show`. If a condition is true, `ng-show` shows it, but `ng-hide` hides it.
+
+So, instead of writing,
+
+**`<p ng-if="ctrl.checked">Some Content</p>`**
+
+We can write,
+
+**`<p ng-show="ctrl.checked">Some Content</p>`**
+
+Or
+
+**`<p ng-hide="!ctrl.checked">Some Content</p>`**
+
+**All three does the same thing.**
+
+Now, **what is the difference between these three then?**
+
+There is actually some difference.
+
+When we use `ng-if`, if we do `inspect element` from `developer tools` of the browser.
+
+When unchecked, we will see:
+
+![](more-directives4.png)
+
+When checked, we will see:
+
+![](more-directives5.png)
+
+So, `ng-if` actually removes the paragraph node from the DOM if condition is false, and when condition is true, it inserts the node into DOM again.
+
+When we use `ng-show`, if we do `inspect element` from `developer tools` of the browser.
+
+When unchecked, we will see:
+
+![](more-directives6.png)
+
+When checked, we will see:
+
+![](more-directives7.png)
+
+So, `ng-show` actually does not remove the paragraph node from the DOM if condition is false, it only adds a class `ng-hide` to the paragraph tag. And this `ng-hide` class has a CSS property `display = none`, which is why the paragraph is not shown, while the node is still in the tree. And when the condition is true, it removes the class `ng-hide` from the paragraph tag.
+
+`ng-hide` does the same thing, just the other way round.
+
+**When to use what?**
+
+When we are sure that once an element is removed from DOM, we don't need it again, we use `ng-if`. But if we might need to show the element later, we use `ng-show` or `ng-hide`.
+
+----
+
+### Looping with ng-repeat
+
+Inside `app.js`, we declare an array:
+
+```
+angular.module("MoreDirectivesModule", []).controller("Controller", Controller);
+
+function Controller() {
+	this.myList = [13, 32, 45, 89];
+}
+```
+
+Here, the array has a count of `4`.
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		
+	<p ng-repeat="i in ctrl.myList">Hello</p>
+	</div>
+</body>
+</html>
+```
+
+Output:
+
+![](ng-repeat1.png)
+
+The loop iterates till the count of the array, and repeats the paragraph `4` times.
+
+If we use `ng-repeat` with a `div` having several paragraphs, it repeats the entire `div` 4 times.
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		
+	<div ng-repeat="i in ctrl.myList">
+	<p>Hello</p>
+	<p>Anirudh</p>
+	</div>
+	</div>
+</body>
+</html>
+```
+
+We see:
+
+![](ng-repeat2.png)
+
+The loop variable `i` contains the value of the array.
+
+To demonstrate, inside `index.html`, we write:
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		
+	<div ng-repeat="i in ctrl.myList">
+	<p>{{i}}</p>
+	</div>
+	</div>
+</body>
+</html>
+```
+
+We see:
+
+![](ng-repeat3.png)
+
+This can be used to show content of objects as well.
+
+To demonstrate, inside `app.js`, we write:
+
+```
+angular.module("MoreDirectivesModule", []).controller("Controller", Controller);
+
+function Controller() {
+	this.myList = [
+
+		{ 'name': "Ani", 'age': 23},
+		{ 'name': "Hari", 'age': 34},
+		{ 'name': "Sally", 'age': 18}
+
+	];
+}
+```
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		
+	<div ng-repeat="obj in ctrl.myList">
+	<p>
+
+	Name: {{obj.name}}
+
+	</p>
+
+	<p>
+
+	Age: {{obj.age}}
+
+	</p>
+	
+	</hr>
+
+	</div>
+	</div>
+</body>
+</html>
+```
+
+We see:
+
+![](ng-repeat4.png)
+
+----
+
+### Scopes in ng-repeat
+
+Just like `ng-controller`, Angular adds scopes for `ng-repeat` as well.
+
+![](ng-repeat5.png)
+
+We see for each `div` in `ng-repeat`, it created a class `ng-scope`. It shows Angular creates a scope object for each `div`.
+
+![](ng-repeat6.png)
+
+`obj` cannot be part of main controller scope.
+
+Unlike a traditional `for(i=0;i<10;i++)`, where `i` is the same variable holding different values at different points of time. So, a single scope solves the problem.
+
+But with `ng-repeat` loop, `obj` contains multiple values of same variable at the same time. And all the objects exists simultaneously. So, multiple scopes are required.
+
+![](ng-repeat7.png)
+
+Let's now check some other variables of `ng-repeat`.
+
+![](ng-repeat8.png)
+
+**Examples:**
+
+```
+<!DOCTYPE html>
+<html ng-app="MoreDirectivesModule">
+<head>
+	<title>MoreDirectives</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body>
+	
+	<h1>More Directives App</h1>
+
+	<div ng-controller="Controller as ctrl">
+		
+	<div ng-repeat="obj in ctrl.myList">
+
+	<p>
+
+	Element: {{ $index + 1 }}
+
+	</p>
+
+	<p>
+
+	First: {{ $first }}
+
+	</p>
+
+	<p>
+
+	Name: {{ obj.name }}
+
+	</p>
+
+	<p>
+
+	Age: {{ obj.age }}
+
+	</p>
+
+	</hr>
+
+	</div>
+	</div>
+</body>
+</html>
+```
+
+We see:
+
+![](ng-repeat9.png)
+
+----
+
+### Angular Modules
+
+Sometimes, we might not want to have all the controllers and directives within the same module. We might want to split them up into different modules.
+
+We will create a custom `reusable module` with some important functionality and let other people import it.
+
+Project Structure:
+
+![](ReusableModule1.png)
+
+Let us first create a reusable module. Inside `ReusableModule.js`, write:
+
+```
+var reusableModule = angular.module("ReusableModule", []);
+reusableModule.controller("HelloController", HelloController);
+
+function HelloController() {
+	this.message = "Hello from the Reusable Module";
+}
+```
+
+Next, inside `myModule.js`, write:
+
+```
+var myModule = angular.module("myModule", ["ReusableModule"]); //We add list of dependecies of reusable modules in the array
+```
+
+So far we left the dependencies array as empty. But now we want to import `ReusableModule` as a dependency. So, we add it in the array. We can add several others too.
+
+Now, in `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+	<title>Modules</title>
+	<script src="angular.js"></script>
+	<script src="myModule.js"></script>
+	<script src="ReusableModule.js"></script>
+</head>
+
+<body>
+	
+	<h1>Modules App</h1>
+
+	<div ng-controller="HelloController as ctrl">
+		{{ctrl.message}}
+	</div>
+</body>
+</html>
+```
+
+We include both `Reusable.js` and `myModule.js` in `script` tags.
+
+We use `ng-app="myModule"`. When Angular encounters `ng-controller="HelloController as ctrl"` and `{{ctrl.message}}`, it first looks up for it in `myModule`. But it can't find any controller or variable in `myModule`. It then looks for them in it's list of dependencies, i.e. `ReusableModule`, where it finds the necessary controllers and the variables.
+
+Output:
+
+![](ReusableModule2.png)
+
+----
+
+### Using an External Module
+
+We will now try to use third party modules, written by other developers, which are open-source and can be found online. I usually refer to `ngmodules.org`.
+
+We will be using a module named `ngTagsInput`. You can read more about it [here](http://ngmodules.org/modules/ngTagsInput)
+
+In the [demos](http://mbenford.github.io/ngTagsInput/demos) section, under `index.html` you can find the `script` tag with path to include it.
+
+```
+<script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+```
+
+There is also a CSS path in one of the `script` tags.
+
+```
+<link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+```
+
+Under `app.js`, you can find the name of the tag `ngTagsInput`, to be used in the dependencies array.
+
+I am gonna copy these over and use in my app.
+
+We declare the model array `tagsArray` in `myModule.js` inside a function of a controller.
+
+To use this `tagsArray` model array in the `index.html`, we need to use the directive `<tags-input></tags-input>`, that comes along with the `ngTagsInput` module.
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+	<title>External Modules</title>
+	<script src="angular.js"></script>
+	<script src="myModule.js"></script>
+	<script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+	<link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+</head>
+
+<body>
+	
+	<h1>External Modules App</h1>
+
+	<div ng-controller="TagsDemoCtrl as ctrl">
+		<tags-input ng-model="ctrl.tagsArray"></tags-input>
+	</div>
+</body>
+</html>
+```
+
+Inside `myModule.js`, write:
+
+```
+var myModule = angular.module("myModule", ["ngTagsInput"]);
+
+myModule.controller('TagsDemoCtrl', TagsDemoCtrl);
+
+
+function TagsDemoCtrl() {
+  this.tagsArray = [
+    { text: 'Tag1' },
+    { text: 'Tag2' },
+    { text: 'Tag3' }
+  ];
+}
+```
+
+Output:
+
+![](external-modules.png)
+
+----
+
+### The Todo App
+
+Project Structure:
+
+![](Todo1.png)
+
+Inside `index.html`, write:
+
+```
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+	<title>Calculator App</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<h1>Todo App</h1>
+	<div ng-controller="TodoController as ctrl">
+
+
+	<div>
+		<p>Add a Todo:</p>
+		<input type="text" ng-model="ctrl.newTodo"></input>
+		<button ng-click="ctrl.addNewTodo()">Add</button>
+	</div>
+
+		<div>
+			
+			<p>Your Todos:</p>
+			<button ng-hide="ctrl.editMode" ng-click="ctrl.triggerEditMode()">Edit</button>
+
+			<button ng-show="ctrl.editMode" ng-click="ctrl.triggerEditMode()">Done</button>
+
+			<ol>
+			<li ng-repeat="todo in ctrl.todos">
+
+				<span ng-hide="ctrl.editMode" ng-bind="todo"></span>
+
+				<input ng-show="ctrl.editMode" ng-model="todo" type="text"></input>
+
+				<button ng-hide="ctrl.editMode" ng-click="ctrl.deleteTodo($index)">Delete</button>
+
+			</li>
+			</ol>
+		</div>
+		
+	</div>
+
+
+
+</body>
+</html>
+```
+
+Inside `app.js`, write:
+
+```
+var module = angular.module("todoApp", []);
+module.controller("TodoController", TodoController);
+
+function TodoController() {
+
+	this.editMode = false;
+
+	this.todos = [
+		"Learn Angular 1",
+		"Try examples",
+		"Learn Angular 2 as well"
+	];
+
+	this.addNewTodo = function() {
+		this.todos.push(this.newTodo);
+		this.newTodo = "";
+	}
+
+	this.triggerEditMode = function() {
+		this.editMode = !this.editMode;
+
+	}
+
+	this.deleteTodo = function(index) {
+		this.todos.splice(index, 1);
+	}
+
+}
+```
+
+Output:
+
+![](Todo2.png)
+
+![](Todo3.png)
+
+![](Todo4.png)
+
+![](Todo5.png)
+
+![](Todo6.png)
+
+**Note:**
+
+`array.push(element)` is used to insert an element at the end of the array.
+
+`array.splice(startIndex, count)` is used to delete elements starting from a index till `count` times.
+
+Arrays can't hold duplicate values in Angular. If we add same string again, it gives some error.
+
+![](Todo7.png)
+
+To overcome this, we can either convert the string as an object at runtime, as objects are always unique. Or as an alternative, we can use `track by $index` in the `ng-repeat`.
+
+```
+ng-repeat="todo in ctrl.todos track by $index"
+```
+
+![](Todo8.png)
+
+----
+
+### Where to go from here?
+
+![](nextSteps.png)
