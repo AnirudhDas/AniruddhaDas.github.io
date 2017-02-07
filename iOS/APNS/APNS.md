@@ -39,6 +39,8 @@ For the first time, the device needs internet connection to send request to APNS
 
 1. [Raywenderlich Article on Push Notifications](https://www.raywenderlich.com/123862/push-notifications-tutorial)
 2. [More about APNS](http://sagarrkothari.com/projects/publicwikipages/wiki/Apple_Push_notification)
+3. [Push Notifications: What are they and how do I send them?](https://www.youtube.com/watch?v=ATYhOlK11QM)
+4. [What is a Push Notification and how do they work?](https://www.youtube.com/watch?v=tMW4m-SY-gk)
 
 ### Note
 

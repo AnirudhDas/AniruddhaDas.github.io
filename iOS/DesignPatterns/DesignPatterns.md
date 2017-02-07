@@ -192,9 +192,50 @@ class SecondVC: UIViewController {
 
 ```Notifications``` are a way to let ```unrelated classes``` communicate. ```Delegation``` on the other hand lets ```related classes``` communicate using a more explicitly defined interface.
 
+### VIPER
+
+This is the most recent of Design Patterns in iOS, and is supposed to be a replacement of MVC.
+
+The tradition MVC looks like:
+
+![](Viper1.png)
+
+The common mistake people make while using this MVC pattern is "Monster Class". This refers to a system where the responsiblities are not well distributed amonst all the classes. Instead we have one class which have most of the job surrounded by dumb classes, that do almost nothing. This is bad as the Monster Class becomes hard to maintain and extend. This problem is commonly referred to as "Massive View Controller", where the instances of UIViewController becomes Monster Classes.
+
+![](Viper2.png)
+
+**This can be solved in two ways:**
+
+- Break up your controllers into smaller controllers.
+- Use VIPER, which enforces this breaking down.
+
+**Note:** The "Massive View Controller" problem is not an inherent problem of MVC, but an `implemented-gone-wrong` problem of MVC.
+
+**The Viper Architecture**
+
+![](Viper3.png)
+
+An `entity` is basically is a dumb model. In Swift, it should be implemented as `struct` with data properties only.
+
+All of the behaviour that is part of `model` in MVC goes into `interactor` class. The interactor is the brains of an entity. The interactor should be tested with TDD.
+
+The entity and interactor together comprises of `model` in MVC pattern.
+
+The `presenter` has all the UI Logic and behaviour. The presenter takes data from the `interactor` and decides when and how to display it to the user. This is code that we usually add to the controller in MVC.
+
+The `view` of Viper is different from the view of MVC. It receives instructions from the presenter about what to do, and takes care of the details on how to carry out these orders. It is basically a `protocol`, usually implemented by a UIViewController subclass. It contains methods necessary to carry out the presenter's instructions.
+
+An important part of any iOS app is the navigation information, how one UI screen moves into another. Usually this is decided by UI/UX Team and we as developers implement this plan. This navigation information is laid out through the storyboard. This is fine in simple apps. But for complex apps, it's more convinient to have this information implemented as Swift Code. This code in Viper is placed in `Router`.
+
+The `presenter` knows when to navigate, while the `router` knows how to do it.
+
+![](Viper4.png)
+
 ### Refer
 
 1. [https://www.raywenderlich.com/86477/introducing-ios-design-patterns-in-swift-part-1](https://www.raywenderlich.com/86477/introducing-ios-design-patterns-in-swift-part-1)
 2. [https://www.raywenderlich.com/90773/introducing-ios-design-patterns-in-swift-part-2](https://www.raywenderlich.com/90773/introducing-ios-design-patterns-in-swift-part-2)
 3. [https://cocoacasts.com/what-is-wrong-with-model-view-controller/](https://cocoacasts.com/what-is-wrong-with-model-view-controller/)
 4. [https://www.andrewcbancroft.com/2014/10/08/fundamentals-of-nsnotificationcenter-in-swift/](https://www.andrewcbancroft.com/2014/10/08/fundamentals-of-nsnotificationcenter-in-swift/)
+5. [https://classroom.udacity.com/courses/ud1029/lessons/a27e7e59-dfcd-4368-98fb-bf1bf9c31dc3/concepts/16455951-e5d7-47d1-ab43-2fc67fe3c33e](https://classroom.udacity.com/courses/ud1029/lessons/a27e7e59-dfcd-4368-98fb-bf1bf9c31dc3/concepts/16455951-e5d7-47d1-ab43-2fc67fe3c33e)
+6. [https://www.youtube.com/watch?v=nAI-BI-_YWs](https://www.youtube.com/watch?v=nAI-BI-_YWs)

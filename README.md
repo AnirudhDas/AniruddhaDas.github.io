@@ -74,6 +74,20 @@
 
 - [Security In iOS Apps using KeyChain and SSL Pinning](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SecurityIniOSApps/SecurityIniOSApps.md)
 
+- [Securing Your iOS App](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SecuringYouriOSApp/SecuringYouriOSApp.md)
+
+- [Storing Data Into Keychain](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StoringDataIntoKeychain/StoringDataIntoKeychain.md)
+
+- [Using RNCryptor To Encrypt And Decrypt Data](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UsingRNCryptorToEncryptAndDecryptData/UsingRNCryptorToEncryptAndDecryptData.md)
+
+- [Protecting Your App With Passcode And TouchID](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ProtectingYourAppWithPasscodeAndTouchID/ProtectingYourAppWithPasscodeAndTouchID.md)
+
+- [Understanding OAuth2](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UnderstandingOAuth2/UnderstandingOAuth2.md)
+
+### Debugging
+
+- [Debugging In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DebuggingInXcode/DebuggingInXcode.md)
+
 ### Payment Gateways
 
 - [Stripe Payment Gateway](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StripePaymentGateway/StripePaymentGateway.md)
@@ -303,6 +317,16 @@
 - [Angular 1](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular1/Angular1.md)
 
 - [Angular 2](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Angular/Angular2/Angular2.md)
+
+# **Learning Ionic Framework - Hybrid Apps**
+
+- [Hybrid VS Native Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Ionic/HybridVsNativeApps/HybridVsNativeApps.md)
+
+- [Introduction to Ionic Framework](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Ionic/LearningIonicFramework/LearningIonicFramework.md)
+
+# **Learning DevOps**
+
+- [Introduction to DevOps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/DevOps/DevOps.md)
 
 # **Algorithms**
 
