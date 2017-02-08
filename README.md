@@ -14,6 +14,8 @@
 
 - [CoreData in iOS 10 and Xcode 8 and Swift 3](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CoreData/CoreData.md)
 
+- [CRUD Operations Using CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CRUDOperationsUsingCoreData/CRUDOperationsUsingCoreData.md)
+
 - [Indexes In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/IndexesInCoreData/IndexesInCoreData.md)
 
 - [Deletion Rules In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DeletionRulesInCoreData/DeletionRulesInCoreData.md)
@@ -232,6 +234,12 @@
 
 - [Integrating Reachability in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/IntegratingReachability/IntegratingReachability.md)
 
+- [Downloading File Using URLSession](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DownloadingFileUsingURLSession/DownloadingFileUsingURLSession.md)
+
+- [Drag And Delete Cell In CollectionView](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DragAndDeleteCellInCollectionView/DragAndDeleteCellInCollectionView.md)
+
+- [Authorizing Using LinkedIn Sign-In](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AuthorizingUsingLinkedInSign-In/AuthorizingUsingLinkedInSign-In.md)
+
 ### Xcode and MacOS Settings
 
 - [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
@@ -305,6 +313,12 @@
 - [Shared Preferences](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/SharedPreferences/SharedPreferences.md)
 
 - [SnackBarControl](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/SnackBarControl/SnackBarControl.md)
+
+- [RecyclerView In Android](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/RecyclerViewInAndroid/RecyclerViewInAndroid.md)
+
+- [Life Cycle Of Activity](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/LifeCycleOfActivity/LifeCycleOfActivity.md)
+
+- [AlertDialog In Android](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Android/AlertDialogInAndroid/AlertDialogInAndroid.md)
 
 # **Learning MEAN Stack**
 

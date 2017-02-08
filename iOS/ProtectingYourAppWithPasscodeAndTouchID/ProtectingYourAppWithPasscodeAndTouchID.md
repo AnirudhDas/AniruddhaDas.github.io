@@ -49,6 +49,10 @@ Design your Storyboard like:
 
 ![](Passcode6.png)
 
+Make sure you create the **StoryboardID** for the view controller as `rootView`.
+
+![](Passcode.png)
+
 Create an `@IBOutlet` for every element on the storyboard in the `ViewController.swift`.
 
 ### Step 7
