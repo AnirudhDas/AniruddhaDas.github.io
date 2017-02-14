@@ -1,24 +1,76 @@
 # CRUD Operations using Core Data
 
-For any DB Operations, we need a `NSMangedObjectContext`, which is present as `viewContext` in `NSPersistentContainer`.
+### Introduction to Core Data
 
-`NSPersistentStoreCoordinator` now became `NSPersistentContainer`, and it manages persistent store types like SQLite, XML, In-Memory and Binary.
+- Core data is not a database. It is a framework that lets us store or retrive data into a database in object oriented way.
 
-`NSPersistentContainer` creates a Database Container inside the App Sandbox. So, we need to provide the name of the app while creating the container.
+- Sqlite is the default persistant store of core data.
 
-```
+- Core data supports the following persistent stores:
+  1. NSSqliteStoreType
+  2. NSXMLStoreType
+  3. NSBinaryStoreType
+  4. NSInMemoryStoreType
+
+- Core data is not a relational databse.
+
+## Core Data Stack
+
+![](CoreDataStack.png)
+
+- If your app wants to store or retrieve any data into the database, it needs a `context`, which can be treated as a `DB Connection Object`. Using this context, if we call the method `save()`, then the `persistent container / coordinator` takes the data and stores in the underlying Sqlite database. So, `persistent container` is like an inter-mediator between your app and the database.
+
+- For any DB Operations, we need a `NSMangedObjectContext`, which is present as `viewContext` in `NSPersistentContainer`.
+
+- `NSPersistentStoreCoordinator` now became `NSPersistentContainer`, and it manages persistent store types like SQLite, XML, In-Memory and Binary.
+
+- `NSPersistentContainer` creates a Database Container inside the App Sandbox. So, we need to provide the name of the app while creating the container.
+
+	```
 let container = NSPersistentContainer(name: "CoreDataDemoApp")
-```
+	```
 
-Every record/tuple in the Core Data database is of type `NSManagedObject`.
+- Every record/tuple in the Core Data database is of type `NSManagedObject`.
 
 ----
 
-### Example
+### Managed Object Context 
+
+- It's job is to manage objects created & returned using core data.
+- Whenever you need to fetch, save, edit & delete object in persistant store **Context** is the first component you talk to. 
+- It is a scratch pad containing objects that interacts with data in persistant store.
+
+### Persistant Store Coordinator
+
+- SQLite is default persistent store in core data.
+- Core data allows us to set up multiple persistent stores containing different entities.
+- Persistant Store Coordinator is partly responsible to manage persistent store object & save the objects to store.
+
+### Managed Object Model
+
+- It describes the schema that you uses in the app.
+- Schema is represented by collection of entities.
+- Managed Object Model is defined in a file with the extension **.xcdatamodeld**
+- You can use visual editor to define the entities & their attributes as well as their relationships.
+
+----
+
+We need `persistentContainer.viewContext` as context in controllers when we deal with the database.
+
+`NSPersistentContainer` is a container which has: 
+
+- `viewContext` of type `NSManagedObjectContext`.
+- `managedObjectModel` of type`NSManagedObjectModel`.
+- `persistentStoreCoordinator` of type `NSPersistentStoreCoordinator`.
+- `persistentStoreDescription` of type `[NSPersistentStoreDescription]`.
+
+----
+
+### Example App
 
 **Step 1**
 
-Create a project `CoreDataDemoApp `.
+Create a project `CoreDataDemoApp `. Check the `Core Data` option while creating the project. It pre-populates the app with some code, which comes handy to us.
 
 **Step 2**
 

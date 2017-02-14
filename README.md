@@ -24,6 +24,14 @@
 
 - [Multithreading In CoreData](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MultithreadingInCoreData/MultithreadingInCoreData.md)
 
+- [Using Sqlite In IOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UsingSqliteInIOS/UsingSqliteInIOS.md)
+
+- [How To Save And Retrieve Data From Plist](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HowToSaveAndRetrieveDataFromPlist/HowToSaveAndRetrieveDataFromPlist.md)
+
+### Mapkit
+
+- [MapKit In iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MapKitIniOS/MapKitIniOS.md)
+
 ### Localization
 
 - [Localization in iOS 10 and Xcode 8](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Localization/Localization.md)
@@ -176,6 +184,8 @@
 
 - [For Loops](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ForLoops/ForLoops.md)
 
+- [Selectors In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SelectorsInSwift/SelectorsInSwift.md)
+
 ### Dependency Manager
 
 - [CocoaPods vs Carthage](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/CocoaPodsvsCarthage/CocoaPodsvsCarthage.md)
@@ -240,6 +250,10 @@
 
 - [Authorizing Using LinkedIn Sign-In](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AuthorizingUsingLinkedInSign-In/AuthorizingUsingLinkedInSign-In.md)
 
+- [Dynamic TableView Cell](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DynamicTableViewCell/DynamicTableViewCell.md)
+
+- [Prevent Files From Being Backed Up To iCloud](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/PreventFilesFromBeingBackedUpToiCloud/PreventFilesFromBeingBackedUpToiCloud.md)
+
 ### Xcode and MacOS Settings
 
 - [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
@@ -287,6 +301,8 @@
 - [Screen Sizes And Resolutions for different devices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ScreenSizesAndResolutions/ScreenSizesAndResolutions.md)
 
 - [View Hierarchy](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ViewHierarchy/ViewHierarchy.md)
+
+- [Why Plists Are Not Considered Safe To Store Data](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/WhyPlistsAreNotConsideredSafeToStoreData/WhyPlistsAreNotConsideredSafeToStoreData.md)
 
 # **OOPs Concepts**
 
@@ -427,6 +443,8 @@
 - [Rest Web Services using JAX-RS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/JAX-RS/JAX-RS.md)
 
 - [JSON Convertor Component - **Modifications Needed**](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/JSONConvertor/JSONConvertor.md)
+
+- [Collection Framework In Java](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/Java/CollectionFrameworkInJava/CollectionFrameworkInJava.md)
 
 # **Problem Solving**
 
