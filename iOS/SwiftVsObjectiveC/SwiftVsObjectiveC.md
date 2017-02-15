@@ -24,6 +24,7 @@ In Obj C, method binding/resolution happens at run time.
 
 Both dynamic typing and dynamic method resolution place more power in the hands of the developer, rather than the hands of the compiler. You could call a method on an instance of a class, and even if that class doesn't implement that method your code will still compile. You can even change or add method implementations at runtime.
 
+![](SwiftVSObjectiveC.png)
 
 # Refer
 

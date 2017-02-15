@@ -32,6 +32,12 @@
 
 - [MapKit In iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/MapKitIniOS/MapKitIniOS.md)
 
+### CoreLocation
+
+- [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
+
+- [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
+
 ### Localization
 
 - [Localization in iOS 10 and Xcode 8](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Localization/Localization.md)
@@ -49,12 +55,6 @@
 - [REST VS SOAP WebServices](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RESTvsSOAP/RESTvsSOAP.md)
 
 - [API Automation and Rest Assured](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/RestAssured/RestAssured.md)
-
-### CoreLocation
-
-- [Geocoding - Converting Address to Latitude and Longitude](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/Geocoding/Geocoding.md)
-
-- [Getting Device Location](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GettingDeviceLocation/GettingDeviceLocation.md)
 
 ### Automation
 
@@ -102,7 +102,7 @@
 
 - [Stripe Payment Gateway](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/StripePaymentGateway/StripePaymentGateway.md)
 
-### Pods
+### Reusable Components
 
 - [ADEmailAndPassword](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ADEmailAndPassword/ADEmailAndPassword.md)
 
@@ -254,6 +254,10 @@
 
 - [Prevent Files From Being Backed Up To iCloud](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/PreventFilesFromBeingBackedUpToiCloud/PreventFilesFromBeingBackedUpToiCloud.md)
 
+- [Get Screen Width And Height](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/GetScreenWidthAndHeight/GetScreenWidthAndHeight.md)
+
+- [Instantiate a ViewController Programmatically](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/InstantiateaViewControllerProgrammatically/InstantiateaViewControllerProgrammatically.md)
+
 ### Xcode and MacOS Settings
 
 - [Hiding Unwanted Logs In Xcode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/HidingUnwantedLogsInXcode/HidingUnwantedLogsInXcode.md)
@@ -303,6 +307,18 @@
 - [View Hierarchy](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ViewHierarchy/ViewHierarchy.md)
 
 - [Why Plists Are Not Considered Safe To Store Data](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/WhyPlistsAreNotConsideredSafeToStoreData/WhyPlistsAreNotConsideredSafeToStoreData.md)
+
+- [Adding Build Configurations In XCode](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/BuildConfigurations/BuildConfigurations.md)
+
+- [Deep Linking In iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/DEEPLINKINGiniOS/DEEPLINKINGiniOS.md)
+
+- [Caching Downloaded Data using NSURLCache](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/NSURLCache/NSURLCache.md)
+
+- [Sharing Data Between Apps Using URLSchemes](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SharingDataBetweenAppsUsingURLSchemes/SharingDataBetweenAppsUsingURLSchemes.md)
+
+- [Using Settings Bundle In Swift](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/UsingSettingsBundleInSwift/UsingSettingsBundleInSwift.md)
+
+- [Working With WebView](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/WorkingWithWebView/WorkingWithWebView.md)
 
 # **OOPs Concepts**
 
