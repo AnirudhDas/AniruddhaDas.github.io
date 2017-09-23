@@ -35,3 +35,7 @@ You can now save this report of Profile Test.
 ![](MemoryLeak5.png)
 
 ![](MemoryLeak6.png)
+
+### Read More:
+
+[http://www.universalmind.com/blog/what-every-ios-developer-should-be-doing-with-instruments/](http://www.universalmind.com/blog/what-every-ios-developer-should-be-doing-with-instruments/)

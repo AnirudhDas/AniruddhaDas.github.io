@@ -2,7 +2,9 @@
 
 Generic code enables you to write flexible, reusable functions and types that can work with any type, subject to requirements that you define. You can write code that avoids duplication and expresses its intent in a clear, abstracted manner. Generic functions can work with any data type (primitive or user defined).
 
-```mutating``` keyword is used when a function of a struct, modifies any property defined within the struct.
+Swift's `'Array'` and `'Dictionary'` types belong to generic collections. Thus, arrays and dictionarys are defined to hold 'Int' values and 'String' values or any other types.
+
+```mutating``` keyword is used when a function of a struct, modifies any property defined within the struct. It is used only to change a struct's variables / properties.
 
 ### Example: A generic stack
 

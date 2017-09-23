@@ -75,3 +75,7 @@ For applications that deal with very sensitive data, such as health or financial
 ## Conclusion
 
 The security of an application is a fundamental aspect of software development. Consider what data your application has access to and whether it should store that information. If you do decide to store sensitive information, keep the above tips and best practices in mind. Make sure you treat the user's information with respect. Even though the information may look unimportant to you, it is important to the user.
+
+### Read More:
+
+[https://willowtreeapps.com/ideas/enhanced-device-security-in-ios-9/](https://willowtreeapps.com/ideas/enhanced-device-security-in-ios-9/)

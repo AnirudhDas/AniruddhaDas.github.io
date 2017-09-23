@@ -67,6 +67,12 @@ But why does Apple advise developers to use the highest level of abstraction? Wi
 
 Great. But when do you use which technology? Should you avoid Grand Central Dispatch only because it is a low-level API? You can use Grand Central Dispatch whenever and wherever you like. Many developers swear by Grand Central Dispatch, but most developers use a combination NSOperation and Grand Central Dispatch.
 
+### Note:
+
+Ques: How to handle Multi-threading using NSOperationQueue?
+
+Ans: We can add dependency of each operation as per requirement, so we can achieve multithreading.
+
 ### Refer
 
 1. [CocoaCasts Article](https://cocoacasts.com/choosing-between-nsoperation-and-grand-central-dispatch/).

@@ -156,7 +156,7 @@
 
 ### Objective-C
 
-- [Swift VS ObjectiveC - **Modifications Needed**](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
+- [Swift VS ObjectiveC](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SwiftVsObjectiveC/SwiftVsObjectiveC.md)
 
 - [Types Of Properties In Objective-C](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TypesOfPropertiesInObjectiveC/TypesOfPropertiesInObjectiveC.md)
 
@@ -292,7 +292,7 @@
 
 - [Sharing Data Between Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/ShareDataBetweenApps/ShareDataBetweenApps.md)
 
-- [Slicing Of Apps](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/SlicingOfApps/SlicingOfApps.md)
+- [App Thinning in iOS](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/AppThinning/AppThinning.md)
 
 - [Tracing And Fixing Memory Leak](https://github.com/AnirudhDas/AniruddhaDas.github.io/blob/master/iOS/TracingAndFixingMemoryLeak/TracingAndFixingMemoryLeak.md)
 

@@ -61,7 +61,7 @@ The MVVM pattern introduces a fourth component, the view model. The view model i
 
 **Example:**
 
-Custom TableViewCell (view-model) is placed separately from the TableViewController. The TableViewController holds an outlet to the Custom TableViewCell.
+[https://www.youtube.com/watch?v=nAI-BI-_YWs](https://www.youtube.com/watch?v=nAI-BI-_YWs)
 
 ### Extension
 
@@ -71,13 +71,15 @@ There are two types of extensions in iOS:
 	
 	We can add more properties and methods to an existing class.
 
-2. **App Extension**
+2. **App Extension / Share Extension**
 
 	Example: Today's Widgets
 
 ### Delegate
 
 It does the same thing as closure does. Only difference is Closures does it asyncronously (multithreading). Both Closures and Protocols have one-to-one communication, unlike NotificationCenter which has one-to-many communication. It means several classes may implement methods of the delegate or closure, but in whichever class the delegate method was called, the response comes back only in that class, not all the classes.
+
+Delegates are used to send data from one class to another class. We can't have a delegate deadlock.
 
 We send data from one class to another class where it is processed, and it gets back response to the caller class as ```handler``` or ```delegate = self```.
 
@@ -86,18 +88,24 @@ We send data from one class to another class where it is processed, and it gets 
 **ProtocolPattern.swift**
 
 ```
-@objc protocol AddtionDelegate {
-    func addition(result:Int)
-    func add() -> Int
-    @objc optional func abc()
+import Foundation
+
+
+protocol AdditionDelegate {
+    func showResult(result: Int)
+    
+    func sendValue() -> Int
 }
-class ProtocolPattern: NSObject {
-    var delegate: AddtionDelegate? = nil
-    func doAddition(a: Int, b: Int) {
-        let c = a + b
-        delegate?.addition(result: c)
-       let d = delegate?.add()
-        print(d)
+
+class Addition {
+    var delegate: AdditionDelegate?
+    
+    func add(a: Int, b: Int) {
+        delegate?.showResult(result: (a + b))
+    }
+    
+    func showValue() {
+        print((delegate?.sendValue())!)
     }
 }
 ```
@@ -105,24 +113,34 @@ class ProtocolPattern: NSObject {
 **ViewController.swift**
 
 ```
-class ViewController: UIViewController {
+import UIKit
 
-    let obj = ProtocolPattern()
-    var result: Int = 0
+class ViewController: UIViewController {
+    
+    var addObj = Addition()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        obj.delegate = self
-        obj.doAddition(a: 10, b: 10)
+        // Do any additional setup after loading the view, typically from a nib.
+        addObj.delegate = self
+        addObj.add(a: 10, b: 20)
+        addObj.showValue()
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }
 
-extension ViewController: AddtionDelegate {
-    func addition(result: Int) {
+extension ViewController: AdditionDelegate {
+    func showResult(result: Int) {
         print(result)
-        self.result = result
     }
-    func addi() -> Int {
-        return self.result
+    
+    func sendValue() -> Int {
+        return 10
     }
 }
 ```
@@ -139,14 +157,30 @@ Example: Google APIs.
 
 Used by XCode to show warnings while typing itself.
 
-**Example:**
+**Example 1:**
 
 ```
 UserDefaults.saveValueForKey("name")
 UserDefaults.getValueFromKey("namee")
 ```
 
-The complier continuously observes using KVO if the user properly sets a value to a valid key or not. If key is not valid, it throws an exception using KVC.
+The complier continuously observes using KVO if the user properly sets a value to a valid key or not. If key is not valid, it throws an exception using KVC that `key "namee" is undefined`.
+
+
+**Example 2:**
+
+```
+class A {
+	var s: String?
+	
+	func show() {
+		s1 = "Hello"
+		print(s1)
+	}
+}
+```
+
+This will show a similar error `variable "s1" not declared`.
 
 ### Notification
 
@@ -238,4 +272,3 @@ The `presenter` knows when to navigate, while the `router` knows how to do it.
 3. [https://cocoacasts.com/what-is-wrong-with-model-view-controller/](https://cocoacasts.com/what-is-wrong-with-model-view-controller/)
 4. [https://www.andrewcbancroft.com/2014/10/08/fundamentals-of-nsnotificationcenter-in-swift/](https://www.andrewcbancroft.com/2014/10/08/fundamentals-of-nsnotificationcenter-in-swift/)
 5. [https://classroom.udacity.com/courses/ud1029/lessons/a27e7e59-dfcd-4368-98fb-bf1bf9c31dc3/concepts/16455951-e5d7-47d1-ab43-2fc67fe3c33e](https://classroom.udacity.com/courses/ud1029/lessons/a27e7e59-dfcd-4368-98fb-bf1bf9c31dc3/concepts/16455951-e5d7-47d1-ab43-2fc67fe3c33e)
-6. [https://www.youtube.com/watch?v=nAI-BI-_YWs](https://www.youtube.com/watch?v=nAI-BI-_YWs)

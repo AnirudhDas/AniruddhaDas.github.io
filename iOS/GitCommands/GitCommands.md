@@ -72,6 +72,30 @@ git tag <Tag Number>
 git tag --delete 1.0.1 1.0.2 1.0.3
 ```
 
+13.
+
+```
+git branch <new-branch-to-be-created>
+```
+
+14.
+
+```
+git branch -d <branch-to-be-deleted>
+```
+
+or
+
+```
+git branch -D <branch-to-be-deleted>
+```
+
+15.
+
+```
+git git stash create <stash-message>
+```
+
 ### How to take checkout of the code before previous two commits?
 
 ```
