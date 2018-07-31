@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F389C2F1D78145FDA2849F2 /* Pods_CricketNewsUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6878784D72E200B917A42FDA /* Pods_CricketNewsUnitTests.framework */; };
+		8F6E7C5620EF4B8D006C12D5 /* CustomInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E7C5520EF4B8D006C12D5 /* CustomInteractionController.swift */; };
+		8F6E7C5820EF53F4006C12D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E7C5720EF53F4006C12D5 /* Constants.swift */; };
+		8F6E7C7620EF6D31006C12D5 /* FetchNewsServiceUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E7C7220EF6D31006C12D5 /* FetchNewsServiceUnitTests.swift */; };
+		8F6E7C7720EF6D31006C12D5 /* MockCricbuzzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E7C7420EF6D31006C12D5 /* MockCricbuzzService.swift */; };
+		8FEAE93620EE5C900011CB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE93520EE5C900011CB85 /* AppDelegate.swift */; };
+		8FEAE93820EE5C900011CB85 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE93720EE5C900011CB85 /* NewsViewController.swift */; };
+		8FEAE93B20EE5C900011CB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEAE93920EE5C900011CB85 /* Main.storyboard */; };
+		8FEAE93D20EE5C900011CB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FEAE93C20EE5C900011CB85 /* Assets.xcassets */; };
+		8FEAE94020EE5C900011CB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FEAE93E20EE5C900011CB85 /* LaunchScreen.storyboard */; };
+		8FEAE94820EE63560011CB85 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE94720EE63560011CB85 /* NewsTableViewCell.swift */; };
+		8FEAE94A20EE645E0011CB85 /* FetchNewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE94920EE645E0011CB85 /* FetchNewsService.swift */; };
+		8FEAE94C20EE64E10011CB85 /* AlamofireConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE94B20EE64E10011CB85 /* AlamofireConfig.swift */; };
+		8FEAE94E20EE64FC0011CB85 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE94D20EE64FC0011CB85 /* ServerConfiguration.swift */; };
+		8FEAE95020EE65480011CB85 /* CricbuzzNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE94F20EE65480011CB85 /* CricbuzzNews.swift */; };
+		8FEAE95220EE71BE0011CB85 /* CricbuzzStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95120EE71BE0011CB85 /* CricbuzzStory.swift */; };
+		8FEAE95420EE7AFE0011CB85 /* CricbuzzNewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95320EE7AFE0011CB85 /* CricbuzzNewsResponse.swift */; };
+		8FEAE95620EE87A80011CB85 /* DetailStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95520EE87A80011CB85 /* DetailStoryViewController.swift */; };
+		8FEAE95820EE95830011CB85 /* DetailStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95720EE95830011CB85 /* DetailStoryCollectionViewCell.swift */; };
+		8FEAE95A20EE9F370011CB85 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95920EE9F370011CB85 /* GSImageViewerController.swift */; };
+		8FEAE95C20EEA2F70011CB85 /* DetailStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95B20EEA2F70011CB85 /* DetailStoryTableViewCell.swift */; };
+		8FEAE95E20EEA83E0011CB85 /* CustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEAE95D20EEA83E0011CB85 /* CustomNavigationAnimationController.swift */; };
+		B303FEBC959AB549D86BC5BF /* Pods_CricketNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1C2C06FB5F95DD0F5DB965 /* Pods_CricketNews.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F6E7C6A20EF6CE2006C12D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FEAE92A20EE5C900011CB85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FEAE93120EE5C900011CB85;
+			remoteInfo = CricketNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B1C2C06FB5F95DD0F5DB965 /* Pods_CricketNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricketNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6878784D72E200B917A42FDA /* Pods_CricketNewsUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricketNewsUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F5EE680CB749A4DCC30CD1A /* Pods-CricketNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricketNews/Pods-CricketNews.debug.xcconfig"; sourceTree = "<group>"; };
+		8F6E7C5520EF4B8D006C12D5 /* CustomInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInteractionController.swift; sourceTree = "<group>"; };
+		8F6E7C5720EF53F4006C12D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F6E7C6520EF6CE2006C12D5 /* CricketNewsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CricketNewsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6E7C6920EF6CE2006C12D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6E7C7220EF6D31006C12D5 /* FetchNewsServiceUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchNewsServiceUnitTests.swift; sourceTree = "<group>"; };
+		8F6E7C7420EF6D31006C12D5 /* MockCricbuzzService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCricbuzzService.swift; sourceTree = "<group>"; };
+		8FEAE93220EE5C900011CB85 /* CricketNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricketNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEAE93520EE5C900011CB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FEAE93720EE5C900011CB85 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		8FEAE93A20EE5C900011CB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FEAE93C20EE5C900011CB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FEAE93F20EE5C900011CB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FEAE94120EE5C900011CB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEAE94720EE63560011CB85 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		8FEAE94920EE645E0011CB85 /* FetchNewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchNewsService.swift; sourceTree = "<group>"; };
+		8FEAE94B20EE64E10011CB85 /* AlamofireConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConfig.swift; sourceTree = "<group>"; };
+		8FEAE94D20EE64FC0011CB85 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
+		8FEAE94F20EE65480011CB85 /* CricbuzzNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricbuzzNews.swift; sourceTree = "<group>"; };
+		8FEAE95120EE71BE0011CB85 /* CricbuzzStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricbuzzStory.swift; sourceTree = "<group>"; };
+		8FEAE95320EE7AFE0011CB85 /* CricbuzzNewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricbuzzNewsResponse.swift; sourceTree = "<group>"; };
+		8FEAE95520EE87A80011CB85 /* DetailStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewController.swift; sourceTree = "<group>"; };
+		8FEAE95720EE95830011CB85 /* DetailStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FEAE95920EE9F370011CB85 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
+		8FEAE95B20EEA2F70011CB85 /* DetailStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryTableViewCell.swift; sourceTree = "<group>"; };
+		8FEAE95D20EEA83E0011CB85 /* CustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimationController.swift; sourceTree = "<group>"; };
+		B5C354CA63BE819CC8BD72C0 /* Pods-CricketNewsUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketNewsUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricketNewsUnitTests/Pods-CricketNewsUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5F1487541A791320A472534 /* Pods-CricketNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricketNews/Pods-CricketNews.release.xcconfig"; sourceTree = "<group>"; };
+		F3ED844910FDBDD08A29C3C0 /* Pods-CricketNewsUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricketNewsUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricketNewsUnitTests/Pods-CricketNewsUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F6E7C6220EF6CE2006C12D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F389C2F1D78145FDA2849F2 /* Pods_CricketNewsUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEAE92F20EE5C900011CB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B303FEBC959AB549D86BC5BF /* Pods_CricketNews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B18AFEC79A8E963E8C5ADE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F5EE680CB749A4DCC30CD1A /* Pods-CricketNews.debug.xcconfig */,
+				B5F1487541A791320A472534 /* Pods-CricketNews.release.xcconfig */,
+				F3ED844910FDBDD08A29C3C0 /* Pods-CricketNewsUnitTests.debug.xcconfig */,
+				B5C354CA63BE819CC8BD72C0 /* Pods-CricketNewsUnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F6E7C5920EF6013006C12D5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E7C5520EF4B8D006C12D5 /* CustomInteractionController.swift */,
+				8FEAE95920EE9F370011CB85 /* GSImageViewerController.swift */,
+				8FEAE95D20EEA83E0011CB85 /* CustomNavigationAnimationController.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		8F6E7C5A20EF60A5006C12D5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE93720EE5C900011CB85 /* NewsViewController.swift */,
+				8FEAE95520EE87A80011CB85 /* DetailStoryViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8F6E7C5B20EF60BB006C12D5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE94720EE63560011CB85 /* NewsTableViewCell.swift */,
+				8FEAE95720EE95830011CB85 /* DetailStoryCollectionViewCell.swift */,
+				8FEAE95B20EEA2F70011CB85 /* DetailStoryTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8F6E7C5C20EF60CE006C12D5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE94920EE645E0011CB85 /* FetchNewsService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8F6E7C5D20EF60D6006C12D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE94F20EE65480011CB85 /* CricbuzzNews.swift */,
+				8FEAE95120EE71BE0011CB85 /* CricbuzzStory.swift */,
+				8FEAE95320EE7AFE0011CB85 /* CricbuzzNewsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F6E7C5E20EF60DE006C12D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE94D20EE64FC0011CB85 /* ServerConfiguration.swift */,
+				8FEAE94B20EE64E10011CB85 /* AlamofireConfig.swift */,
+				8F6E7C5720EF53F4006C12D5 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F6E7C5F20EF611C006C12D5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE93920EE5C900011CB85 /* Main.storyboard */,
+				8FEAE93E20EE5C900011CB85 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8F6E7C6020EF6167006C12D5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE93520EE5C900011CB85 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8F6E7C6620EF6CE2006C12D5 /* CricketNewsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E7C7120EF6D31006C12D5 /* ServiceUnitTests */,
+				8F6E7C7320EF6D31006C12D5 /* MockService */,
+				8F6E7C6920EF6CE2006C12D5 /* Info.plist */,
+			);
+			path = CricketNewsUnitTests;
+			sourceTree = "<group>";
+		};
+		8F6E7C7120EF6D31006C12D5 /* ServiceUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E7C7220EF6D31006C12D5 /* FetchNewsServiceUnitTests.swift */,
+			);
+			path = ServiceUnitTests;
+			sourceTree = "<group>";
+		};
+		8F6E7C7320EF6D31006C12D5 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E7C7420EF6D31006C12D5 /* MockCricbuzzService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		8FEAE92920EE5C900011CB85 = {
+			isa = PBXGroup;
+			children = (
+				8FEAE93420EE5C900011CB85 /* CricketNews */,
+				8F6E7C6620EF6CE2006C12D5 /* CricketNewsUnitTests */,
+				8FEAE93320EE5C900011CB85 /* Products */,
+				6B18AFEC79A8E963E8C5ADE2 /* Pods */,
+				E82E51C1E6859F812EE2F83A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8FEAE93320EE5C900011CB85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FEAE93220EE5C900011CB85 /* CricketNews.app */,
+				8F6E7C6520EF6CE2006C12D5 /* CricketNewsUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FEAE93420EE5C900011CB85 /* CricketNews */ = {
+			isa = PBXGroup;
+			children = (
+				8F6E7C5920EF6013006C12D5 /* Animations */,
+				8F6E7C5A20EF60A5006C12D5 /* Controllers */,
+				8F6E7C5B20EF60BB006C12D5 /* Cells */,
+				8F6E7C5C20EF60CE006C12D5 /* Service */,
+				8F6E7C5E20EF60DE006C12D5 /* Common */,
+				8F6E7C5D20EF60D6006C12D5 /* Model */,
+				8F6E7C5F20EF611C006C12D5 /* Storyboards */,
+				8F6E7C6020EF6167006C12D5 /* Application */,
+				8FEAE94120EE5C900011CB85 /* Info.plist */,
+				8FEAE93C20EE5C900011CB85 /* Assets.xcassets */,
+			);
+			path = CricketNews;
+			sourceTree = "<group>";
+		};
+		E82E51C1E6859F812EE2F83A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B1C2C06FB5F95DD0F5DB965 /* Pods_CricketNews.framework */,
+				6878784D72E200B917A42FDA /* Pods_CricketNewsUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F6E7C6420EF6CE2006C12D5 /* CricketNewsUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6E7C6C20EF6CE2006C12D5 /* Build configuration list for PBXNativeTarget "CricketNewsUnitTests" */;
+			buildPhases = (
+				8A4627639F880D348454A6E0 /* [CP] Check Pods Manifest.lock */,
+				8F6E7C6120EF6CE2006C12D5 /* Sources */,
+				8F6E7C6220EF6CE2006C12D5 /* Frameworks */,
+				8F6E7C6320EF6CE2006C12D5 /* Resources */,
+				6A318DA5851736E79C70965B /* [CP] Embed Pods Frameworks */,
+				DA8F93B5D78BD87888BBC1FF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F6E7C6B20EF6CE2006C12D5 /* PBXTargetDependency */,
+			);
+			name = CricketNewsUnitTests;
+			productName = CricketNewsUnitTests;
+			productReference = 8F6E7C6520EF6CE2006C12D5 /* CricketNewsUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FEAE93120EE5C900011CB85 /* CricketNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FEAE94420EE5C900011CB85 /* Build configuration list for PBXNativeTarget "CricketNews" */;
+			buildPhases = (
+				80E72D7F568AB86866ABC1AD /* [CP] Check Pods Manifest.lock */,
+				8FEAE92E20EE5C900011CB85 /* Sources */,
+				8FEAE92F20EE5C900011CB85 /* Frameworks */,
+				8FEAE93020EE5C900011CB85 /* Resources */,
+				CBEC541EE5230FB19C034909 /* [CP] Embed Pods Frameworks */,
+				51C829F36DB37A2A79FC6FD8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CricketNews;
+			productName = CricketNews;
+			productReference = 8FEAE93220EE5C900011CB85 /* CricketNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FEAE92A20EE5C900011CB85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Aniruddha Das";
+				TargetAttributes = {
+					8F6E7C6420EF6CE2006C12D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FEAE93120EE5C900011CB85;
+					};
+					8FEAE93120EE5C900011CB85 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 8FEAE92D20EE5C900011CB85 /* Build configuration list for PBXProject "CricketNews" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FEAE92920EE5C900011CB85;
+			productRefGroup = 8FEAE93320EE5C900011CB85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FEAE93120EE5C900011CB85 /* CricketNews */,
+				8F6E7C6420EF6CE2006C12D5 /* CricketNewsUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F6E7C6320EF6CE2006C12D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEAE93020EE5C900011CB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEAE94020EE5C900011CB85 /* LaunchScreen.storyboard in Resources */,
+				8FEAE93D20EE5C900011CB85 /* Assets.xcassets in Resources */,
+				8FEAE93B20EE5C900011CB85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51C829F36DB37A2A79FC6FD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricketNews/Pods-CricketNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A318DA5851736E79C70965B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CricketNewsUnitTests/Pods-CricketNewsUnitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricketNewsUnitTests/Pods-CricketNewsUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E72D7F568AB86866ABC1AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CricketNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A4627639F880D348454A6E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CricketNewsUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEC541EE5230FB19C034909 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CricketNews/Pods-CricketNews-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricketNews/Pods-CricketNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA8F93B5D78BD87888BBC1FF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricketNewsUnitTests/Pods-CricketNewsUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F6E7C6120EF6CE2006C12D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6E7C7620EF6D31006C12D5 /* FetchNewsServiceUnitTests.swift in Sources */,
+				8F6E7C7720EF6D31006C12D5 /* MockCricbuzzService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FEAE92E20EE5C900011CB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEAE93820EE5C900011CB85 /* NewsViewController.swift in Sources */,
+				8FEAE95E20EEA83E0011CB85 /* CustomNavigationAnimationController.swift in Sources */,
+				8FEAE94A20EE645E0011CB85 /* FetchNewsService.swift in Sources */,
+				8FEAE93620EE5C900011CB85 /* AppDelegate.swift in Sources */,
+				8FEAE95620EE87A80011CB85 /* DetailStoryViewController.swift in Sources */,
+				8FEAE95220EE71BE0011CB85 /* CricbuzzStory.swift in Sources */,
+				8FEAE95820EE95830011CB85 /* DetailStoryCollectionViewCell.swift in Sources */,
+				8F6E7C5820EF53F4006C12D5 /* Constants.swift in Sources */,
+				8FEAE94C20EE64E10011CB85 /* AlamofireConfig.swift in Sources */,
+				8FEAE95A20EE9F370011CB85 /* GSImageViewerController.swift in Sources */,
+				8F6E7C5620EF4B8D006C12D5 /* CustomInteractionController.swift in Sources */,
+				8FEAE94820EE63560011CB85 /* NewsTableViewCell.swift in Sources */,
+				8FEAE95C20EEA2F70011CB85 /* DetailStoryTableViewCell.swift in Sources */,
+				8FEAE95020EE65480011CB85 /* CricbuzzNews.swift in Sources */,
+				8FEAE95420EE7AFE0011CB85 /* CricbuzzNewsResponse.swift in Sources */,
+				8FEAE94E20EE64FC0011CB85 /* ServerConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F6E7C6B20EF6CE2006C12D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FEAE93120EE5C900011CB85 /* CricketNews */;
+			targetProxy = 8F6E7C6A20EF6CE2006C12D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FEAE93920EE5C900011CB85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEAE93A20EE5C900011CB85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FEAE93E20EE5C900011CB85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FEAE93F20EE5C900011CB85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F6E7C6D20EF6CE2006C12D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3ED844910FDBDD08A29C3C0 /* Pods-CricketNewsUnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6845F78QK;
+				INFOPLIST_FILE = CricketNewsUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cricbuzz.CricketNewsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CricketNews.app/CricketNews";
+			};
+			name = Debug;
+		};
+		8F6E7C6E20EF6CE2006C12D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C354CA63BE819CC8BD72C0 /* Pods-CricketNewsUnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6845F78QK;
+				INFOPLIST_FILE = CricketNewsUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cricbuzz.CricketNewsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CricketNews.app/CricketNews";
+			};
+			name = Release;
+		};
+		8FEAE94220EE5C900011CB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FEAE94320EE5C900011CB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FEAE94520EE5C900011CB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5EE680CB749A4DCC30CD1A /* Pods-CricketNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CricketNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cricbuzz.CricketNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FEAE94620EE5C900011CB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F1487541A791320A472534 /* Pods-CricketNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CricketNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cricbuzz.CricketNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F6E7C6C20EF6CE2006C12D5 /* Build configuration list for PBXNativeTarget "CricketNewsUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6E7C6D20EF6CE2006C12D5 /* Debug */,
+				8F6E7C6E20EF6CE2006C12D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEAE92D20EE5C900011CB85 /* Build configuration list for PBXProject "CricketNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEAE94220EE5C900011CB85 /* Debug */,
+				8FEAE94320EE5C900011CB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FEAE94420EE5C900011CB85 /* Build configuration list for PBXNativeTarget "CricketNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FEAE94520EE5C900011CB85 /* Debug */,
+				8FEAE94620EE5C900011CB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FEAE92A20EE5C900011CB85 /* Project object */;
+}

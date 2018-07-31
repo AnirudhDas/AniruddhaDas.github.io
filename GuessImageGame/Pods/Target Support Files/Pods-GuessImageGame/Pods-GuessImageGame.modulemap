@@ -1,0 +1,6 @@
+framework module Pods_GuessImageGame {
+  umbrella header "Pods-GuessImageGame-umbrella.h"
+
+  export *
+  module * { export * }
+}

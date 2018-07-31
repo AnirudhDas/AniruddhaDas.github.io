@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037C935B6D045B26A77AA1D6 /* Pods_GuessImageGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1E0801720D7EAFDEF3D303 /* Pods_GuessImageGame.framework */; };
+		8F0E568E20B98B7800576D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F0E568D20B98B7700576D21 /* Assets.xcassets */; };
+		8F1DA0D520B80B0000C83E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0D420B80B0000C83E09 /* AppDelegate.swift */; };
+		8F1DA0D720B80B0000C83E09 /* GuessImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0D620B80B0000C83E09 /* GuessImageViewController.swift */; };
+		8F1DA0DA20B80B0000C83E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DA0D820B80B0000C83E09 /* Main.storyboard */; };
+		8F1DA0DF20B80B0000C83E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1DA0DD20B80B0000C83E09 /* LaunchScreen.storyboard */; };
+		8F1DA0E720B81E3A00C83E09 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0E620B81E3A00C83E09 /* ImageCollectionViewCell.swift */; };
+		8F1DA0EA20B83BE900C83E09 /* FetchImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0E920B83BE900C83E09 /* FetchImageService.swift */; };
+		8F1DA0EE20B8994C00C83E09 /* AlamofireConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0ED20B8994C00C83E09 /* AlamofireConfig.swift */; };
+		8F1DA0F020B8997800C83E09 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0EF20B8997800C83E09 /* FlickrPhoto.swift */; };
+		8F1DA0F220B8A35500C83E09 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1DA0F120B8A35500C83E09 /* ServerConfiguration.swift */; };
+		8F1E95F220B946B600AAC4F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E95F120B946B600AAC4F9 /* Constants.swift */; };
+		8F1E95F420B959DB00AAC4F9 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E95F320B959DB00AAC4F9 /* GCDBlackBox.swift */; };
+		8F1E95F620B95E6E00AAC4F9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E95F520B95E6E00AAC4F9 /* BaseViewController.swift */; };
+		8F1E960C20B969BB00AAC4F9 /* GuessImageViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E960B20B969BB00AAC4F9 /* GuessImageViewControllerUnitTests.swift */; };
+		8F1E961420B970B300AAC4F9 /* MockFetchImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E961320B970B300AAC4F9 /* MockFetchImageService.swift */; };
+		8F1E961620B9729D00AAC4F9 /* MockPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E961520B9729D00AAC4F9 /* MockPhoto.swift */; };
+		C45740FAC0B682F655EB801A /* Pods_GuessImageGameUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E9B2848DEBA7AF7209167E /* Pods_GuessImageGameUnitTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F1E960E20B969BB00AAC4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F1DA0C920B80B0000C83E09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F1DA0D020B80B0000C83E09;
+			remoteInfo = GuessImageGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D1E0801720D7EAFDEF3D303 /* Pods_GuessImageGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessImageGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E9B2848DEBA7AF7209167E /* Pods_GuessImageGameUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuessImageGameUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B580EA24D29CAAEED079A1 /* Pods-GuessImageGameUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessImageGameUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuessImageGameUnitTests/Pods-GuessImageGameUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		8F0E568D20B98B7700576D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F1DA0D120B80B0000C83E09 /* GuessImageGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuessImageGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1DA0D420B80B0000C83E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F1DA0D620B80B0000C83E09 /* GuessImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessImageViewController.swift; sourceTree = "<group>"; };
+		8F1DA0D920B80B0000C83E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F1DA0DE20B80B0000C83E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F1DA0E020B80B0000C83E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1DA0E620B81E3A00C83E09 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F1DA0E920B83BE900C83E09 /* FetchImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchImageService.swift; sourceTree = "<group>"; };
+		8F1DA0ED20B8994C00C83E09 /* AlamofireConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireConfig.swift; sourceTree = "<group>"; };
+		8F1DA0EF20B8997800C83E09 /* FlickrPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		8F1DA0F120B8A35500C83E09 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
+		8F1E95F120B946B600AAC4F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8F1E95F320B959DB00AAC4F9 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		8F1E95F520B95E6E00AAC4F9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8F1E960920B969BB00AAC4F9 /* GuessImageGameUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessImageGameUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1E960B20B969BB00AAC4F9 /* GuessImageViewControllerUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessImageViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		8F1E960D20B969BB00AAC4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F1E961320B970B300AAC4F9 /* MockFetchImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchImageService.swift; sourceTree = "<group>"; };
+		8F1E961520B9729D00AAC4F9 /* MockPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhoto.swift; sourceTree = "<group>"; };
+		DCD4C07FB42D889CC28241A5 /* Pods-GuessImageGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessImageGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuessImageGame/Pods-GuessImageGame.debug.xcconfig"; sourceTree = "<group>"; };
+		E09D9DC0D1B929EBC0601BCC /* Pods-GuessImageGameUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessImageGameUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuessImageGameUnitTests/Pods-GuessImageGameUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE4C094A54C1E3E5B0C3CF48 /* Pods-GuessImageGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessImageGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuessImageGame/Pods-GuessImageGame.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F1DA0CE20B80B0000C83E09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037C935B6D045B26A77AA1D6 /* Pods_GuessImageGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1E960620B969BB00AAC4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C45740FAC0B682F655EB801A /* Pods_GuessImageGameUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F0E568C20B98B7700576D21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F0E568D20B98B7700576D21 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F1DA0C820B80B0000C83E09 = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0D320B80B0000C83E09 /* GuessImageGame */,
+				8F1E960A20B969BB00AAC4F9 /* GuessImageGameUnitTests */,
+				8F1DA0D220B80B0000C83E09 /* Products */,
+				EBFFFB7DF9E0B0C06FD11A2C /* Pods */,
+				EA21C878CB1AF84ED8EAF9D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F1DA0D220B80B0000C83E09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0D120B80B0000C83E09 /* GuessImageGame.app */,
+				8F1E960920B969BB00AAC4F9 /* GuessImageGameUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F1DA0D320B80B0000C83E09 /* GuessImageGame */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0E020B80B0000C83E09 /* Info.plist */,
+				8F0E568C20B98B7700576D21 /* Resources */,
+				8F1E961B20B978ED00AAC4F9 /* Application */,
+				8F1E961720B9783A00AAC4F9 /* Utilities */,
+				8F1E95EE20B945CF00AAC4F9 /* Controller */,
+				8F1E95F020B9460F00AAC4F9 /* Service */,
+				8F1E95EC20B945A400AAC4F9 /* Configurations */,
+				8F1E95ED20B945C400AAC4F9 /* Model */,
+				8F1E95EF20B945ED00AAC4F9 /* View */,
+			);
+			path = GuessImageGame;
+			sourceTree = "<group>";
+		};
+		8F1E95EC20B945A400AAC4F9 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0ED20B8994C00C83E09 /* AlamofireConfig.swift */,
+				8F1DA0F120B8A35500C83E09 /* ServerConfiguration.swift */,
+				8F1E95F120B946B600AAC4F9 /* Constants.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8F1E95ED20B945C400AAC4F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0EF20B8997800C83E09 /* FlickrPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F1E95EE20B945CF00AAC4F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E95F520B95E6E00AAC4F9 /* BaseViewController.swift */,
+				8F1DA0D620B80B0000C83E09 /* GuessImageViewController.swift */,
+				8F1DA0E620B81E3A00C83E09 /* ImageCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F1E95EF20B945ED00AAC4F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0D820B80B0000C83E09 /* Main.storyboard */,
+				8F1DA0DD20B80B0000C83E09 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F1E95F020B9460F00AAC4F9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0E920B83BE900C83E09 /* FetchImageService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8F1E960A20B969BB00AAC4F9 /* GuessImageGameUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E960D20B969BB00AAC4F9 /* Info.plist */,
+				8F1E961820B9786600AAC4F9 /* Controller */,
+				8F1E961920B9786F00AAC4F9 /* MockService */,
+				8F1E961A20B9787E00AAC4F9 /* MockModel */,
+			);
+			path = GuessImageGameUnitTests;
+			sourceTree = "<group>";
+		};
+		8F1E961720B9783A00AAC4F9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E95F320B959DB00AAC4F9 /* GCDBlackBox.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8F1E961820B9786600AAC4F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E960B20B969BB00AAC4F9 /* GuessImageViewControllerUnitTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F1E961920B9786F00AAC4F9 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E961320B970B300AAC4F9 /* MockFetchImageService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		8F1E961A20B9787E00AAC4F9 /* MockModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F1E961520B9729D00AAC4F9 /* MockPhoto.swift */,
+			);
+			path = MockModel;
+			sourceTree = "<group>";
+		};
+		8F1E961B20B978ED00AAC4F9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8F1DA0D420B80B0000C83E09 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EA21C878CB1AF84ED8EAF9D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D1E0801720D7EAFDEF3D303 /* Pods_GuessImageGame.framework */,
+				53E9B2848DEBA7AF7209167E /* Pods_GuessImageGameUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBFFFB7DF9E0B0C06FD11A2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCD4C07FB42D889CC28241A5 /* Pods-GuessImageGame.debug.xcconfig */,
+				EE4C094A54C1E3E5B0C3CF48 /* Pods-GuessImageGame.release.xcconfig */,
+				E09D9DC0D1B929EBC0601BCC /* Pods-GuessImageGameUnitTests.debug.xcconfig */,
+				84B580EA24D29CAAEED079A1 /* Pods-GuessImageGameUnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F1DA0D020B80B0000C83E09 /* GuessImageGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1DA0E320B80B0000C83E09 /* Build configuration list for PBXNativeTarget "GuessImageGame" */;
+			buildPhases = (
+				3F5EB7921FE3A6DD45F3F3AE /* [CP] Check Pods Manifest.lock */,
+				8F1DA0CD20B80B0000C83E09 /* Sources */,
+				8F1DA0CE20B80B0000C83E09 /* Frameworks */,
+				8F1DA0CF20B80B0000C83E09 /* Resources */,
+				9183BC0C59E700459A927B16 /* [CP] Embed Pods Frameworks */,
+				EC3964FBFB34D105E7C0D067 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuessImageGame;
+			productName = GuessImageGame;
+			productReference = 8F1DA0D120B80B0000C83E09 /* GuessImageGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F1E960820B969BB00AAC4F9 /* GuessImageGameUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1E961020B969BB00AAC4F9 /* Build configuration list for PBXNativeTarget "GuessImageGameUnitTests" */;
+			buildPhases = (
+				4E66EDF1F45FE3E5975BA489 /* [CP] Check Pods Manifest.lock */,
+				8F1E960520B969BB00AAC4F9 /* Sources */,
+				8F1E960620B969BB00AAC4F9 /* Frameworks */,
+				8F1E960720B969BB00AAC4F9 /* Resources */,
+				8C9AFDEC8377AD962C1DF11D /* [CP] Embed Pods Frameworks */,
+				E32DC5BBF3BC8652C2BCDB63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F1E960F20B969BB00AAC4F9 /* PBXTargetDependency */,
+			);
+			name = GuessImageGameUnitTests;
+			productName = GuessImageGameUnitTests;
+			productReference = 8F1E960920B969BB00AAC4F9 /* GuessImageGameUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F1DA0C920B80B0000C83E09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Aniruddha Das";
+				TargetAttributes = {
+					8F1DA0D020B80B0000C83E09 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					8F1E960820B969BB00AAC4F9 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+						TestTargetID = 8F1DA0D020B80B0000C83E09;
+					};
+				};
+			};
+			buildConfigurationList = 8F1DA0CC20B80B0000C83E09 /* Build configuration list for PBXProject "GuessImageGame" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F1DA0C820B80B0000C83E09;
+			productRefGroup = 8F1DA0D220B80B0000C83E09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F1DA0D020B80B0000C83E09 /* GuessImageGame */,
+				8F1E960820B969BB00AAC4F9 /* GuessImageGameUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F1DA0CF20B80B0000C83E09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1DA0DF20B80B0000C83E09 /* LaunchScreen.storyboard in Resources */,
+				8F0E568E20B98B7800576D21 /* Assets.xcassets in Resources */,
+				8F1DA0DA20B80B0000C83E09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1E960720B969BB00AAC4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F5EB7921FE3A6DD45F3F3AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessImageGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E66EDF1F45FE3E5975BA489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuessImageGameUnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C9AFDEC8377AD962C1DF11D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGameUnitTests/Pods-GuessImageGameUnitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGameUnitTests/Pods-GuessImageGameUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9183BC0C59E700459A927B16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGame/Pods-GuessImageGame-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSpinner/SwiftSpinner.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSpinner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGame/Pods-GuessImageGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E32DC5BBF3BC8652C2BCDB63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGameUnitTests/Pods-GuessImageGameUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC3964FBFB34D105E7C0D067 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuessImageGame/Pods-GuessImageGame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F1DA0CD20B80B0000C83E09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1DA0F220B8A35500C83E09 /* ServerConfiguration.swift in Sources */,
+				8F1DA0EA20B83BE900C83E09 /* FetchImageService.swift in Sources */,
+				8F1DA0F020B8997800C83E09 /* FlickrPhoto.swift in Sources */,
+				8F1DA0E720B81E3A00C83E09 /* ImageCollectionViewCell.swift in Sources */,
+				8F1DA0D720B80B0000C83E09 /* GuessImageViewController.swift in Sources */,
+				8F1E95F620B95E6E00AAC4F9 /* BaseViewController.swift in Sources */,
+				8F1DA0EE20B8994C00C83E09 /* AlamofireConfig.swift in Sources */,
+				8F1DA0D520B80B0000C83E09 /* AppDelegate.swift in Sources */,
+				8F1E95F420B959DB00AAC4F9 /* GCDBlackBox.swift in Sources */,
+				8F1E95F220B946B600AAC4F9 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1E960520B969BB00AAC4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1E961420B970B300AAC4F9 /* MockFetchImageService.swift in Sources */,
+				8F1E961620B9729D00AAC4F9 /* MockPhoto.swift in Sources */,
+				8F1E960C20B969BB00AAC4F9 /* GuessImageViewControllerUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F1E960F20B969BB00AAC4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F1DA0D020B80B0000C83E09 /* GuessImageGame */;
+			targetProxy = 8F1E960E20B969BB00AAC4F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F1DA0D820B80B0000C83E09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F1DA0D920B80B0000C83E09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F1DA0DD20B80B0000C83E09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F1DA0DE20B80B0000C83E09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F1DA0E120B80B0000C83E09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F1DA0E220B80B0000C83E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F1DA0E420B80B0000C83E09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD4C07FB42D889CC28241A5 /* Pods-GuessImageGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuessImageGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniruddha.GuessImageGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F1DA0E520B80B0000C83E09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4C094A54C1E3E5B0C3CF48 /* Pods-GuessImageGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuessImageGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniruddha.GuessImageGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F1E961120B969BB00AAC4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09D9DC0D1B929EBC0601BCC /* Pods-GuessImageGameUnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuessImageGameUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniruddha.GuessImageGameUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessImageGame.app/GuessImageGame";
+			};
+			name = Debug;
+		};
+		8F1E961220B969BB00AAC4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B580EA24D29CAAEED079A1 /* Pods-GuessImageGameUnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = GuessImageGameUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aniruddha.GuessImageGameUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuessImageGame.app/GuessImageGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1DA0CC20B80B0000C83E09 /* Build configuration list for PBXProject "GuessImageGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1DA0E120B80B0000C83E09 /* Debug */,
+				8F1DA0E220B80B0000C83E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1DA0E320B80B0000C83E09 /* Build configuration list for PBXNativeTarget "GuessImageGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1DA0E420B80B0000C83E09 /* Debug */,
+				8F1DA0E520B80B0000C83E09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F1E961020B969BB00AAC4F9 /* Build configuration list for PBXNativeTarget "GuessImageGameUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1E961120B969BB00AAC4F9 /* Debug */,
+				8F1E961220B969BB00AAC4F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F1DA0C920B80B0000C83E09 /* Project object */;
+}
