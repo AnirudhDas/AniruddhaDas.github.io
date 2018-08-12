@@ -1,0 +1,7 @@
+
+target 'WikipediaSearch' do
+  use_frameworks!
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+  pod 'SDWebImage'
+end

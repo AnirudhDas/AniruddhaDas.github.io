@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GR2-K3-3UZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wiki Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WikiSearchViewController" customModule="WikipediaSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-h0-RRp">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WikiCell" rowHeight="66" id="yrc-tf-f8Y" customClass="WikiTableViewCell" customModule="WikipediaSearch" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yrc-tf-f8Y" id="bqn-Tf-kX2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="65.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="I41-ab-PmZ">
+                                                    <rect key="frame" x="8" y="8" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="7R9-Kj-Y2b"/>
+                                                        <constraint firstAttribute="width" constant="50" id="98S-OB-vxB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxC-g9-MI1">
+                                                    <rect key="frame" x="66" y="37" width="301" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlM-sl-n5t">
+                                                    <rect key="frame" x="66" y="8" width="301" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="uxC-g9-MI1" secondAttribute="trailing" constant="8" id="6sa-p6-iDU"/>
+                                                <constraint firstItem="I41-ab-PmZ" firstAttribute="leading" secondItem="bqn-Tf-kX2" secondAttribute="leading" constant="8" id="KRH-BJ-GSv"/>
+                                                <constraint firstItem="dlM-sl-n5t" firstAttribute="top" secondItem="I41-ab-PmZ" secondAttribute="top" id="LuB-S0-ALp"/>
+                                                <constraint firstItem="I41-ab-PmZ" firstAttribute="top" secondItem="bqn-Tf-kX2" secondAttribute="top" constant="8" id="Nz9-fY-t74"/>
+                                                <constraint firstAttribute="trailing" secondItem="dlM-sl-n5t" secondAttribute="trailing" constant="8" id="U81-VC-kPW"/>
+                                                <constraint firstItem="uxC-g9-MI1" firstAttribute="leading" secondItem="I41-ab-PmZ" secondAttribute="trailing" constant="8" id="XTr-xc-mdX"/>
+                                                <constraint firstItem="uxC-g9-MI1" firstAttribute="bottom" secondItem="I41-ab-PmZ" secondAttribute="bottom" id="Zu5-te-LyX"/>
+                                                <constraint firstItem="dlM-sl-n5t" firstAttribute="leading" secondItem="I41-ab-PmZ" secondAttribute="trailing" constant="8" id="guB-eF-qGk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLbl" destination="uxC-g9-MI1" id="Lk4-dd-Isb"/>
+                                            <outlet property="itemImgView" destination="I41-ab-PmZ" id="Uzk-x1-H5y"/>
+                                            <outlet property="titleLbl" destination="dlM-sl-n5t" id="0cZ-Kr-xHT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="CXn-oB-OK4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VYJ-h0-RRp" secondAttribute="trailing" id="9Cm-F6-gZu"/>
+                            <constraint firstItem="CXn-oB-OK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E7t-8t-GQh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VYJ-h0-RRp" secondAttribute="bottom" id="bmU-L7-bwe"/>
+                            <constraint firstItem="CXn-oB-OK4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cc3-ZY-oVa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CXn-oB-OK4" secondAttribute="trailing" id="f6C-kp-a4i"/>
+                            <constraint firstItem="VYJ-h0-RRp" firstAttribute="top" secondItem="CXn-oB-OK4" secondAttribute="bottom" id="h40-LI-hI1"/>
+                            <constraint firstItem="VYJ-h0-RRp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pwK-rG-eAU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pJm-LJ-5G7"/>
+                    <connections>
+                        <outlet property="wikiResultsTableView" destination="VYJ-h0-RRp" id="4e9-Zv-1rG"/>
+                        <outlet property="wikiSearchBar" destination="CXn-oB-OK4" id="N2c-42-t1E"/>
+                        <outlet property="wikiViewModel" destination="COV-Nv-uTm" id="S9B-oC-eGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="COV-Nv-uTm" customClass="WikiViewModel" customModule="WikipediaSearch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QfC-Av-Z9D">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UGf-Mi-2Lh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GR2-K3-3UZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m8J-0M-Gt6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wwl-cm-iMa"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder" width="300" height="300"/>
+    </resources>
+</document>
