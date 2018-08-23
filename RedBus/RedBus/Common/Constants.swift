@@ -12,30 +12,33 @@ import UIKit
 struct Constants {
     //Images
     public static let placeholderImage: UIImage = #imageLiteral(resourceName: "placeholder")
-    public static let filterOff: UIImage = #imageLiteral(resourceName: "filterOff")
     
-    public static let ratingOff: UIImage = #imageLiteral(resourceName: "ratingOff")
-    public static let ratingOn: UIImage = #imageLiteral(resourceName: "ratingOn")
+    public static let filter: UIImage = #imageLiteral(resourceName: "filter")
+    public static let clearFilter: UIImage = #imageLiteral(resourceName: "clearFilter")
     
-    public static let timeOn: UIImage = #imageLiteral(resourceName: "timeOn")
-    public static let timeOff: UIImage = #imageLiteral(resourceName: "timeOff")
+    public static let ratingDeselected: UIImage = #imageLiteral(resourceName: "ratingDeselected")
+    public static let ratingSelected: UIImage = #imageLiteral(resourceName: "ratingSelected")
     
-    public static let fareOff: UIImage = #imageLiteral(resourceName: "fareOff")
-    public static let fareOn: UIImage = #imageLiteral(resourceName: "fareOn")
+    public static let depatureDeselected: UIImage = #imageLiteral(resourceName: "departureDeselected")
+    public static let depatureSelected: UIImage = #imageLiteral(resourceName: "departureSelected")
+    
+    public static let fareDeselected: UIImage = #imageLiteral(resourceName: "fareDeselected")
+    public static let fareSelected: UIImage = #imageLiteral(resourceName: "fareSelected")
     
     public static let arrowUp: UIImage = #imageLiteral(resourceName: "arrowUp")
     public static let arrowDown: UIImage = #imageLiteral(resourceName: "arrowDown")
     
-    public static let acOff: UIImage = #imageLiteral(resourceName: "acOff")
-    public static let noAccOff: UIImage = #imageLiteral(resourceName: "noAccOff")
-    public static let acOn: UIImage = #imageLiteral(resourceName: "acOn")
-    public static let noAccOn: UIImage = #imageLiteral(resourceName: "noAccOn")
+    public static let acDeselected: UIImage = #imageLiteral(resourceName: "acDeselected")
+    public static let acSelected: UIImage = #imageLiteral(resourceName: "acSelected")
     
-    public static let seaterOff: UIImage = #imageLiteral(resourceName: "seaterOff")
-    public static let seaterOn: UIImage = #imageLiteral(resourceName: "seaterOn")
+    public static let nonACDeselected: UIImage = #imageLiteral(resourceName: "nonACDeselected")
+    public static let nonACSelected: UIImage = #imageLiteral(resourceName: "nonACSelected")
     
-    public static let sleeperOff: UIImage = #imageLiteral(resourceName: "sleeperOff")
-    public static let sleeperOn: UIImage = #imageLiteral(resourceName: "sleeperOn")
+    public static let seaterDeselected: UIImage = #imageLiteral(resourceName: "seaterDeselected")
+    public static let seaterSelected: UIImage = #imageLiteral(resourceName: "seaterSelected")
+    
+    public static let sleeperDeselected: UIImage = #imageLiteral(resourceName: "sleeperDeselected")
+    public static let sleeperSelected: UIImage = #imageLiteral(resourceName: "sleeperSelected")
     
     //Storyboard Identifiers
     public static let filterVCStoryboardId = "filterVC"
@@ -44,7 +47,7 @@ struct Constants {
     
     //Alerts
     public static let bookingAlertTitle = "Confirm Booking"
-    public static let bookingAlertMessage = "Are you sure you want to book your bus?"
+    public static let bookingAlertMessage = "Are you sure you want to book your bus"
     public static let bookingAlertOK = "Book"
     public static let bookingAlertCancel = "Dismiss"
     

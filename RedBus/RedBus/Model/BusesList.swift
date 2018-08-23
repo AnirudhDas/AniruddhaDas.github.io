@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum SortBy {
+enum SortBusesBy {
     case ratingAscending
     case ratingDescending
     case departureTimeAscending
@@ -20,13 +20,13 @@ enum SortBy {
 
 struct BusesList {
     
-    var sortBy: SortBy = .none
+    var sortBy: SortBusesBy = .none
     var busType: BusType?
     var allBuses: [BusDetail]? = []
     
     var filteredBuses: [BusDetail] {
         if let allBuses = allBuses {
-            //Without Filter
+            
             guard let busType = busType else {
                 return sortBusList(busList: Array(allBuses))
             }
@@ -36,6 +36,7 @@ struct BusesList {
                 return sortBusList(busList: Array(allBuses))
             }
             
+            //Set Filters
             let acBuses = allBuses.filter({
                 busType.isAc && (busType.isAc == $0.busType.isAc)
             })

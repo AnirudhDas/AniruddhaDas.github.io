@@ -10,30 +10,49 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    
-    @nonobjc class var redBusRed: UIColor {
-        return UIColor(red: 216.0 / 255.0, green: 79.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0)
+    public static func ratingRed() -> UIColor {
+        return UIColor(red:201/255, green:87/255, blue:87/255, alpha:1.00)
     }
     
-    @nonobjc class var redBusGreen: UIColor {
-        return UIColor(red: 0.0, green: (210/255), blue: 0.0, alpha: 0.9)
+    public static func ratingGreen() -> UIColor {
+        return UIColor(red:0.30, green:0.72, blue:0.53, alpha:1.00)
     }
     
-    @nonobjc class var redBusYellow: UIColor {
-        return UIColor(red: (237/255), green: (218/255), blue: 0.0, alpha: 0.9)
+    public static func ratingYellow() -> UIColor {
+        return UIColor(red: 201/255, green: 187/255, blue: 87/255, alpha:1.00)
     }
     
-    @nonobjc class var redBusRedDark: UIColor {
-        return UIColor(red: (237/255), green: (28/255), blue: 0.0, alpha: 0.9)
+    public static func lightNavyColor() -> UIColor {
+        return UIColor(red: 22.0/255, green: 86/255, blue: 136/255, alpha:1.00)
     }
     
-    @nonobjc class var blackBrown: UIColor {
-        return UIColor(red: 40.0 / 255.0, green: 35.0 / 255.0, blue: 30.0 / 255.0, alpha: 1.0)
+    /**
+     Initializer of UIColor which accepts a hex-color string.
+     */
+    public convenience init(hexString: String) {
+        let scanner  = Scanner(string: hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines))
+        
+        if (hexString.hasPrefix("#")) {
+            scanner.scanLocation = 1
+        }
+        
+        var color: UInt32 = 0
+        scanner.scanHexInt32(&color)
+        
+        let mask = 0x000000FF
+        let r = Int(color >> 16) & mask
+        let g = Int(color >> 8) & mask
+        let b = Int(color) & mask
+        
+        let red   = CGFloat(r) / 255.0
+        let green = CGFloat(g) / 255.0
+        let blue  = CGFloat(b) / 255.0
+        
+        self.init(red:red, green:green, blue:blue, alpha:1)
     }
 }
 
 public extension Date {
-    
     public var millisecondsSince1970: Double {
         return Double((self.timeIntervalSince1970 * 1000.0).rounded())
     }
@@ -87,18 +106,19 @@ extension Utility {
                                    message: message,
                                    preferredStyle: UIAlertControllerStyle.alert)
         
+        //Cancel button action
         if let cancelTitleTxt = cancelButtonTitle  {
             let cancelAction = UIAlertAction(title: cancelTitleTxt, style: .default, handler: cancelHandler)
             ac.addAction(cancelAction)
         }
         
-        // *** Ok button action ***//
+        //Ok button action
         if let okTitleTxt = okButtonTitle {
             let okAction = UIAlertAction(title: okTitleTxt, style: .default, handler: okHandler)
             ac.addAction(okAction)
         }
         
-        // *** Add text field ***//
+        //Add text field
         if let txtField = textField {
             ac.addTextField(configurationHandler: txtField)
         }
@@ -106,10 +126,5 @@ extension Utility {
         viewController.present(ac, animated: true, completion: nil)
         
         return ac
-    }
-
-    //Encodes a string to URL Encoded Format
-    open class func addURLEncoding(_ string: String) -> String? {
-        return string.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
     }
 }

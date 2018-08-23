@@ -32,23 +32,23 @@ class BusesListViewController: BaseViewController {
     }
     
     func setupNavBar() {
-        let filterBarButton = UIBarButtonItem(image: Constants.filterOff, style: .done, target: self, action: #selector(self.presentFilterVC))
+        let filterBarButton = UIBarButtonItem(image: Constants.filter, style: .done, target: self, action: #selector(self.presentFilterVC))
         self.navigationItem.rightBarButtonItem = filterBarButton
     }
     
     @objc func presentFilterVC() {
-        guard let filterVC = storyboard?.instantiateViewController(withIdentifier: Constants.filterVCStoryboardId) as? FilterViewController else {
+        guard let filterVC = storyboard?.instantiateViewController(withIdentifier: Constants.filterVCStoryboardId) as? FilterViewController, !busesList.filteredBuses.isEmpty else {
             return
         }
         filterVC.modalPresentationStyle = .overCurrentContext
+        filterVC.sortBy = busesList.sortBy
+        if let bFType = busesList.busType {
+            filterVC.busFilterType = bFType
+        }
         filterVC.handlerOnDismiss = { (sortBy, busFilterType) in
             self.busesList.sortBy = sortBy
             self.busesList.busType = busFilterType
             self.tableView.reloadData()
-        }
-        filterVC.sortBy = busesList.sortBy
-        if let bFType = busesList.busType {
-            filterVC.busFilterType = bFType
         }
         self.present(filterVC, animated: true, completion: nil)
     }
@@ -77,10 +77,6 @@ class BusesListViewController: BaseViewController {
             }
         }
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
 
 extension BusesListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -102,7 +98,7 @@ extension BusesListViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        _ = Utility.showAlertMessage(title: Constants.bookingAlertTitle, message: Constants.bookingAlertMessage, viewController: self, okButtonTitle: Constants.bookingAlertOK, okHandler: { [weak self] _ in
+        _ = Utility.showAlertMessage(title: Constants.bookingAlertTitle, message: Constants.bookingAlertMessage + " with \(busCell.busDetail.operatorName)?", viewController: self, okButtonTitle: Constants.bookingAlertOK, okHandler: { [weak self] _ in
             guard let weakSelf = self else { return }
             weakSelf.dataController.addBus(bus: busDetail)
         }, cancelButtonTitle: Constants.bookingAlertCancel, cancelHandler: nil)

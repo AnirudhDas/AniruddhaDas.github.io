@@ -20,7 +20,6 @@ class BookingTableViewCell: UITableViewCell {
     @IBOutlet weak var ratingLbl: UILabel!
     @IBOutlet weak var busTypeLbl: UILabel!
     @IBOutlet weak var fareLbl: UILabel!
-    @IBOutlet weak var currencyLbl: UILabel!
     
     var bus: Bus!
     
@@ -48,8 +47,11 @@ class BookingTableViewCell: UITableViewCell {
         self.bus = busDetail
         self.sourceLbl.text = busDetail.source
         self.destinationLbl.text = busDetail.destination
-        self.fareLbl.text = "\(busDetail.fare)"
-        self.currencyLbl.text = busDetail.currency
+        if let currency = busDetail.currency {
+            self.fareLbl.text = "\(currency) \(busDetail.fare)"
+        } else {
+            self.fareLbl.text = ""
+        }
         self.busNameLbl.text = busDetail.operatorName
         
         if let busLogoURL = busDetail.busLogoURL, busLogoURL != "", let imageUrl = URL(string: busLogoURL) {
@@ -61,14 +63,14 @@ class BookingTableViewCell: UITableViewCell {
         if busDetail.rating != -1 {
             self.ratingLbl.isHidden = false
             if busDetail.rating >= 4 {
-                self.ratingLbl.text = "\(busDetail.rating)"
-                self.ratingLbl.backgroundColor = UIColor.redBusGreen
+                self.ratingLbl.text = "\(busDetail.rating) ★"
+                self.ratingLbl.backgroundColor = UIColor.ratingGreen()
             } else if busDetail.rating >= 3 {
-                self.ratingLbl.text = "\(busDetail.rating)"
-                self.ratingLbl.backgroundColor = UIColor.redBusYellow
+                self.ratingLbl.text = "\(busDetail.rating) ★"
+                self.ratingLbl.backgroundColor = UIColor.ratingYellow()
             } else if busDetail.rating > 0 {
-                self.ratingLbl.text = "\(busDetail.rating)"
-                self.ratingLbl.backgroundColor = UIColor.redBusRedDark
+                self.ratingLbl.text = "\(busDetail.rating) ★"
+                self.ratingLbl.backgroundColor = UIColor.ratingRed()
             } else {
                 self.ratingLbl.isHidden = true
             }
@@ -76,15 +78,15 @@ class BookingTableViewCell: UITableViewCell {
             self.ratingLbl.isHidden = true
         }
         
-        if let hourMinute = Date(milliseconds: busDetail.departureTime).toString(with: "HH:mm a") {
-            self.departureTimeLbl.text = "(\(hourMinute))"
+        if let hourMinute = Date(milliseconds: busDetail.departureTime).toString(with: "h:mm a") {
+            self.departureTimeLbl.text = "Board at \(hourMinute)"
         } else {
             self.departureTimeLbl.text = ""
         }
         
-        if busDetail.arrivalTime != -1, let hourMinute = Date(milliseconds: busDetail.arrivalTime).toString(with: "HH:mm a") {
+        if busDetail.arrivalTime != -1, let hourMinute = Date(milliseconds: busDetail.arrivalTime).toString(with: "h:mm a") {
             self.arrivalTimeLbl.isHidden = false
-            self.arrivalTimeLbl.text = "(\(hourMinute))"
+            self.arrivalTimeLbl.text = "Drop at \(hourMinute)"
         } else {
             self.arrivalTimeLbl.isHidden = true
         }

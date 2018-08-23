@@ -81,10 +81,10 @@
 		8F1730CA212DC0D000CB4285 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8F1EE730212C866F00CF4917 /* BusesListViewController.swift */,
-				8F1EE732212C869600CF4917 /* MyBookingsViewController.swift */,
-				8F1EE740212D17B800CF4917 /* FilterViewController.swift */,
 				8F1730D2212DCEE400CB4285 /* BaseViewController.swift */,
+				8F1EE730212C866F00CF4917 /* BusesListViewController.swift */,
+				8F1EE740212D17B800CF4917 /* FilterViewController.swift */,
+				8F1EE732212C869600CF4917 /* MyBookingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

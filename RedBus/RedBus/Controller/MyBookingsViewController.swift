@@ -34,10 +34,6 @@ class MyBookingsViewController: BaseViewController {
     @objc func fetchBuses() {
         busesList = dataController.getBookings()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
 
 extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -79,16 +75,12 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func showUpdateRatingAlert(bus: Bus) {
-        
-        //*** Add phone number text field  ***//
         let ratingTxtField = { (textField: UITextField) in
             textField.placeholder = Constants.updateAlertPlaceholder
         }
         
-        //*** Add alert controller popup ***//
         self.alertController = Utility.showAlertMessage(title: Constants.updateAlertTitle, message: Constants.updateAlertMessage, viewController: self, cancelButtonTitle: Constants.updateAlertCancel, textField: ratingTxtField)
         
-        //*** Action for save phone number  ***//
         let action = UIAlertAction(title: Constants.updateAlertOK, style: UIAlertActionStyle.default, handler: { [weak self] (alertController) -> Void in
             guard let weakSelf = self else { return }
             guard let ratingStr = weakSelf.alertController?.textFields?.first?.text, let rating = Double(ratingStr), rating >= 0 else {

@@ -14,15 +14,9 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         configureNavBar()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func configureNavBar() {
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.redBusRed, NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20.0, weight: .bold)]
-        //navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.tintColor = UIColor.redBusRed
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.lightNavyColor(), NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20.0, weight: .bold)]
+        navigationController?.navigationBar.tintColor = UIColor.lightNavyColor()
     }
 }

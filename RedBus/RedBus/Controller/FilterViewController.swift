@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FilterViewController: UIViewController {
+class FilterViewController: BaseViewController {
 
     @IBOutlet weak var alertBgView: UIView!
     @IBOutlet weak var ratingImg: UIImageView!
@@ -22,15 +22,15 @@ class FilterViewController: UIViewController {
     @IBOutlet weak var seaterImg: UIImageView!
     @IBOutlet weak var sleeperImg: UIImageView!
     
-    var sortBy: SortBy = .none
+    var sortBy: SortBusesBy = .none
     var busFilterType = BusType(isAc: false, isNonAc: false, isSeater: false, isSleeper: false)
-    var handlerOnDismiss: ((SortBy, BusType) -> ())?
+    var handlerOnDismiss: ((SortBusesBy, BusType) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addShadowAndCornerRadiusForBgView()
-        addSortButtonUI()
-        addFilterButtonUI()
+        addShadowAndCornerRadius()
+        addSortButtonsStack()
+        addFilterButtonsStack()
     }
     
     @IBAction func resetAction(_ sender: UIButton) {
@@ -58,7 +58,7 @@ class FilterViewController: UIViewController {
         } else {
             sortBy = .ratingDescending
         }
-        addSortButtonUI()
+        addSortButtonsStack()
     }
     
     @IBAction func departureAction(_ sender: UIButton) {
@@ -69,7 +69,7 @@ class FilterViewController: UIViewController {
         } else {
             sortBy = .departureTimeAscending
         }
-        addSortButtonUI()
+        addSortButtonsStack()
     }
     
     @IBAction func fareAction(_ sender: UIButton) {
@@ -80,7 +80,7 @@ class FilterViewController: UIViewController {
         } else {
             sortBy = .fareAscending
         }
-        addSortButtonUI()
+        addSortButtonsStack()
     }
     
     @IBAction func acAction(_ sender: UIButton) {
@@ -89,7 +89,7 @@ class FilterViewController: UIViewController {
         } else {
             busFilterType.isAc = true
         }
-        addFilterButtonUI()
+        addFilterButtonsStack()
     }
     
     @IBAction func noAcAction(_ sender: UIButton) {
@@ -98,7 +98,7 @@ class FilterViewController: UIViewController {
         } else {
             busFilterType.isNonAc = true
         }
-        addFilterButtonUI()
+        addFilterButtonsStack()
     }
     
     @IBAction func seaterAction(_ sender: UIButton) {
@@ -107,7 +107,7 @@ class FilterViewController: UIViewController {
         } else {
             busFilterType.isSeater = true
         }
-        addFilterButtonUI()
+        addFilterButtonsStack()
     }
     
     @IBAction func sleeperAction(_ sender: UIButton) {
@@ -116,10 +116,10 @@ class FilterViewController: UIViewController {
         } else {
             busFilterType.isSleeper = true
         }
-        addFilterButtonUI()
+        addFilterButtonsStack()
     }
     
-    func addShadowAndCornerRadiusForBgView() {
+    func addShadowAndCornerRadius() {
         let color = UIColor.lightGray
         let opacity: Float = 0.3
         let offset = CGSize(width: 0, height: 3.0)
@@ -133,39 +133,39 @@ class FilterViewController: UIViewController {
     }
     
     func resetSortButtonUI() {
-        ratingImg.image = Constants.ratingOff
+        ratingImg.image = Constants.ratingDeselected
         ratingArrow.isHidden = true
-        departureImg.image = Constants.timeOff
+        departureImg.image = Constants.depatureDeselected
         departureArrowIng.isHidden = true
-        fareImg.image = Constants.fareOff
+        fareImg.image = Constants.fareDeselected
         fareArrowImg.isHidden = true
     }
     
-    func addSortButtonUI() {
+    func addSortButtonsStack() {
         resetSortButtonUI()
         switch sortBy {
             case .ratingAscending:
-                ratingImg.image = Constants.ratingOn
+                ratingImg.image = Constants.ratingSelected
                 ratingArrow.isHidden = false
                 ratingArrow.image = Constants.arrowUp
             case .ratingDescending:
-                ratingImg.image = Constants.ratingOn
+                ratingImg.image = Constants.ratingSelected
                 ratingArrow.isHidden = false
                 ratingArrow.image = Constants.arrowDown
             case .departureTimeAscending:
-                departureImg.image = Constants.timeOn
+                departureImg.image = Constants.depatureSelected
                 departureArrowIng.isHidden = false
                 departureArrowIng.image = Constants.arrowUp
             case .departureTimeDescending:
-                departureImg.image = Constants.timeOn
+                departureImg.image = Constants.depatureSelected
                 departureArrowIng.isHidden = false
                 departureArrowIng.image = Constants.arrowDown
             case .fareAscending:
-                fareImg.image = Constants.fareOn
+                fareImg.image = Constants.fareSelected
                 fareArrowImg.isHidden = false
                 fareArrowImg.image = Constants.arrowUp
             case .fareDescending:
-                fareImg.image = Constants.fareOn
+                fareImg.image = Constants.fareSelected
                 fareArrowImg.isHidden = false
                 fareArrowImg.image = Constants.arrowDown
             case .none:
@@ -174,35 +174,35 @@ class FilterViewController: UIViewController {
     }
     
     func resetFilterButtonUI() {
-        acImg.image = Constants.acOff
-        nonAcImg.image = Constants.noAccOff
-        seaterImg.image = Constants.seaterOff
-        sleeperImg.image = Constants.sleeperOff
+        acImg.image = Constants.acDeselected
+        nonAcImg.image = Constants.nonACDeselected
+        seaterImg.image = Constants.seaterDeselected
+        sleeperImg.image = Constants.sleeperDeselected
     }
     
-    func addFilterButtonUI() {
+    func addFilterButtonsStack() {
         if busFilterType.isAc {
-            acImg.image = Constants.acOn
+            acImg.image = Constants.acSelected
         } else {
-            acImg.image = Constants.acOff
+            acImg.image = Constants.acDeselected
         }
         
         if busFilterType.isNonAc {
-            nonAcImg.image = Constants.noAccOn
+            nonAcImg.image = Constants.nonACSelected
         } else {
-            nonAcImg.image = Constants.noAccOff
+            nonAcImg.image = Constants.nonACDeselected
         }
         
         if busFilterType.isSeater {
-            seaterImg.image = Constants.seaterOn
+            seaterImg.image = Constants.seaterSelected
         } else {
-            seaterImg.image = Constants.seaterOff
+            seaterImg.image = Constants.seaterDeselected
         }
         
         if busFilterType.isSleeper {
-            sleeperImg.image = Constants.sleeperOn
+            sleeperImg.image = Constants.sleeperSelected
         } else {
-            sleeperImg.image = Constants.sleeperOff
+            sleeperImg.image = Constants.sleeperDeselected
         }
     }
 }
