@@ -7,107 +7,93 @@
 //
 
 import UIKit
-import SwiftSpinner
 
-class BusesListViewController: UIViewController {
+class BusesListViewController: BaseViewController {
 
-    @IBOutlet weak var tblViewBusesList: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+    @IBOutlet weak var errorView: UIView!
     
     var dataController = appDelegate.dataController
-    var fetchBusesService: FetchBusesProtocol!
+    var fetchBusesService: FetchBusesProtocol = FetchBusesService()
     
-    var busesList: [BusDetail] = [] {
+    var busesList: BusesList = BusesList() {
         didSet {
-            tblViewBusesList.reloadData()
+            tableView.reloadData()
         }
-    }
-    
-    var pickupLocation: String!
-    var dropoffLocation: String!
-    var journeyDate: String!
-    
-    func setupWith(pickupLocation: String, dropoffLocation: String, journeyDate: String, fetchBusesService: FetchBusesProtocol) {
-        self.pickupLocation = pickupLocation
-        self.dropoffLocation = dropoffLocation
-        self.journeyDate = journeyDate
-        self.fetchBusesService = fetchBusesService
-    }
-    
-    func setupNavBar() {
-        let filterBtn = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(BusesListViewController.filterBtnClicked))
-        self.navigationItem.rightBarButtonItem = filterBtn
-    }
-    
-    @objc func filterBtnClicked() {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        guard let filterViewController = storyboard.instantiateViewController(withIdentifier: "filterVC") as? FilterViewController else {
-            return
-        }
-        filterViewController.sortFilterDelegate = self
-        filterViewController.modalPresentationStyle = .overCurrentContext
-        present(filterViewController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
-        tblViewBusesList.delegate = self
-        tblViewBusesList.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         fetchBuses()
     }
     
-    @objc func fetchBuses() {
-        SwiftSpinner.show("Please wait... Fetching Buses")
-        fetchBusesService.fetchAllBuses { [weak self] (busesList) in
-            SwiftSpinner.hide()
-            guard let weakSelf = self, let busesList = busesList else {
-                return
+    func setupNavBar() {
+        let filterBarButton = UIBarButtonItem(image: Constants.filterOff, style: .done, target: self, action: #selector(self.presentFilterVC))
+        self.navigationItem.rightBarButtonItem = filterBarButton
+    }
+    
+    @objc func presentFilterVC() {
+        guard let filterVC = storyboard?.instantiateViewController(withIdentifier: Constants.filterVCStoryboardId) as? FilterViewController else {
+            return
+        }
+        filterVC.modalPresentationStyle = .overCurrentContext
+        filterVC.handlerOnDismiss = { (sortBy, busFilterType) in
+            self.busesList.sortBy = sortBy
+            self.busesList.busType = busFilterType
+            self.tableView.reloadData()
+        }
+        filterVC.sortBy = busesList.sortBy
+        if let bFType = busesList.busType {
+            filterVC.busFilterType = bFType
+        }
+        self.present(filterVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func tryAgainAction(_ sender: Any) {
+        self.errorView.isHidden = true
+        self.tableView.isHidden = false
+        fetchBuses()
+    }
+    
+    func fetchBuses() {
+        loader.startAnimating()
+        performOperationInBackground {
+            self.fetchBusesService.fetchAllBuses { [weak self] (busesList) in
+                guard let weakSelf = self else { return }
+                performUIUpdatesOnMain {
+                    weakSelf.loader.stopAnimating()
+                    guard let busesList = busesList else {
+                        weakSelf.errorView.isHidden = false
+                        weakSelf.tableView.isHidden = true
+                        return
+                    }
+                    weakSelf.busesList.allBuses = busesList
+                    weakSelf.tableView.reloadData()
+                }
             }
-            weakSelf.busesList = busesList
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
 
-extension BusesListViewController: SortFilterResultsDelegate {
-    func applySortFilters(sort: String, filter: String) {
-        let AC_Buses_Set: Set<BusDetail> = Set(busesList.filter ({ $0.isAC == true }))
-        let NON_AC_Buses_Set: Set<BusDetail> = Set(busesList.filter ({ $0.isNONAC == true }))
-        let SEATER_Buses_Set: Set<BusDetail> = Set(busesList.filter ({ $0.isSEATER == true }))
-        let SLEEPER_Buses_Set: Set<BusDetail> = Set(busesList.filter ({ $0.isSLEEPER == true }))
-
-        let unionSet: Set<BusDetail> = AC_Buses_Set.union(SLEEPER_Buses_Set)
-        let filteredBusList: [BusDetail] = Array(unionSet)
-        let sortedBusList = filteredBusList.sorted(by: { $0.departureTime < $1.departureTime })
-        
-        /*
-        let departureTimeSortDescriptor = NSSortDescriptor(key: "departureTime", ascending: true)
-        let ratingTimeSortDescriptor = NSSortDescriptor(key: "rating", ascending: true)
-        let fareTimeSortDescriptor = NSSortDescriptor(key: "fare", ascending: true)
-        
-        guard let sortedBusList = (filteredBusList as NSArray).sortedArray(using: [departureTimeSortDescriptor, ratingTimeSortDescriptor, fareTimeSortDescriptor]) as? [BusDetail] else {
-            return
-        }
-        */
-        
-        busesList = sortedBusList
-    }
-}
-
 extension BusesListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return busesList.count
+        return busesList.filteredBuses.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let busCell = tableView.dequeueReusableCell(withIdentifier: "busCell", for: indexPath) as? BusTableViewCell else {
+        guard let busCell = tableView.dequeueReusableCell(withIdentifier: Constants.busCell, for: indexPath) as? BusTableViewCell else {
             return UITableViewCell()
         }
         busCell.selectionStyle = .none
-        busCell.configureCell(busDetail: busesList[indexPath.row])
+        busCell.configureCell(busDetail: busesList.filteredBuses[indexPath.row])
         return busCell
     }
     
@@ -116,12 +102,9 @@ extension BusesListViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        _ = Utility.showAlertMessage(title: "Confirm Booking", message: "Are you sure you want to book at \(busDetail.operatorName)?", viewController: self, okButtonTitle: "Book", okHandler: { [weak self] _ in
+        _ = Utility.showAlertMessage(title: Constants.bookingAlertTitle, message: Constants.bookingAlertMessage, viewController: self, okButtonTitle: Constants.bookingAlertOK, okHandler: { [weak self] _ in
             guard let weakSelf = self else { return }
-            //Go to Edit Account Screen
             weakSelf.dataController.addBus(bus: busDetail)
-        }, cancelButtonTitle: "Dismiss", cancelHandler: nil)
-        
-        //tableView.deselectRow(at: indexPath, animated: true)
+        }, cancelButtonTitle: Constants.bookingAlertCancel, cancelHandler: nil)
     }
 }

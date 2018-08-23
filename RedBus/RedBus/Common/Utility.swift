@@ -9,10 +9,37 @@
 import Foundation
 import UIKit
 
+extension UIColor {
+    
+    @nonobjc class var redBusRed: UIColor {
+        return UIColor(red: 216.0 / 255.0, green: 79.0 / 255.0, blue: 86.0 / 255.0, alpha: 1.0)
+    }
+    
+    @nonobjc class var redBusGreen: UIColor {
+        return UIColor(red: 0.0, green: (210/255), blue: 0.0, alpha: 0.9)
+    }
+    
+    @nonobjc class var redBusYellow: UIColor {
+        return UIColor(red: (237/255), green: (218/255), blue: 0.0, alpha: 0.9)
+    }
+    
+    @nonobjc class var redBusRedDark: UIColor {
+        return UIColor(red: (237/255), green: (28/255), blue: 0.0, alpha: 0.9)
+    }
+    
+    @nonobjc class var blackBrown: UIColor {
+        return UIColor(red: 40.0 / 255.0, green: 35.0 / 255.0, blue: 30.0 / 255.0, alpha: 1.0)
+    }
+}
+
 public extension Date {
     
     public var millisecondsSince1970: Double {
         return Double((self.timeIntervalSince1970 * 1000.0).rounded())
+    }
+    
+    public init(milliseconds: Double) {
+        self = Date(timeIntervalSince1970: (milliseconds / 1000.0))
     }
     
     public func toString(with format:String) -> String? {

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyBookingsViewController: UIViewController {
+class MyBookingsViewController: BaseViewController {
 
     @IBOutlet weak var tblViewBookings: UITableView!
     var alertController: UIAlertController?
@@ -46,11 +46,11 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let bookingCell = tableView.dequeueReusableCell(withIdentifier: "bookingCell", for: indexPath) as? BookingTableViewCell else {
+        guard let bookingCell = tableView.dequeueReusableCell(withIdentifier: Constants.bookingCell, for: indexPath) as? BookingTableViewCell else {
             return UITableViewCell()
         }
         bookingCell.selectionStyle = .none
-        bookingCell.configureCell(bus: busesList[indexPath.row])
+        bookingCell.configureCell(busDetail: busesList[indexPath.row])
         return bookingCell
     }
     
@@ -64,14 +64,14 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            _ = Utility.showAlertMessage(title: "Confirm Delete", message: "Are you sure you want to cancel your booking?", viewController: self, okButtonTitle: "Proceed", okHandler: { [weak self] _ in
+            _ = Utility.showAlertMessage(title: Constants.cancelAlertTitle, message: Constants.cancelAlertMessage, viewController: self, okButtonTitle: Constants.cancelAlertOK, okHandler: { [weak self] _ in
                 guard let weakSelf = self else { return }
                 guard let bookingCell = tableView.cellForRow(at: indexPath) as? BookingTableViewCell, let bus = bookingCell.bus else {
                     return
                 }
                 weakSelf.dataController.deleteBooking(bus: bus)
                 weakSelf.fetchBuses()
-                }, cancelButtonTitle: "Dismiss", cancelHandler: { [weak self] _ in
+                }, cancelButtonTitle: Constants.cancelAlertCancel, cancelHandler: { [weak self] _ in
                     guard let weakSelf = self else { return }
                     weakSelf.tblViewBookings.reloadData()
             })
@@ -82,14 +82,14 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         //*** Add phone number text field  ***//
         let ratingTxtField = { (textField: UITextField) in
-            textField.placeholder = "Enter rating"
+            textField.placeholder = Constants.updateAlertPlaceholder
         }
         
         //*** Add alert controller popup ***//
-        self.alertController = Utility.showAlertMessage(title: "Confirm Update", message: "Are you sure you want to update rating?", viewController: self, cancelButtonTitle: "Dismiss", textField: ratingTxtField)
+        self.alertController = Utility.showAlertMessage(title: Constants.updateAlertTitle, message: Constants.updateAlertMessage, viewController: self, cancelButtonTitle: Constants.updateAlertCancel, textField: ratingTxtField)
         
         //*** Action for save phone number  ***//
-        let action = UIAlertAction(title: "Update", style: UIAlertActionStyle.default, handler: { [weak self] (alertController) -> Void in
+        let action = UIAlertAction(title: Constants.updateAlertOK, style: UIAlertActionStyle.default, handler: { [weak self] (alertController) -> Void in
             guard let weakSelf = self else { return }
             guard let ratingStr = weakSelf.alertController?.textFields?.first?.text, let rating = Double(ratingStr), rating >= 0 else {
                 print("Invalid Rating")

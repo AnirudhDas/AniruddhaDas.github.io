@@ -7,11 +7,11 @@
 //
 
 import Foundation
-import Foundation
 import CoreData
 
+// MARK:- Creates and setups up CoreData Stack.
+
 class DataController {
-    
     let persistentContainer:NSPersistentContainer
     
     var viewContext:NSManagedObjectContext {
@@ -37,7 +37,7 @@ class DataController {
     func load(completion: (() -> Void)? = nil) {
         persistentContainer.loadPersistentStores { storeDescription, error in
             guard error == nil else {
-                fatalError(error!.localizedDescription)
+                fatalError()
             }
             self.autoSaveViewContext()
             self.configureContexts()
@@ -46,34 +46,33 @@ class DataController {
     }
 }
 
-// MARK:- Autosaving
+// MARK:- Save Context
 
 extension DataController {
+    //Manually Save Context
     func saveContext() {
         if viewContext.hasChanges {
             do {
                 try viewContext.save()
-            } catch {
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            } catch let error {
+                fatalError(error.localizedDescription)
             }
         }
     }
     
-    func autoSaveViewContext(interval:TimeInterval = 30) {
+    //Automatically save context
+    func autoSaveViewContext(intervalInSeconds: Int = 30) {
         print("Autosaving")
-        
-        guard interval > 0 else {
-            print("Cannot set negative autosave interval")
-            return
+        guard intervalInSeconds > 0 else {
+            fatalError("Cannot set negative autosave interval")
         }
         
         if viewContext.hasChanges {
             try? viewContext.save()
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + interval) {
-            self.autoSaveViewContext(interval: interval)
+        performOperationOnMainAfterDelay(delayTimeInSeconds: intervalInSeconds) {
+            self.autoSaveViewContext(intervalInSeconds: intervalInSeconds)
         }
     }
 }
@@ -90,10 +89,10 @@ extension DataController {
         object.operatorName = bus.operatorName
         object.rating = bus.rating
         object.busLogoURL = bus.busLogoURL
-        object.isAC = bus.isAC
-        object.isNONAC = bus.isNONAC
-        object.isSEATER = bus.isSEATER
-        object.isSLEEPER = bus.isSLEEPER
+        object.isAC = bus.busType.isAc
+        object.isNONAC = bus.busType.isNonAc
+        object.isSEATER = bus.busType.isSeater
+        object.isSLEEPER = bus.busType.isSleeper
         object.fare = bus.fare
         object.currency = bus.currency
         saveContext()
@@ -111,7 +110,10 @@ extension DataController {
     
     func getBookings() -> [Bus] {
         do {
-            var buses = (try viewContext.fetch(Bus.fetchRequest()) as? [Bus])!
+            guard var buses = try viewContext.fetch(Bus.fetchRequest()) as? [Bus] else {
+                return []
+            }
+            //Sort to get the latest ride first
             buses.sort(by: { $0.departureTime < $1.departureTime })
             return buses
         } catch {

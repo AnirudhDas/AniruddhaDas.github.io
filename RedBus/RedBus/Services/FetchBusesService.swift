@@ -21,21 +21,21 @@ protocol FetchBusesProtocol {
  */
 class FetchBusesService: FetchBusesProtocol {
     func fetchAllBuses(completionBlock: @escaping (_ response: [BusDetail]?) -> Void) {
-        AlamofireConfig.shared.manager.request(ServerConfiguration.apiRedBusFetchBusUrl)
+        AlamofireConfig.shared.manager.request(ServerConfiguration.Request.apiFetchBusUrl)
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 switch response.result {
                 case .success:
                     let json = JSON(data: response.data!)
                     //print("Response: \(json)")
-                    guard json != JSON.null, let RIN = json["RIN"].array, !RIN.isEmpty else {
+                    guard json != JSON.null, let RIN = json[ServerConfiguration.Response.rin].array, !RIN.isEmpty else {
                         completionBlock(nil)
                         return
                     }
                     var busesList: [BusDetail] = []
-                    let busLogoBaseURL: String? = json["blu"].string
+                    let busLogoBaseURL: String? = json[ServerConfiguration.Response.blu].string
                     RIN.forEach({ (item) in
-                        if let InvList = item["InvList"].array {
+                        if let InvList = item[ServerConfiguration.Response.invList].array {
                             for bus in InvList {
                                 if let busDetail = BusDetail(bus, logoBaseURL: busLogoBaseURL) {
                                     busesList.append(busDetail)

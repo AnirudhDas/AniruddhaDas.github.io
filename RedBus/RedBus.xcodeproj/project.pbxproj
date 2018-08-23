@@ -10,8 +10,10 @@
 		8F1730C4212D5CBD00CB4285 /* RedBus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730C2212D5CBD00CB4285 /* RedBus.xcdatamodeld */; };
 		8F1730C6212D78FA00CB4285 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730C5212D78FA00CB4285 /* DataController.swift */; };
 		8F1730C8212DAF6D00CB4285 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730C7212DAF6D00CB4285 /* BookingTableViewCell.swift */; };
+		8F1730D3212DCEE400CB4285 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730D2212DCEE400CB4285 /* BaseViewController.swift */; };
+		8F1730D5212DD47400CB4285 /* BusesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730D4212DD47400CB4285 /* BusesList.swift */; };
+		8F1730D7212DE82D00CB4285 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1730D6212DE82D00CB4285 /* GCDBlackBox.swift */; };
 		8F1EE71D212C365C00CF4917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1EE71C212C365C00CF4917 /* AppDelegate.swift */; };
-		8F1EE71F212C365C00CF4917 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1EE71E212C365C00CF4917 /* HomeViewController.swift */; };
 		8F1EE722212C365C00CF4917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1EE720212C365C00CF4917 /* Main.storyboard */; };
 		8F1EE724212C365D00CF4917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1EE723212C365D00CF4917 /* Assets.xcassets */; };
 		8F1EE727212C365D00CF4917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1EE725212C365D00CF4917 /* LaunchScreen.storyboard */; };
@@ -33,9 +35,11 @@
 		8F1730C3212D5CBD00CB4285 /* RedBus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedBus.xcdatamodel; sourceTree = "<group>"; };
 		8F1730C5212D78FA00CB4285 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		8F1730C7212DAF6D00CB4285 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		8F1730D2212DCEE400CB4285 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8F1730D4212DD47400CB4285 /* BusesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusesList.swift; sourceTree = "<group>"; };
+		8F1730D6212DE82D00CB4285 /* GCDBlackBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 		8F1EE719212C365C00CF4917 /* RedBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1EE71C212C365C00CF4917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F1EE71E212C365C00CF4917 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F1EE721212C365C00CF4917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F1EE723212C365D00CF4917 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F1EE726212C365D00CF4917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,10 +81,10 @@
 		8F1730CA212DC0D000CB4285 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8F1EE71E212C365C00CF4917 /* HomeViewController.swift */,
 				8F1EE730212C866F00CF4917 /* BusesListViewController.swift */,
 				8F1EE732212C869600CF4917 /* MyBookingsViewController.swift */,
 				8F1EE740212D17B800CF4917 /* FilterViewController.swift */,
+				8F1730D2212DCEE400CB4285 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8F1EE736212C90D700CF4917 /* BusDetail.swift */,
+				8F1730D4212DD47400CB4285 /* BusesList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				8F1EE73A212C988200CF4917 /* Constants.swift */,
 				8F1EE73C212C98BA00CF4917 /* ServerConfiguration.swift */,
 				8F1EE73E212D14FA00CF4917 /* Utility.swift */,
+				8F1730D6212DE82D00CB4285 /* GCDBlackBox.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -323,15 +329,17 @@
 				8F1EE73F212D14FA00CF4917 /* Utility.swift in Sources */,
 				8F1EE731212C866F00CF4917 /* BusesListViewController.swift in Sources */,
 				8F1730C8212DAF6D00CB4285 /* BookingTableViewCell.swift in Sources */,
-				8F1EE71F212C365C00CF4917 /* HomeViewController.swift in Sources */,
+				8F1730D7212DE82D00CB4285 /* GCDBlackBox.swift in Sources */,
 				8F1EE741212D17B800CF4917 /* FilterViewController.swift in Sources */,
 				8F1730C6212D78FA00CB4285 /* DataController.swift in Sources */,
 				8F1EE71D212C365C00CF4917 /* AppDelegate.swift in Sources */,
 				8F1730C4212D5CBD00CB4285 /* RedBus.xcdatamodeld in Sources */,
 				8F1EE737212C90D700CF4917 /* BusDetail.swift in Sources */,
 				8F1EE739212C985A00CF4917 /* AlamofireConfig.swift in Sources */,
+				8F1730D3212DCEE400CB4285 /* BaseViewController.swift in Sources */,
 				8F1EE733212C869600CF4917 /* MyBookingsViewController.swift in Sources */,
 				8F1EE73B212C988200CF4917 /* Constants.swift in Sources */,
+				8F1730D5212DD47400CB4285 /* BusesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,6 @@
         <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Bus" positionX="-63" positionY="-18" width="128" height="238"/>
+        <element name="Bus" positionX="-63" positionY="-18" width="128" height="240"/>
     </elements>
 </model>

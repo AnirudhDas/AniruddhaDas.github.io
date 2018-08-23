@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Singleton Reference to access dataController
 let appDelegate = (UIApplication.shared.delegate as? AppDelegate)!
 
 @UIApplicationMain
