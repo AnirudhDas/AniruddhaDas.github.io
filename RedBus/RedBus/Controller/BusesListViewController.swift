@@ -37,10 +37,10 @@ class BusesListViewController: BaseViewController {
     }
     
     @objc func presentFilterVC() {
-        guard let filterVC = storyboard?.instantiateViewController(withIdentifier: Constants.filterVCStoryboardId) as? FilterViewController, !busesList.filteredBuses.isEmpty else {
+        guard let filterVC = storyboard?.instantiateViewController(withIdentifier: Constants.filterVCStoryboardId) as? FilterViewController else {
             return
         }
-        filterVC.modalPresentationStyle = .overCurrentContext
+        filterVC.modalPresentationStyle = .overFullScreen
         filterVC.sortBy = busesList.sortBy
         if let bFType = busesList.busType {
             filterVC.busFilterType = bFType

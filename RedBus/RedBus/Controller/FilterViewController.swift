@@ -21,6 +21,7 @@ class FilterViewController: BaseViewController {
     @IBOutlet weak var nonAcImg: UIImageView!
     @IBOutlet weak var seaterImg: UIImageView!
     @IBOutlet weak var sleeperImg: UIImageView!
+    @IBOutlet weak var applyBtn: UIButton!
     
     var sortBy: SortBusesBy = .none
     var busFilterType = BusType(isAc: false, isNonAc: false, isSeater: false, isSleeper: false)
@@ -130,6 +131,8 @@ class FilterViewController: BaseViewController {
         alertBgView.layer.shadowOpacity = opacity
         alertBgView.layer.shadowOffset = offset
         alertBgView.layer.shadowRadius = radius
+        applyBtn.layer.cornerRadius = radius
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
     }
     
     func resetSortButtonUI() {
