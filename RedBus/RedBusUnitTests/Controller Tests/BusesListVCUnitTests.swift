@@ -26,26 +26,26 @@ class BusesListVCUnitTests: XCTestCase {
 // MARK: - Tests for Collection View
 extension BusesListVCUnitTests {
     func testTableViewShouldNotBeNil() {
-        XCTAssertNotNil(busesListVC.tableView)
+        XCTAssertNotNil(busesListVC.busListTblView)
     }
     
     func testTableViewDataSourceAndDelegateShouldNotBeNil() {
-        XCTAssertNotNil(busesListVC.tableView.dataSource)
-        XCTAssertNotNil(busesListVC.tableView.delegate)
+        XCTAssertNotNil(busesListVC.busListTblView.dataSource)
+        XCTAssertNotNil(busesListVC.busListTblView.delegate)
     }
     
     func testTableViewIsSetAsDelegateAndDataSource() {
-        XCTAssertNotNil(busesListVC.tableView.dataSource is BusesListViewController)
-        XCTAssertNotNil(busesListVC.tableView.delegate is BusesListViewController)
+        XCTAssertNotNil(busesListVC.busListTblView.dataSource is BusesListViewController)
+        XCTAssertNotNil(busesListVC.busListTblView.delegate is BusesListViewController)
     }
     
     func testTableViewHasSingleDataServiceObject() {
-        XCTAssertEqual(busesListVC.tableView.dataSource is BusesListViewController, busesListVC.tableView.delegate is BusesListViewController)
+        XCTAssertEqual(busesListVC.busListTblView.dataSource is BusesListViewController, busesListVC.busListTblView.delegate is BusesListViewController)
     }
     
     func testNumberOfSections() {
-        XCTAssertEqual(busesListVC.tableView.numberOfSections, 1)
-        XCTAssertNotEqual(busesListVC.tableView.numberOfSections, 2)
+        XCTAssertEqual(busesListVC.busListTblView.numberOfSections, 1)
+        XCTAssertNotEqual(busesListVC.busListTblView.numberOfSections, 2)
     }
     
     func testNumberOfItemsInSection() {
@@ -53,22 +53,22 @@ extension BusesListVCUnitTests {
         guard let path1 = bundle.path(forResource: "Bus1", ofType: "json"), let data1 = try? Data.init(contentsOf: URL.init(fileURLWithPath: path1)), let path2 = bundle.path(forResource: "Bus2", ofType: "json"), let data2 = try? Data.init(contentsOf: URL.init(fileURLWithPath: path2)) else {
            return
         }
-        busesListVC.tableView.isHidden = false
+        busesListVC.busListTblView.isHidden = false
         let json1 = JSON(data: data1)
         let json2 = JSON(data: data2)
         let bus1: BusDetail! = BusDetail(json1, logoBaseURL: "busLogoBaseURL")
         let bus2: BusDetail! = BusDetail(json2, logoBaseURL: "busLogoBaseURL")
         
-        busesListVC.busesList.allBuses = [bus1]
+        busesListVC.busesDataSource.allBuses = [bus1]
         
-        busesListVC.tableView.reloadData()
+        busesListVC.busListTblView.reloadData()
         
-        XCTAssertEqual(busesListVC.tableView.numberOfRows(inSection: 0), 1)
+        XCTAssertEqual(busesListVC.busListTblView.numberOfRows(inSection: 0), 1)
         
-        busesListVC.busesList.allBuses = [bus1, bus2]
+        busesListVC.busesDataSource.allBuses = [bus1, bus2]
         
-        busesListVC.tableView.reloadData()
-        XCTAssertEqual(busesListVC.tableView.numberOfRows(inSection: 0), 2)
+        busesListVC.busListTblView.reloadData()
+        XCTAssertEqual(busesListVC.busListTblView.numberOfRows(inSection: 0), 2)
     }
     
     func testCellForItemAtIndexPathReturnsImageCollectionViewCell() {
@@ -76,15 +76,15 @@ extension BusesListVCUnitTests {
         guard let path1 = bundle.path(forResource: "Bus1", ofType: "json"), let data1 = try? Data.init(contentsOf: URL.init(fileURLWithPath: path1)) else {
             return
         }
-        busesListVC.tableView.isHidden = false
+        busesListVC.busListTblView.isHidden = false
         let json1 = JSON(data: data1)
         let bus1: BusDetail! = BusDetail(json1, logoBaseURL: "busLogoBaseURL")
         
-        busesListVC.busesList.allBuses = [bus1]
+        busesListVC.busesDataSource.allBuses = [bus1]
         
-        busesListVC.tableView.reloadData()
+        busesListVC.busListTblView.reloadData()
         
-        let cellQueried = busesListVC.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        let cellQueried = busesListVC.busListTblView.cellForRow(at: IndexPath(row: 0, section: 0))
         XCTAssertFalse(cellQueried is MockBusTableViewCell)
     }
 }
