@@ -1,0 +1,96 @@
+
+{
+    "Bc": {
+        "IsAc": true,
+        "IsNonAc": false,
+        "IsSeater": true,
+        "IsSleeper": false
+    },
+    "sid": 192939,
+    "did": 192913,
+    "src": "Singapore",
+    "dst": "Kuala lumpur",
+    "bt": "SVIP",
+    "sn": "",
+    "cp": "",
+    "rt": {
+        "totRt": 2.2,
+        "Rt": {
+            "Ct": "11"
+        }
+    },
+    "oprt": null,
+    "dt": "01/12/2017 11:59:00 PM",
+    "dm": 1439,
+    "at": null,
+    "am": 0,
+    "dur": 0,
+    "BPLst": null,
+    "DPLst": null,
+    "BPLt": [
+             {
+             "BpId": 249809,
+             "BpTime": 1439,
+             "BPTimeStr": "23:59"
+             }
+             ],
+    "DPLt": [
+             {
+             "BpId": 249830,
+             "BpTime": 0,
+             "BPTimeStr": ""
+             }
+             ],
+    "Issa": true,
+    "Iscs": false,
+    "Islt": false,
+    "Isob": false,
+    "amnt": [],
+    "tz": "UTC+08:00",
+    "atz": "",
+    "dtz": "",
+    "isbd": false,
+    "si": 0,
+    "BSI": 0,
+    "vt": "bus",
+    "FrLst": [
+              60
+              ],
+    "minfr": 60,
+    "oid": 16188,
+    "rid": 97313,
+    "nsa": 26,
+    "nusa": 0,
+    "ismt": true,
+    "IsSO": false,
+    "IsSpF": false,
+    "Tvs": "Starmart Express",
+    "sort": "1",
+    "p42": {
+        "rgb": 0,
+        "restStopList": [],
+        "boReqParm": [
+                      {
+                      "isBpDpSl": false,
+                      "isBpDpTb": false
+                      }
+                      ],
+        "LocationSearchParams": null,
+        "busImageCount": 10,
+        "zcf": null,
+        "sponsor": null,
+        "viaRoutes": ""
+    },
+    "spt": 10,
+    "WnSt": 18,
+    "bs": "-1",
+    "cur": "SGD",
+    "Cmpg": null,
+    "TimeOfDay": "Evening",
+    "lp": "sgp/logo/16188.png",
+    "IGId": 0,
+    "IsPC": false,
+    "busTypeId": 600,
+    "isRsc": false,
+    "rc": ""
+    }

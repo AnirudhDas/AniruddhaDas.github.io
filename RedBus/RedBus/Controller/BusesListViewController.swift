@@ -15,7 +15,7 @@ class BusesListViewController: BaseViewController {
     @IBOutlet weak var errorView: UIView!
     
     var dataController = appDelegate.dataController
-    var fetchBusesService: FetchBusesProtocol = FetchBusesService()
+    var fetchBusesService: FetchBusesProtocol = FetchBusesService(apiURL: ServerConfiguration.Request.apiFetchBusUrl)
     
     var busesList: BusesList = BusesList() {
         didSet {
@@ -62,7 +62,7 @@ class BusesListViewController: BaseViewController {
     func fetchBuses() {
         loader.startAnimating()
         performOperationInBackground {
-            self.fetchBusesService.fetchAllBuses { [weak self] (busesList) in
+            _ = self.fetchBusesService.fetchAllBuses { [weak self] (busesList) in
                 guard let weakSelf = self else { return }
                 performUIUpdatesOnMain {
                     weakSelf.loader.stopAnimating()
@@ -100,7 +100,7 @@ extension BusesListViewController: UITableViewDelegate, UITableViewDataSource {
         
         _ = Utility.showAlertMessage(title: Constants.bookingAlertTitle, message: Constants.bookingAlertMessage + " with \(busCell.busDetail.operatorName)?", viewController: self, okButtonTitle: Constants.bookingAlertOK, okHandler: { [weak self] _ in
             guard let weakSelf = self else { return }
-            weakSelf.dataController.addBus(bus: busDetail)
+            weakSelf.dataController.addBooking(bus: busDetail)
         }, cancelButtonTitle: Constants.bookingAlertCancel, cancelHandler: nil)
     }
 }

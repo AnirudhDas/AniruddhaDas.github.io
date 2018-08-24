@@ -224,7 +224,7 @@
         <!--Book your Ride-->
         <scene sceneID="NVQ-3b-j7s">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="32t-Si-jB9" customClass="BusesListViewController" customModule="RedBus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="busesListVC" automaticallyAdjustsScrollViewInsets="NO" id="32t-Si-jB9" customClass="BusesListViewController" customModule="RedBus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afJ-nz-ivA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -44,6 +44,7 @@ struct Constants {
     public static let filterVCStoryboardId = "filterVC"
     public static let busCell = "busCell"
     public static let bookingCell = "bookingCell"
+    public static let busesListVC = "busesListVC"
     
     //Alerts
     public static let bookingAlertTitle = "Confirm Booking"

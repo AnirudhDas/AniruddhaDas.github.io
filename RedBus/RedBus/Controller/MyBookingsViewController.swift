@@ -32,7 +32,7 @@ class MyBookingsViewController: BaseViewController {
     }
     
     @objc func fetchBuses() {
-        busesList = dataController.getBookings()
+        busesList = dataController.getAllBookings()
     }
 }
 

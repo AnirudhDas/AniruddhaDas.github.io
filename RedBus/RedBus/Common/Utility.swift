@@ -81,6 +81,7 @@ public extension String {
 @objc public class Utility: NSObject {
     
 }
+
 extension Utility {
     /**
      Method to show an alert with attributed message.

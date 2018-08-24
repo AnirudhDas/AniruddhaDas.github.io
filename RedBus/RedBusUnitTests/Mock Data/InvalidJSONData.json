@@ -1,0 +1,2543 @@
+
+{
+    "RUN": [
+            {
+            "InvList": [
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "",
+                        "cp": "",
+                        "rt": {
+                        "totRt": 2.2,
+                        "Rt": {
+                        "Ct": "11"
+                        }
+                        },
+                        "oprt": null,
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 249809,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 249830,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 0,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  60
+                                  ],
+                        "minfr": 60,
+                        "oid": 16188,
+                        "rid": 97313,
+                        "nsa": 26,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Starmart Express",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": 10,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 18,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16188.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "",
+                        "cp": "",
+                        "rt": {
+                        "totRt": 3.6,
+                        "Rt": {
+                        "Ct": "20"
+                        }
+                        },
+                        "oprt": null,
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 249809,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 249829,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 0,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  50
+                                  ],
+                        "minfr": 50,
+                        "oid": 16188,
+                        "rid": 97316,
+                        "nsa": 14,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Starmart Express",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": 10,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 7,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16188.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Kuala Lumpur",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": "02/12/2017 05:11:00 AM",
+                        "am": 311,
+                        "dur": 312,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250051,
+                                 "BpTime": 311,
+                                 "BPTimeStr": "05:11"
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 4009211,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 101910,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 0,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": "02/12/2017 05:12:00 AM",
+                        "am": 312,
+                        "dur": 313,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 312,
+                                 "BPTimeStr": "05:12"
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 4009211,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 102008,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 0,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": "02/12/2017 05:04:00 AM",
+                        "am": 304,
+                        "dur": 305,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250063,
+                                 "BpTime": 304,
+                                 "BPTimeStr": "05:04"
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 4009211,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 102061,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 0,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "Jurong East-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "-1",
+                        "Ct": "No Ratings"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250731,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250505,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3929855,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16237,
+                        "rid": 127492,
+                        "nsa": 11,
+                        "nusa": 0,
+                        "ismt": false,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "WTS Travel City Holidays",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 7,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16237.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "Jurong East-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "-1",
+                        "Ct": "No Ratings"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250731,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250504,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3929855,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16237,
+                        "rid": 127493,
+                        "nsa": 10,
+                        "nusa": 0,
+                        "ismt": false,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "WTS Travel City Holidays",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 7,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16237.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Golden Mile-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": 3.1,
+                        "Rt": {
+                        "Ct": "7"
+                        }
+                        },
+                        "oprt": null,
+                        "dt": "01/12/2017 11:30:00 PM",
+                        "dm": 1410,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250526,
+                                 "BpTime": 1410,
+                                 "BPTimeStr": "23:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250529,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3907804,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  30
+                                  ],
+                        "minfr": 30,
+                        "oid": 16238,
+                        "rid": 132793,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": false,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Season express",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16238.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Golden Mile-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": 2.5,
+                        "Rt": {
+                        "Ct": "6"
+                        }
+                        },
+                        "oprt": null,
+                        "dt": "01/12/2017 11:30:00 PM",
+                        "dm": 1410,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250526,
+                                 "BpTime": 1410,
+                                 "BPTimeStr": "23:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250530,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3907804,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  30
+                                  ],
+                        "minfr": 30,
+                        "oid": 16238,
+                        "rid": 132796,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": false,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Season express",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16238.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "2300PM_GMC_SEREMBAN_TBS_BERJAYA [FRI Only]",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "3.8",
+                        "Ct": "5"
+                        },
+                        "dt": "01/12/2017 11:00:00 PM",
+                        "dm": 1380,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 249746,
+                                 "BpTime": 1380,
+                                 "BPTimeStr": "23:00"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 249740,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 0,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  36.5
+                                  ],
+                        "minfr": 36.5,
+                        "oid": 16177,
+                        "rid": 95534,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "The One Travel & Tours",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 0,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16177.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:00:00 PM",
+                        "dm": 1320,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1320,
+                                 "BPTimeStr": "22:00"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250063,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 168121,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:30:00 PM",
+                        "dm": 1410,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1410,
+                                 "BPTimeStr": "23:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250063,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 168123,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:30:00 PM",
+                        "dm": 1350,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1350,
+                                 "BPTimeStr": "22:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 169384,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:30:00 PM",
+                        "dm": 1350,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1350,
+                                 "BPTimeStr": "22:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250063,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 169479,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:30:00 PM",
+                        "dm": 1350,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1350,
+                                 "BPTimeStr": "22:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3877848,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 169778,
+                        "nsa": 2,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 0,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-Kuala Lumpur",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:00:00 PM",
+                        "dm": 1320,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1320,
+                                 "BPTimeStr": "22:00"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250051,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 169876,
+                        "nsa": 6,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 5,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:00:00 PM",
+                        "dm": 1320,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1320,
+                                 "BPTimeStr": "22:00"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 169877,
+                        "nsa": 4,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 3,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-Kuala Lumpur",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:30:00 PM",
+                        "dm": 1410,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1410,
+                                 "BPTimeStr": "23:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250051,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 169879,
+                        "nsa": 5,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 3,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Kovan Hub-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:30:00 PM",
+                        "dm": 1410,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250059,
+                                 "BpTime": 1410,
+                                 "BPTimeStr": "23:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 169880,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Kuala Lumpur",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 10:30:00 PM",
+                        "dm": 1350,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1350,
+                                 "BPTimeStr": "22:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250051,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3928778,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  31
+                                  ],
+                        "minfr": 31,
+                        "oid": 16226,
+                        "rid": 170028,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "Kitchener Complex-Berjaya Times Square",
+                        "cp": "0:24:100:0;24:72:80:0;72:120:60:0;120:-1:40:0;",
+                        "rt": {
+                        "totRt": 3.3,
+                        "Rt": {
+                        "Ct": "5"
+                        }
+                        },
+                        "oprt": null,
+                        "dt": "01/12/2017 10:30:00 PM",
+                        "dm": 1350,
+                        "at": "02/12/2017 02:23:00 AM",
+                        "am": 143,
+                        "dur": 233,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250734,
+                                 "BpTime": 1350,
+                                 "BPTimeStr": "22:30"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 249198,
+                                 "BpTime": 143,
+                                 "BPTimeStr": "02:23"
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 4005665,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  30
+                                  ],
+                        "minfr": 30,
+                        "oid": 15001,
+                        "rid": 22386,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Transtar Travel Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": 5,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 15,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/15001.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "SVIP",
+                        "sn": "",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "3.1",
+                        "Ct": "9"
+                        },
+                        "dt": "01/12/2017 11:59:00 PM",
+                        "dm": 1439,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 249809,
+                                 "BpTime": 1439,
+                                 "BPTimeStr": "23:59"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 249829,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 0,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  60
+                                  ],
+                        "minfr": 60,
+                        "oid": 16188,
+                        "rid": 179190,
+                        "nsa": 26,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Starmart Express",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": 10,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 18,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16188.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 600,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "VIP",
+                        "sn": "SYSTB10PM",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.7",
+                        "Ct": "5"
+                        },
+                        "dt": "01/12/2017 10:00:00 PM",
+                        "dm": 1320,
+                        "at": "02/12/2017 04:00:00 AM",
+                        "am": 240,
+                        "dur": 360,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 8981,
+                                 "BpTime": 1320,
+                                 "BPTimeStr": "22:00"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 8983,
+                                 "BpTime": 240,
+                                 "BPTimeStr": "04:00"
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 0,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  30.86
+                                  ],
+                        "minfr": 30.86,
+                        "oid": 15243,
+                        "rid": 27577,
+                        "nsa": 7,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "Eltabina Jaya",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 4,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/15243.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 603,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Berjaya Times Square",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:58:00 PM",
+                        "dm": 1438,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1438,
+                                 "BPTimeStr": "23:58"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250067,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 181692,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-Kuala Lumpur",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:58:00 PM",
+                        "dm": 1438,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1438,
+                                 "BPTimeStr": "23:58"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250051,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 181805,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        },
+                        {
+                        "Bc": {
+                        "IsAc": true,
+                        "IsNonAc": false,
+                        "IsSeater": true,
+                        "IsSleeper": false
+                        },
+                        "sid": 192939,
+                        "did": 192913,
+                        "src": "Singapore",
+                        "dst": "Kuala lumpur",
+                        "bt": "Executive",
+                        "sn": "Singapore-TBS",
+                        "cp": "",
+                        "rt": {
+                        "totRt": -1,
+                        "Rt": {
+                        "Ct": ""
+                        }
+                        },
+                        "oprt": {
+                        "totRt": "4.2",
+                        "Ct": "7"
+                        },
+                        "dt": "01/12/2017 11:58:00 PM",
+                        "dm": 1438,
+                        "at": null,
+                        "am": 0,
+                        "dur": 0,
+                        "BPLst": null,
+                        "DPLst": null,
+                        "BPLt": [
+                                 {
+                                 "BpId": 250047,
+                                 "BpTime": 1438,
+                                 "BPTimeStr": "23:58"
+                                 }
+                                 ],
+                        "DPLt": [
+                                 {
+                                 "BpId": 250063,
+                                 "BpTime": 0,
+                                 "BPTimeStr": ""
+                                 }
+                                 ],
+                        "Issa": true,
+                        "Iscs": false,
+                        "Islt": false,
+                        "Isob": false,
+                        "amnt": [],
+                        "tz": "UTC+08:00",
+                        "atz": "",
+                        "dtz": "",
+                        "isbd": false,
+                        "si": 3931496,
+                        "BSI": 0,
+                        "vt": "bus",
+                        "FrLst": [
+                                  35
+                                  ],
+                        "minfr": 35,
+                        "oid": 16226,
+                        "rid": 182385,
+                        "nsa": 1,
+                        "nusa": 0,
+                        "ismt": true,
+                        "IsSO": false,
+                        "IsSpF": false,
+                        "Tvs": "KKKL Travel & Tours Pte Ltd",
+                        "sort": "1",
+                        "p42": {
+                        "rgb": 0,
+                        "restStopList": [],
+                        "boReqParm": [
+                                      {
+                                      "isBpDpSl": false,
+                                      "isBpDpTb": false
+                                      }
+                                      ],
+                        "LocationSearchParams": null,
+                        "busImageCount": -1,
+                        "zcf": null,
+                        "sponsor": null,
+                        "viaRoutes": ""
+                        },
+                        "spt": 10,
+                        "WnSt": 1,
+                        "bs": "-1",
+                        "cur": "SGD",
+                        "Cmpg": null,
+                        "TimeOfDay": "Evening",
+                        "lp": "sgp/logo/16226.png",
+                        "IGId": 0,
+                        "IsPC": false,
+                        "busTypeId": 601,
+                        "isRsc": false,
+                        "rc": ""
+                        }
+                        ]
+            }
+            ],
+    "blu": "http://origin-st.redbus.in/buslogos/country/"
+}

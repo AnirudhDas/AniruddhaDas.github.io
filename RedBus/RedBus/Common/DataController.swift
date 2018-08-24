@@ -14,7 +14,7 @@ import CoreData
 class DataController {
     let persistentContainer:NSPersistentContainer
     
-    var viewContext:NSManagedObjectContext {
+    var viewContext: NSManagedObjectContext {
         return persistentContainer.viewContext
     }
     
@@ -80,8 +80,9 @@ extension DataController {
 // MARK:- CRUD Operations
 
 extension DataController {
-    func addBus(bus: BusDetail) {
+    func addBooking(bus: BusDetail) {
         let object: Bus = Bus(context: viewContext)
+        object.busId = Int64(bus.busId)
         object.source = bus.source
         object.destination = bus.destination
         object.departureTime = bus.departureTime
@@ -108,7 +109,24 @@ extension DataController {
         saveContext()
     }
     
-    func getBookings() -> [Bus] {
+    func getBus(bus: BusDetail) -> Bus? {
+        do {
+            let bookingArr = try viewContext.fetch(Bus.fetchRequest()) as? [Bus]
+            guard let bookings = bookingArr, !bookings.isEmpty else {
+                return nil
+            }
+            for booking in bookings {
+                if booking.busId == bus.busId {
+                    return booking
+                }
+            }
+            return nil
+        } catch {
+            return nil
+        }
+    }
+    
+    func getAllBookings() -> [Bus] {
         do {
             guard var buses = try viewContext.fetch(Bus.fetchRequest()) as? [Bus] else {
                 return []
@@ -119,5 +137,12 @@ extension DataController {
         } catch {
             return []
         }
+    }
+    
+    //delete all bookings
+    func cleanUpCoreData() {
+        let fetchRequestBus: NSFetchRequest<Bus> = Bus.fetchRequest()
+        let deleteRequestBus = NSBatchDeleteRequest(fetchRequest: fetchRequestBus as! NSFetchRequest<NSFetchRequestResult>)
+        let _ = try? viewContext.execute(deleteRequestBus)
     }
 }

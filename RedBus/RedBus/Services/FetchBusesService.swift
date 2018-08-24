@@ -8,17 +8,27 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
+/**
+ FetchBusesProtocol for Mocking Service
+ */
 protocol FetchBusesProtocol {
-    func fetchAllBuses(completionBlock: @escaping (_ response: [BusDetail]?) -> Void)
+    func fetchAllBuses(completionBlock: @escaping (_ response: [BusDetail]?) -> Void) -> DataRequest?
 }
 
 /**
  Fetches response and parses response
  */
 class FetchBusesService: FetchBusesProtocol {
-    func fetchAllBuses(completionBlock: @escaping (_ response: [BusDetail]?) -> Void) {
-        AlamofireConfig.shared.manager.request(ServerConfiguration.Request.apiFetchBusUrl)
+    var apiURL: String
+    
+    init(apiURL: String) {
+        self.apiURL = apiURL
+    }
+    
+    func fetchAllBuses(completionBlock: @escaping (_ response: [BusDetail]?) -> Void) -> DataRequest? {
+        return AlamofireConfig.shared.manager.request(apiURL)
             .validate(statusCode: 200..<300)
             .responseJSON { response in
                 switch response.result {
