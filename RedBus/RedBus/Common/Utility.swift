@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+ Defines custom colors
+ */
 extension UIColor {
     public static func ratingRed() -> UIColor {
         return UIColor(red:201/255, green:87/255, blue:87/255, alpha:1.00)
@@ -52,6 +55,23 @@ extension UIColor {
     }
 }
 
+/**
+ Adds shadow to a view
+ */
+public extension UIView {
+    public func addShadow() {
+        self.layer.cornerRadius = 3.0
+        self.layer.masksToBounds = false
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 0, height: 0.3)
+        self.layer.shadowRadius = 3.0
+    }
+}
+
+/**
+ Converts Date in Date format to String format
+ */
 public extension Date {
     public var millisecondsSince1970: Double {
         return Double((self.timeIntervalSince1970 * 1000.0).rounded())
@@ -69,6 +89,9 @@ public extension Date {
     }
 }
 
+/**
+ Converts Date in String format to Date format
+*/
 public extension String {
     public func toDate(format:String) -> Date? {
         let formatter = DateFormatter()

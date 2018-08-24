@@ -245,7 +245,7 @@
                                             <color key="titleColor" red="0.086274509799999996" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="tryAgainAction:" destination="32t-Si-jB9" eventType="touchUpInside" id="NcQ-2T-2oJ"/>
+                                            <action selector="retryBtnClicked:" destination="32t-Si-jB9" eventType="touchUpInside" id="Hal-ms-hgM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -445,9 +445,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Book your Ride" id="ibg-Lx-p6J"/>
                     <connections>
+                        <outlet property="busListTblView" destination="fOI-p4-6cY" id="NjI-xg-yi5"/>
+                        <outlet property="errorLabel" destination="Jfe-1h-sps" id="XwV-9C-9Tf"/>
                         <outlet property="errorView" destination="j2g-37-5cR" id="IOL-p2-rih"/>
-                        <outlet property="loader" destination="lGZ-Ih-rkY" id="SJV-7Y-3eh"/>
-                        <outlet property="tableView" destination="fOI-p4-6cY" id="ZeB-CY-l9G"/>
+                        <outlet property="retryBtn" destination="Bou-Zm-PVG" id="IPc-Pq-s9N"/>
+                        <outlet property="spinner" destination="lGZ-Ih-rkY" id="lAR-D0-5CK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snr-tp-TAU" sceneMemberID="firstResponder"/>
@@ -475,7 +477,7 @@
                                             <color key="titleColor" red="0.086274509799999996" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="dismissAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="CVA-Gc-hNH"/>
+                                            <action selector="cancelBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="ig4-r9-04c"/>
                                         </connections>
                                     </button>
                                     <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ahO-vD-vq4">
@@ -496,7 +498,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="applyAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="UwC-32-lNb"/>
+                                            <action selector="applyBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="XDV-tx-Zmh"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SORT BY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k64-4O-ZTw">
@@ -536,7 +538,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <connections>
-                                                            <action selector="ratingAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="wmY-jO-0hm"/>
+                                                            <action selector="ratingBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="vzp-xq-w2F"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -579,7 +581,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWn-zd-4bj">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <connections>
-                                                            <action selector="departureAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="bzo-rR-Z0F"/>
+                                                            <action selector="departureTimeBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="Fwu-Ra-Yo0"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -626,7 +628,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-KZ-WHh">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <connections>
-                                                            <action selector="fareAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="NBp-LW-EEk"/>
+                                                            <action selector="fareBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="Uhe-au-niN"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -682,7 +684,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <connections>
-                                                                    <action selector="acAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="fOP-cz-Ohh"/>
+                                                                    <action selector="acBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="Lt3-uy-bge"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -717,7 +719,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <connections>
-                                                                    <action selector="noAcAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="PEp-P2-aNt"/>
+                                                                    <action selector="nonAcBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="0rx-fz-r68"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -757,7 +759,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <connections>
-                                                                    <action selector="seaterAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="5rd-Yl-n92"/>
+                                                                    <action selector="seaterBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="qCh-ae-KZA"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -792,7 +794,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <connections>
-                                                                    <action selector="sleeperAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="geh-9j-vQv"/>
+                                                                    <action selector="sleeperBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="Sce-kJ-8Gp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -848,7 +850,7 @@
                                             <color key="titleColor" red="0.086274509799999996" green="0.33725490200000002" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="resetAction:" destination="ael-vm-IIK" eventType="touchUpInside" id="qjb-uD-XvE"/>
+                                            <action selector="resetBtnClicked:" destination="ael-vm-IIK" eventType="touchUpInside" id="4UT-cT-bQW"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -902,17 +904,26 @@
                         <viewLayoutGuide key="safeArea" id="eB7-VM-hCp"/>
                     </view>
                     <connections>
+                        <outlet property="acBtn" destination="va9-FU-q3d" id="mxv-hE-F4E"/>
                         <outlet property="acImg" destination="kdK-mU-H7Z" id="dAK-KB-MTq"/>
-                        <outlet property="alertBgView" destination="cNY-WI-Tn2" id="t7j-28-fAj"/>
                         <outlet property="applyBtn" destination="VLY-bd-mmm" id="nE1-lm-EH4"/>
+                        <outlet property="bgView" destination="cNY-WI-Tn2" id="CeK-W4-AAG"/>
+                        <outlet property="cancelBtn" destination="1Kb-6w-piX" id="F9P-ON-56N"/>
                         <outlet property="departureArrowIng" destination="XyL-Yg-3vm" id="wl3-LT-lBO"/>
                         <outlet property="departureImg" destination="zPE-3F-2rL" id="jTC-as-R5u"/>
+                        <outlet property="departureTimeBtn" destination="NWn-zd-4bj" id="Tbh-eo-Nk3"/>
                         <outlet property="fareArrowImg" destination="ld7-Bu-hbB" id="GsU-at-wsZ"/>
+                        <outlet property="fareBtn" destination="z9L-KZ-WHh" id="33J-48-2CV"/>
                         <outlet property="fareImg" destination="KJ3-pU-sG2" id="Hmr-T5-Uo4"/>
+                        <outlet property="nonAcBtn" destination="mqg-qO-wwa" id="6a1-Bf-SW5"/>
                         <outlet property="nonAcImg" destination="cJ3-WN-4Ns" id="yPr-vY-hm2"/>
                         <outlet property="ratingArrow" destination="R2l-tL-Lid" id="2Ed-hM-A0W"/>
+                        <outlet property="ratingBtn" destination="T2U-cF-A3S" id="WVd-1e-i1X"/>
                         <outlet property="ratingImg" destination="S2U-wB-I0A" id="kxN-Zo-SEe"/>
+                        <outlet property="resetBtn" destination="tX3-wR-qlT" id="YgI-vd-xAL"/>
+                        <outlet property="seaterBtn" destination="UZK-8L-wpp" id="eAP-mC-0XO"/>
                         <outlet property="seaterImg" destination="P5O-IG-JXY" id="uFP-Z0-6ki"/>
+                        <outlet property="sleeperBtn" destination="EYr-x1-v98" id="YYX-uU-oDW"/>
                         <outlet property="sleeperImg" destination="wHr-OR-gw0" id="2gg-U1-7oW"/>
                     </connections>
                 </viewController>

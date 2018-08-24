@@ -26,22 +26,9 @@ class BusTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        busLogoImg.layer.cornerRadius = 3.0
-        ratingLbl.layer.cornerRadius = 3.0
-        dropShadow()
-    }
-    
-    func dropShadow() {
-        let color = UIColor.lightGray
-        let opacity: Float = 0.5
-        let offset = CGSize(width: -1, height: 1)
-        let radius: CGFloat = 3.0
-        bgView.layer.cornerRadius = 3.0
-        bgView.layer.masksToBounds = false
-        bgView.layer.shadowColor = color.cgColor
-        bgView.layer.shadowOpacity = opacity
-        bgView.layer.shadowOffset = offset
-        bgView.layer.shadowRadius = radius
+        busLogoImg.addShadow()
+        ratingLbl.addShadow()
+        bgView.addShadow()
     }
     
     func configureCell(busDetail: BusDetail) {
@@ -90,33 +77,6 @@ class BusTableViewCell: UITableViewCell {
             self.arrivalTimeLbl.isHidden = true
         }
         
-        let busFeatureType = busDetail.busType
-        
-        var busTypeStr = ""
-        if busFeatureType.isAc {
-            busTypeStr += "AC"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isNonAc {
-            busTypeStr += " NON-AC"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isSeater {
-            busTypeStr += " SEATER"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isSleeper {
-            busTypeStr += " SLEEPER"
-        } else {
-            busTypeStr += ""
-        }
-        
-        self.busTypeLbl.text = busTypeStr
+        self.busTypeLbl.text = (busDetail.busType.isAc ? "AC": "") + (busDetail.busType.isNonAc ? " NON-AC" : "") + (busDetail.busType.isSeater ? " SEATER" : "") + (busDetail.busType.isSleeper ? " SLEEPER" : "")
     }
 }

@@ -20,6 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         dataController.load()
+        
+        /// Configuring Toast manager class for Queueing of Toast's and Tap to dismiss the Toast.
+        ToastManager.shared.queueEnabled = true
+        ToastManager.shared.tapToDismissEnabled = true
+        
         return true
     }
 

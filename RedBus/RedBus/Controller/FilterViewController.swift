@@ -10,7 +10,7 @@ import UIKit
 
 class FilterViewController: BaseViewController {
 
-    @IBOutlet weak var alertBgView: UIView!
+    @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var ratingImg: UIImageView!
     @IBOutlet weak var ratingArrow: UIImageView!
     @IBOutlet weak var departureImg: UIImageView!
@@ -21,37 +21,61 @@ class FilterViewController: BaseViewController {
     @IBOutlet weak var nonAcImg: UIImageView!
     @IBOutlet weak var seaterImg: UIImageView!
     @IBOutlet weak var sleeperImg: UIImageView!
+    @IBOutlet weak var resetBtn: UIButton!
+    @IBOutlet weak var cancelBtn: UIButton!
+    @IBOutlet weak var ratingBtn: UIButton!
+    @IBOutlet weak var departureTimeBtn: UIButton!
+    @IBOutlet weak var fareBtn: UIButton!
+    @IBOutlet weak var acBtn: UIButton!
+    @IBOutlet weak var nonAcBtn: UIButton!
+    @IBOutlet weak var seaterBtn: UIButton!
+    @IBOutlet weak var sleeperBtn: UIButton!
     @IBOutlet weak var applyBtn: UIButton!
     
     var sortBy: SortBusesBy = .none
     var busFilterType = BusType(isAc: false, isNonAc: false, isSeater: false, isSleeper: false)
-    var handlerOnDismiss: ((SortBusesBy, BusType) -> ())?
+    var applyCompletionHandler: ((SortBusesBy, BusType) -> ())?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addShadowAndCornerRadius()
-        addSortButtonsStack()
-        addFilterButtonsStack()
+        setupView()
+        configureSortRadioButtonImage(isReset: false)
+        configureFilterCheckBoxImage(isReset: false)
     }
     
-    @IBAction func resetAction(_ sender: UIButton) {
+    func setupView() {
+        bgView.addShadow()
+        resetBtn.addShadow()
+        cancelBtn.addShadow()
+        ratingBtn.addShadow()
+        departureTimeBtn.addShadow()
+        fareBtn.addShadow()
+        acBtn.addShadow()
+        nonAcBtn.addShadow()
+        seaterBtn.addShadow()
+        sleeperBtn.addShadow()
+        applyBtn.addShadow()
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+    }
+    
+    @IBAction func resetBtnClicked(_ sender: UIButton) {
         sortBy = .none
         busFilterType = BusType(isAc: false, isNonAc: false, isSeater: false, isSleeper: false)
-        resetSortButtonUI()
-        resetFilterButtonUI()
+        configureSortRadioButtonImage(isReset: true)
+        configureFilterCheckBoxImage(isReset: true)
     }
     
-    @IBAction func applyAction(_ sender: UIButton) {
+    @IBAction func applyBtnClicked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: {
-            self.handlerOnDismiss?(self.sortBy, self.busFilterType)
+            self.applyCompletionHandler?(self.sortBy, self.busFilterType)
         })
     }
     
-    @IBAction func dismissAction(_ sender: UIButton) {
+    @IBAction func cancelBtnClicked(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func ratingAction(_ sender: UIButton) {
+    @IBAction func ratingBtnClicked(_ sender: UIButton) {
         if sortBy == .ratingDescending {
             sortBy = .ratingAscending
         } else if sortBy == .ratingAscending {
@@ -59,10 +83,10 @@ class FilterViewController: BaseViewController {
         } else {
             sortBy = .ratingDescending
         }
-        addSortButtonsStack()
+        configureSortRadioButtonImage(isReset: false)
     }
     
-    @IBAction func departureAction(_ sender: UIButton) {
+    @IBAction func departureTimeBtnClicked(_ sender: UIButton) {
         if sortBy == .departureTimeAscending {
             sortBy = .departureTimeDescending
         } else if sortBy == .departureTimeDescending {
@@ -70,10 +94,10 @@ class FilterViewController: BaseViewController {
         } else {
             sortBy = .departureTimeAscending
         }
-        addSortButtonsStack()
+        configureSortRadioButtonImage(isReset: false)
     }
     
-    @IBAction func fareAction(_ sender: UIButton) {
+    @IBAction func fareBtnClicked(_ sender: UIButton) {
         if sortBy == .fareAscending {
             sortBy = .fareDescending
         } else if sortBy == .fareDescending {
@@ -81,131 +105,99 @@ class FilterViewController: BaseViewController {
         } else {
             sortBy = .fareAscending
         }
-        addSortButtonsStack()
+        configureSortRadioButtonImage(isReset: false)
     }
     
-    @IBAction func acAction(_ sender: UIButton) {
+    @IBAction func acBtnClicked(_ sender: UIButton) {
         if busFilterType.isAc {
             busFilterType.isAc = false
         } else {
             busFilterType.isAc = true
         }
-        addFilterButtonsStack()
+        configureFilterCheckBoxImage(isReset: false)
     }
     
-    @IBAction func noAcAction(_ sender: UIButton) {
+    @IBAction func nonAcBtnClicked(_ sender: UIButton) {
         if busFilterType.isNonAc {
             busFilterType.isNonAc = false
         } else {
             busFilterType.isNonAc = true
         }
-        addFilterButtonsStack()
+        configureFilterCheckBoxImage(isReset: false)
     }
     
-    @IBAction func seaterAction(_ sender: UIButton) {
+    @IBAction func seaterBtnClicked(_ sender: UIButton) {
         if busFilterType.isSeater {
             busFilterType.isSeater = false
         } else {
             busFilterType.isSeater = true
         }
-        addFilterButtonsStack()
+        configureFilterCheckBoxImage(isReset: false)
     }
     
-    @IBAction func sleeperAction(_ sender: UIButton) {
+    @IBAction func sleeperBtnClicked(_ sender: UIButton) {
         if busFilterType.isSleeper {
             busFilterType.isSleeper = false
         } else {
             busFilterType.isSleeper = true
         }
-        addFilterButtonsStack()
+        configureFilterCheckBoxImage(isReset: false)
     }
     
-    func addShadowAndCornerRadius() {
-        let color = UIColor.lightGray
-        let opacity: Float = 0.3
-        let offset = CGSize(width: 0, height: 3.0)
-        let radius: CGFloat = 8.0
-        alertBgView.layer.cornerRadius = radius
-        alertBgView.layer.masksToBounds = false
-        alertBgView.layer.shadowColor = color.cgColor
-        alertBgView.layer.shadowOpacity = opacity
-        alertBgView.layer.shadowOffset = offset
-        alertBgView.layer.shadowRadius = radius
-        applyBtn.layer.cornerRadius = radius
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.7)
-    }
-    
-    func resetSortButtonUI() {
-        ratingImg.image = Constants.ratingDeselected
-        ratingArrow.isHidden = true
-        departureImg.image = Constants.depatureDeselected
-        departureArrowIng.isHidden = true
-        fareImg.image = Constants.fareDeselected
-        fareArrowImg.isHidden = true
-    }
-    
-    func addSortButtonsStack() {
-        resetSortButtonUI()
-        switch sortBy {
+    func configureSortRadioButtonImage(isReset: Bool) {
+        func resetSortRadioButtonImage() {
+            ratingImg.image = Constants.ratingDeselected
+            ratingArrow.isHidden = true
+            departureImg.image = Constants.depatureDeselected
+            departureArrowIng.isHidden = true
+            fareImg.image = Constants.fareDeselected
+            fareArrowImg.isHidden = true
+        }
+        
+        resetSortRadioButtonImage()
+        if !isReset {
+            switch sortBy {
             case .ratingAscending:
                 ratingImg.image = Constants.ratingSelected
-                ratingArrow.isHidden = false
                 ratingArrow.image = Constants.arrowUp
+                ratingArrow.isHidden = false
             case .ratingDescending:
                 ratingImg.image = Constants.ratingSelected
-                ratingArrow.isHidden = false
                 ratingArrow.image = Constants.arrowDown
+                ratingArrow.isHidden = false
             case .departureTimeAscending:
                 departureImg.image = Constants.depatureSelected
-                departureArrowIng.isHidden = false
                 departureArrowIng.image = Constants.arrowUp
+                departureArrowIng.isHidden = false
             case .departureTimeDescending:
                 departureImg.image = Constants.depatureSelected
-                departureArrowIng.isHidden = false
                 departureArrowIng.image = Constants.arrowDown
+                departureArrowIng.isHidden = false
             case .fareAscending:
                 fareImg.image = Constants.fareSelected
-                fareArrowImg.isHidden = false
                 fareArrowImg.image = Constants.arrowUp
+                fareArrowImg.isHidden = false
             case .fareDescending:
                 fareImg.image = Constants.fareSelected
-                fareArrowImg.isHidden = false
                 fareArrowImg.image = Constants.arrowDown
+                fareArrowImg.isHidden = false
             case .none:
                 break
+            }
         }
     }
     
-    func resetFilterButtonUI() {
-        acImg.image = Constants.acDeselected
-        nonAcImg.image = Constants.nonACDeselected
-        seaterImg.image = Constants.seaterDeselected
-        sleeperImg.image = Constants.sleeperDeselected
-    }
-    
-    func addFilterButtonsStack() {
-        if busFilterType.isAc {
-            acImg.image = Constants.acSelected
-        } else {
+    func configureFilterCheckBoxImage(isReset: Bool) {
+        if isReset {
             acImg.image = Constants.acDeselected
-        }
-        
-        if busFilterType.isNonAc {
-            nonAcImg.image = Constants.nonACSelected
-        } else {
             nonAcImg.image = Constants.nonACDeselected
-        }
-        
-        if busFilterType.isSeater {
-            seaterImg.image = Constants.seaterSelected
-        } else {
             seaterImg.image = Constants.seaterDeselected
-        }
-        
-        if busFilterType.isSleeper {
-            sleeperImg.image = Constants.sleeperSelected
-        } else {
             sleeperImg.image = Constants.sleeperDeselected
+        } else {
+            acImg.image = busFilterType.isAc ? Constants.acSelected : Constants.acDeselected
+            nonAcImg.image = busFilterType.isNonAc ? Constants.nonACSelected : Constants.nonACDeselected
+            seaterImg.image = busFilterType.isSeater ? Constants.seaterSelected : Constants.seaterDeselected
+            sleeperImg.image = busFilterType.isSleeper ? Constants.sleeperSelected : Constants.sleeperDeselected
         }
     }
 }

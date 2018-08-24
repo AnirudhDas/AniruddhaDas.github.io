@@ -10,6 +10,16 @@ import Foundation
 import UIKit
 
 struct Constants {
+    //Success and Error Messages
+    public static let useDifferentFilter = "Use a different filter!"
+    //public static let somethingWentWrong = "Something went wrong!"
+    public static let bookingSuccessful = "Bus booking successful."
+    public static let fetchBusesSuccess = "Showing all buses."
+    public static let cancelSuccessful = "Booking cancelled successfully."
+    public static let invalidRatingInput = "Please enter a valid rating between 0 to 5"
+    public static let ratingUpdateSuccess = "Rating updated successfully."
+    public static let filterSuccess = "Filter applied successfully."
+    
     //Images
     public static let placeholderImage: UIImage = #imageLiteral(resourceName: "placeholder")
     

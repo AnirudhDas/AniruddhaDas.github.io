@@ -24,6 +24,7 @@
 		8F19DB12212FAA5900FDD0D2 /* BusesListVCUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19DB11212FAA5900FDD0D2 /* BusesListVCUnitTests.swift */; };
 		8F19DB14212FAD4500FDD0D2 /* MockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19DB13212FAD4500FDD0D2 /* MockTableView.swift */; };
 		8F19DB1E212FB28D00FDD0D2 /* CoreDataUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19DB1D212FB28D00FDD0D2 /* CoreDataUnitTests.swift */; };
+		8F19DB22213009BA00FDD0D2 /* ToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F19DB21213009BA00FDD0D2 /* ToastManager.swift */; };
 		8F1EE71D212C365C00CF4917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1EE71C212C365C00CF4917 /* AppDelegate.swift */; };
 		8F1EE722212C365C00CF4917 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1EE720212C365C00CF4917 /* Main.storyboard */; };
 		8F1EE724212C365D00CF4917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F1EE723212C365D00CF4917 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		8F19DB13212FAD4500FDD0D2 /* MockTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableView.swift; sourceTree = "<group>"; };
 		8F19DB1D212FB28D00FDD0D2 /* CoreDataUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataUnitTests.swift; sourceTree = "<group>"; };
 		8F19DB1F212FB80B00FDD0D2 /* RedBus2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RedBus2.xcdatamodel; sourceTree = "<group>"; };
+		8F19DB21213009BA00FDD0D2 /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
 		8F1EE719212C365C00CF4917 /* RedBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F1EE71C212C365C00CF4917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F1EE721212C365C00CF4917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				8F1EE73C212C98BA00CF4917 /* ServerConfiguration.swift */,
 				8F1EE73E212D14FA00CF4917 /* Utility.swift */,
 				8F1730D6212DE82D00CB4285 /* GCDBlackBox.swift */,
+				8F19DB21213009BA00FDD0D2 /* ToastManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				8F1EE72F212C84A300CF4917 /* BusTableViewCell.swift in Sources */,
 				8F1EE73D212C98BA00CF4917 /* ServerConfiguration.swift in Sources */,
 				8F1EE735212C894D00CF4917 /* FetchBusesService.swift in Sources */,
+				8F19DB22213009BA00FDD0D2 /* ToastManager.swift in Sources */,
 				8F1EE73F212D14FA00CF4917 /* Utility.swift in Sources */,
 				8F1EE731212C866F00CF4917 /* BusesListViewController.swift in Sources */,
 				8F1730C8212DAF6D00CB4285 /* BookingTableViewCell.swift in Sources */,

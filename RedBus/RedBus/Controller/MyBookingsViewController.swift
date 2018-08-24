@@ -12,9 +12,9 @@ class MyBookingsViewController: BaseViewController {
 
     @IBOutlet weak var tblViewBookings: UITableView!
     var alertController: UIAlertController?
-    
     var dataController = appDelegate.dataController
-    var busesList: [Bus] = [] {
+    
+    var busesDataSource: [Bus] = [] {
         didSet {
             tblViewBookings.reloadData()
         }
@@ -32,13 +32,13 @@ class MyBookingsViewController: BaseViewController {
     }
     
     @objc func fetchBuses() {
-        busesList = dataController.getAllBookings()
+        busesDataSource = dataController.getAllBookings()
     }
 }
 
 extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return busesList.count
+        return busesDataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +46,7 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         bookingCell.selectionStyle = .none
-        bookingCell.configureCell(busDetail: busesList[indexPath.row])
+        bookingCell.configureCell(busDetail: busesDataSource[indexPath.row])
         return bookingCell
     }
     
@@ -67,6 +67,7 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 weakSelf.dataController.deleteBooking(bus: bus)
                 weakSelf.fetchBuses()
+                weakSelf.view.makeToast(Constants.cancelSuccessful, duration: 3.0, position: .bottom)
                 }, cancelButtonTitle: Constants.cancelAlertCancel, cancelHandler: { [weak self] _ in
                     guard let weakSelf = self else { return }
                     weakSelf.tblViewBookings.reloadData()
@@ -83,12 +84,13 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
         
         let action = UIAlertAction(title: Constants.updateAlertOK, style: UIAlertActionStyle.default, handler: { [weak self] (alertController) -> Void in
             guard let weakSelf = self else { return }
-            guard let ratingStr = weakSelf.alertController?.textFields?.first?.text, let rating = Double(ratingStr), rating >= 0 else {
-                print("Invalid Rating")
+            guard let ratingStr = weakSelf.alertController?.textFields?.first?.text, let rating = Double(ratingStr), rating >= 0, rating <= 5 else {
+                weakSelf.view.makeToast(Constants.invalidRatingInput, duration: 3.0, position: .bottom)
                 return
             }
             weakSelf.dataController.updateBooking(bus: bus, rating: rating)
             weakSelf.fetchBuses()
+            weakSelf.view.makeToast(Constants.ratingUpdateSuccess, duration: 3.0, position: .bottom)
         })
         
         alertController?.addAction(action)

@@ -25,26 +25,14 @@ class BookingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        busLogoImg.layer.cornerRadius = 3.0
-        ratingLbl.layer.cornerRadius = 3.0
-        dropShadow()
-    }
-    
-    func dropShadow() {
-        let color = UIColor.lightGray
-        let opacity: Float = 0.5
-        let offset = CGSize(width: -1, height: 1)
-        let radius: CGFloat = 3.0
-        bgView.layer.cornerRadius = 3.0
-        bgView.layer.masksToBounds = false
-        bgView.layer.shadowColor = color.cgColor
-        bgView.layer.shadowOpacity = opacity
-        bgView.layer.shadowOffset = offset
-        bgView.layer.shadowRadius = radius
+        busLogoImg.addShadow()
+        ratingLbl.addShadow()
+        bgView.addShadow()
     }
     
     func configureCell(busDetail: Bus) {
         self.bus = busDetail
+        
         self.sourceLbl.text = busDetail.source
         self.destinationLbl.text = busDetail.destination
         if let currency = busDetail.currency {
@@ -91,33 +79,6 @@ class BookingTableViewCell: UITableViewCell {
             self.arrivalTimeLbl.isHidden = true
         }
         
-        let busFeatureType: BusType = BusType(isAc: busDetail.isAC, isNonAc: busDetail.isNONAC, isSeater: busDetail.isSEATER, isSleeper: busDetail.isSLEEPER)
-        
-        var busTypeStr = ""
-        if busFeatureType.isAc {
-            busTypeStr += "AC"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isNonAc {
-            busTypeStr += " NON-AC"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isSeater {
-            busTypeStr += " SEATER"
-        } else {
-            busTypeStr += ""
-        }
-        
-        if busFeatureType.isSleeper {
-            busTypeStr += " SLEEPER"
-        } else {
-            busTypeStr += ""
-        }
-        
-        self.busTypeLbl.text = busTypeStr
+        self.busTypeLbl.text = (busDetail.isAC ? "AC": "") + (busDetail.isNONAC ? " NON-AC" : "") + (busDetail.isSEATER ? " SEATER" : "") + (busDetail.isSLEEPER ? " SLEEPER" : "")
     }
 }
