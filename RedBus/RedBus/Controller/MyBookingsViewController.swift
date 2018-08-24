@@ -55,7 +55,6 @@ extension MyBookingsViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         showUpdateRatingAlert(bus: bus)
-        //tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

@@ -24,6 +24,7 @@ public struct BusType {
 }
 
 public struct BusDetail: Equatable, Hashable {
+    
     let busId: Int
     let source: String
     let destination: String

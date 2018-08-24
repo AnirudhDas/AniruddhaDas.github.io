@@ -109,38 +109,22 @@ class FilterViewController: BaseViewController {
     }
     
     @IBAction func acBtnClicked(_ sender: UIButton) {
-        if busFilterType.isAc {
-            busFilterType.isAc = false
-        } else {
-            busFilterType.isAc = true
-        }
+        busFilterType.isAc = busFilterType.isAc ? false : true
         configureFilterCheckBoxImage(isReset: false)
     }
     
     @IBAction func nonAcBtnClicked(_ sender: UIButton) {
-        if busFilterType.isNonAc {
-            busFilterType.isNonAc = false
-        } else {
-            busFilterType.isNonAc = true
-        }
+        busFilterType.isNonAc = busFilterType.isNonAc ? false : true
         configureFilterCheckBoxImage(isReset: false)
     }
     
     @IBAction func seaterBtnClicked(_ sender: UIButton) {
-        if busFilterType.isSeater {
-            busFilterType.isSeater = false
-        } else {
-            busFilterType.isSeater = true
-        }
+        busFilterType.isSeater = busFilterType.isSeater ? false : true
         configureFilterCheckBoxImage(isReset: false)
     }
     
     @IBAction func sleeperBtnClicked(_ sender: UIButton) {
-        if busFilterType.isSleeper {
-            busFilterType.isSleeper = false
-        } else {
-            busFilterType.isSleeper = true
-        }
+        busFilterType.isSleeper = busFilterType.isSleeper ? false : true
         configureFilterCheckBoxImage(isReset: false)
     }
     

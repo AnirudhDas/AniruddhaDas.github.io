@@ -12,7 +12,6 @@ import UIKit
 struct Constants {
     //Success and Error Messages
     public static let useDifferentFilter = "Use a different filter!"
-    //public static let somethingWentWrong = "Something went wrong!"
     public static let bookingSuccessful = "Bus booking successful."
     public static let fetchBusesSuccess = "Showing all buses."
     public static let cancelSuccessful = "Booking cancelled successfully."

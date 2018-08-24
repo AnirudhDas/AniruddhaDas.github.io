@@ -52,20 +52,8 @@ class BusesListViewController: BaseViewController {
             self.busesDataSource.busType = busFilterType
             self.busListTblView.reloadData()
             if self.busesDataSource.filteredBuses.isEmpty {
-                /*
-                self.errorView.isHidden = false
-                self.busListTblView.isHidden = true
-                self.errorLabel.text = Constants.useDifferentFilter
-                self.retryBtn.isHidden = true
-                */
                 self.view.makeToast(Constants.useDifferentFilter, duration: 3.0, position: .bottom)
             } else {
-                /*
-                self.errorView.isHidden = true
-                self.busListTblView.isHidden = false
-                self.errorLabel.text = Constants.somethingWentWrong
-                self.retryBtn.isHidden = false
-                */
                 self.view.makeToast(Constants.filterSuccess, duration: 3.0, position: .bottom)
             }
         }
@@ -87,7 +75,6 @@ class BusesListViewController: BaseViewController {
                     weakSelf.spinner.stopAnimating()
                     guard let busesResponse = busesResponse, !busesResponse.isEmpty else {
                         weakSelf.errorView.isHidden = false
-                        //weakSelf.errorLabel.text = Constants.somethingWentWrong
                         weakSelf.busListTblView.isHidden = true
                         return
                     }

@@ -31,105 +31,73 @@ struct BusesList {
                 return sortBusList(busList: Array(allBuses))
             }
             
-            //No filter set
+            //No filter added
             if busType.isAc == false && busType.isNonAc == false && busType.isSeater == false && busType.isSleeper == false {
                 return sortBusList(busList: Array(allBuses))
             }
             
             //Set Filters
-            let acBuses = allBuses.filter({
-                busType.isAc && (busType.isAc == $0.busType.isAc)
-            })
+            let acBuses = allBuses.filter({ busType.isAc && (busType.isAc == $0.busType.isAc) })
+            let nonAcBuses = allBuses.filter({ busType.isNonAc && (busType.isNonAc == $0.busType.isNonAc) })
+            let seaterBuses = allBuses.filter({ busType.isSeater && (busType.isSeater == $0.busType.isSeater) })
+            let sleeperBuses = allBuses.filter({ busType.isSleeper && (busType.isSleeper == $0.busType.isSleeper) })
             
-            let nonAcBuses = allBuses.filter({
-                busType.isNonAc && (busType.isNonAc == $0.busType.isNonAc)
-            })
+            let setAcBuses: Set<BusDetail> = Set(acBuses)
+            let setNonAcBuses: Set<BusDetail> = Set(nonAcBuses)
+            let setSeaterBuses: Set<BusDetail> = Set(seaterBuses)
+            let setSleeperBuses: Set<BusDetail> = Set(sleeperBuses)
             
-            let seaterBuses = allBuses.filter({
-                busType.isSeater && (busType.isSeater == $0.busType.isSeater)
-            })
-            
-            let sleeperBuses = allBuses.filter({
-                busType.isSleeper && (busType.isSleeper == $0.busType.isSleeper)
-            })
-            
-            let setOne: Set<BusDetail> = Set(acBuses)
-            let setTwo: Set<BusDetail> = Set(nonAcBuses)
-            let setThree: Set<BusDetail> = Set(seaterBuses)
-            let setFour: Set<BusDetail> = Set(sleeperBuses)
-            
-            var finalSet = setOne.union(setTwo).union(setThree).union(setFour)
+            var filteredSet = setAcBuses.union(setNonAcBuses).union(setSeaterBuses).union(setSleeperBuses)
             
             if busType.isAc {
-                finalSet = finalSet.intersection(setOne)
+                filteredSet = filteredSet.intersection(setAcBuses)
             }
             
             if busType.isNonAc {
-                finalSet = finalSet.intersection(setTwo)
+                filteredSet = filteredSet.intersection(setNonAcBuses)
             }
             
             if busType.isSeater {
-                finalSet = finalSet.intersection(setThree)
+                filteredSet = filteredSet.intersection(setSeaterBuses)
             }
             
             if busType.isSleeper {
-                finalSet = finalSet.intersection(setFour)
+                filteredSet = filteredSet.intersection(setSleeperBuses)
             }
             
-            let sortedList = sortBusList(busList: Array(finalSet))
-            return sortedList
+            return sortBusList(busList: Array(filteredSet))
         }
         
         return []
     }
     
     func sortBusList(busList: [BusDetail]) -> [BusDetail] {
-        var result: [BusDetail] = []
+        var sortedList: [BusDetail] = []
         
         switch sortBy {
             
             case .ratingAscending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    if busOne.rating != -1 && busTwo.rating != -1 {
-                        return busOne.rating < busTwo.rating
-                    } else {
-                        return true
-                    }
-                })
+                sortedList = busList.sorted(by: { return ($0.rating != -1 && $1.rating != -1) ? $0.rating < $1.rating : true })
             
             case .ratingDescending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    if busOne.rating != -1 && busTwo.rating != -1 {
-                        return busOne.rating > busTwo.rating
-                    } else {
-                        return true
-                    }
-                })
+                sortedList = busList.sorted(by: { return ($0.rating != -1 && $1.rating != -1) ? $0.rating > $1.rating : true })
             
             case .departureTimeAscending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    return busOne.departureTime < busTwo.departureTime
-                })
+                sortedList = busList.sorted(by: { return $0.departureTime < $1.departureTime })
             
             case .departureTimeDescending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    return busOne.departureTime > busTwo.departureTime
-                })
+                sortedList = busList.sorted(by: { return $0.departureTime > $1.departureTime })
             
             case .fareAscending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    return busOne.fare < busTwo.fare
-                })
+                sortedList = busList.sorted(by: { return $0.fare < $1.fare })
             
             case .fareDescending:
-                result = busList.sorted(by: { (busOne, busTwo) -> Bool in
-                    return busOne.fare > busTwo.fare
-                })
+                sortedList = busList.sorted(by: { return $0.fare > $1.fare })
             
             case .none:
-                result = busList
+                sortedList = busList
         }
         
-        return result
+        return sortedList
     }
 }
